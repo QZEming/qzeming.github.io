@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">2</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>cookies</span>
+    </h1>
+    <div class="articleContent">
+        <h1 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>由于HTTP本身是无状态的，服务器无法记住发送请求的客户端。cookie实际上是一小段文本信息（只有4k大小），如果服务器要记住发起请求的用户的状态，就可以使用cookie来实现。<br>当客户端向服务器端发送请求的时候，服务器端向客户端发回一个cookie，而客户端将该cookie保存下来，每次发送请求的时候带上这个cookie，因为服务器端也存有该cookie，所以可以通过检查来cookie来确认用户的状态。<br> <a id="more"></a></p>
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>当用户发起登录请求时，cookie的设置会经历下面的过程</p>
+<ol>
+<li>客户端发送一个请求到服务器</li>
+<li>服务器发送一个http响应到客户端，其中包括set-cookie的头部</li>
+<li>客户端保存响应中的cookie，再向服务器发送请求，请求中包含cookie的头部</li>
+<li>服务器返回响应数据</li>
+</ol>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><h3 id="name-value"><a href="#name-value" class="headerlink" title="name=value"></a>name=value</h3><p>键值对，可以设置要保持的key/value，要注意的是这里的name不能和其他属性重名</p>
+<h3 id="Expires"><a href="#Expires" class="headerlink" title="Expires"></a>Expires</h3><p>该属性用来设置cookie的有效期。cookie中的maxAge用来表示该属性，单位为秒。<br>Cookie中通过getMaxAge()和setMaxAge(int maxAge)来读写该属性。maxAge有3种值，分别为正数，负数和0。  </p>
+<p>如果maxAge为正数，则cookie会在对应的时间结束后自动失效。浏览器会将maxAge为正数的cookie写入对应的cookie文件中（每个浏览器的存放位置不同）。只要在该时间内，不管用户重新打开浏览器甚至是电脑，都还是可以保持登录状态的。<br>如果maxAge为0，则表示立即删除cookie，一旦执行该方法，cookie会马上失效。<br>如果maxAge为负数，则cookie会在浏览器关闭的时候失效，于为0的情况不同的是，为负数的情况下，cookie还会保持一段时间。</p>
+<h3 id="domain"><a href="#domain" class="headerlink" title="domain"></a>domain</h3><p>该属性用来设置生成cookie的域名<br>cookie无法跨域名使用，只能在当前域名下使用</p>
+<p>正常情况下，同一个一级域名下的两个二级域名也不能交互使用cookie,比如test1.mcrwayfun.com和test2.mcrwayfun.com，因为二者的域名不完全相同。如果想要mcrwayfun.com名下的二级域名都可以使用该Cookie，需要设置Cookie的domain参数为.mcrwayfun.com，这样使用test1.mcrwayfun.com和test2.mcrwayfun.com就能访问同一个cookie</p>
+<h3 id="path"><a href="#path" class="headerlink" title="path"></a>path</h3><p>path属性决定允许访问Cookie的路径。比如，设置为”/“表示允许所有路径都可以使用Cookie</p>
+<h3 id="secure"><a href="#secure" class="headerlink" title="secure"></a>secure</h3><p>http除了是无状态的外，还是不安全的。信息不经任何处理就会在网络上传输。可以通过将cookie的secure属性设置为true来让浏览器只在https和SSL中传输此类cookie</p>
+<h2 id="修改删除cookie"><a href="#修改删除cookie" class="headerlink" title="修改删除cookie"></a>修改删除cookie</h2><p>HttpServletResponse提供的Cookie操作只有一个addCookie(Cookie cookie)，所以想要修改Cookie只能使用一个同名的Cookie来覆盖原先的Cookie。如果要删除某个Cookie，则只需要新建一个同名的Cookie，并将maxAge设置为0，并覆盖原来的Cookie即可。<br>新建的Cookie，除了value、maxAge之外的属性，比如name、path、domain都必须与原来的一致才能达到修改或者删除的效果。否则，浏览器将视为两个不同的Cookie不予覆盖。</p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#cookie"><span class="toc-number">1.</span> <span class="toc-text">cookie</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过程"><span class="toc-number">1.2.</span> <span class="toc-text">过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#属性"><span class="toc-number">1.3.</span> <span class="toc-text">属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#name-value"><span class="toc-number">1.3.1.</span> <span class="toc-text">name&#x3D;value</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Expires"><span class="toc-number">1.3.2.</span> <span class="toc-text">Expires</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#domain"><span class="toc-number">1.3.3.</span> <span class="toc-text">domain</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#path"><span class="toc-number">1.3.4.</span> <span class="toc-text">path</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#secure"><span class="toc-number">1.3.5.</span> <span class="toc-text">secure</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改删除cookie"><span class="toc-number">1.4.</span> <span class="toc-text">修改删除cookie</span></a></li></ol></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        <script src="/js/script.js"></script>
+    </body>
+
+</html>

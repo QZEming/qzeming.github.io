@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">2</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>BigInt类型笔记整理</span>
+    </h1>
+    <div class="articleContent">
+        <h1 id="BigInt"><a href="#BigInt" class="headerlink" title="BigInt"></a>BigInt</h1><hr>
+<p>在ES10之前，JavaScript已经有6种基本类型了，而ES10带来了第七种数据类型BigInt<br>在MDN上看到关于BigInt的描述  </p>
+<blockquote>
+<p>BigInt is a built-in object that provides a way to represent whole numbers larger than 2**53 - 1, which is the largest number JavaScript can reliably represent with the Number primitive.<br>BigInt可以描述比原来JavaScript可以描述的数更大的数<br> <a id="more"></a></p>
+</blockquote>
+<h3 id="创建BigInt"><a href="#创建BigInt" class="headerlink" title="创建BigInt"></a>创建BigInt</h3><p>我们可以通过直接声明和为BigInt传入字符串，数值来创建BigInt类型的数值<br>直接声明时，只要在数字后面加上n，就是一个BigInt类型了  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> b1 = <span class="hljs-number">123n</span>;<br><span class="hljs-keyword">var</span> b2 = BigInt(<span class="hljs-number">123</span>); <span class="hljs-comment">// 123n</span><br><span class="hljs-keyword">var</span> b3 = BigInt(<span class="hljs-string">"123"</span>); <span class="hljs-comment">// 123n</span><br></code></pre></td></tr></table></figure>
+<p>在传入字符串时，可以通过传入0x，0o,0b开头的字符串来对十六进制，八进制，二进制的数值创建BigInt类型的数值  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> b16 = BigInt(<span class="hljs-string">"0x10"</span>); <span class="hljs-comment">// 16n</span><br><span class="hljs-keyword">var</span> b8 = BigInt(<span class="hljs-string">"0o10"</span>); <span class="hljs-comment">// 8n</span><br><span class="hljs-keyword">var</span> b2 = BigInt(<span class="hljs-string">"0b10"</span>); <span class="hljs-comment">// 2n</span><br></code></pre></td></tr></table></figure>
+<p>如果传入其他字符串的话，就会报错</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript">BigInt(<span class="hljs-string">"aaa"</span>);<br><span class="hljs-comment">// Uncaught SyntaxError: Cannot convert aaa to a BigInt</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="对BigInt类型的判断"><a href="#对BigInt类型的判断" class="headerlink" title="对BigInt类型的判断"></a>对BigInt类型的判断</h3><p>要判断一个值是否为BigInt，可以用以下几种方式</p>
+<ol>
+<li>typeof<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">typeof</span> <span class="hljs-number">1n</span>; <span class="hljs-comment">// "bigint"</span><br><span class="hljs-keyword">typeof</span> BigInt(<span class="hljs-number">1</span>); <span class="hljs-comment">// "bigint"</span><br></code></pre></td></tr></table></figure></li>
+<li>constructor<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">BigInt(<span class="hljs-string">'1'</span>).constructor === BigInt; <span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure></li>
+<li>Object.prototype.toString<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-number">1n</span>); <span class="hljs-comment">// "[object BigInt]"</span><br></code></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>关于其他的类型判断见<a href="https://blog.csdn.net/zemprogram/article/details/89646636" target="_blank" rel="noopener">JavaScript类型判断总结</a></p>
+<h3 id="超过安全数的计算"><a href="#超过安全数的计算" class="headerlink" title="超过安全数的计算"></a>超过安全数的计算</h3><p>我们知道，JavaScript原本的值的计算最大只到2**53-1，超过这个数值的计算结果会出现错误，而使用BigInt，我们可以超过这个数值正常计算，在JavaScript中，使用Number.MAX_SAFE_INTEGER来代表这个最大的安全数<br>我们看看不使用BigInt时的计算  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> n1 = <span class="hljs-built_in">Number</span>.MAX_SAFE_INTEGER; <span class="hljs-comment">// 9007199254740991</span><br>n1+=<span class="hljs-number">10</span>; <span class="hljs-comment">// 9007199254741000</span><br></code></pre></td></tr></table></figure>
+<p>这里n1+10后的答案显然是错误的，那么我们使用BigInt来计算</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> n1 = BigInt(<span class="hljs-built_in">Number</span>.MAX_SAFE_INTEGER); <span class="hljs-comment">// 9007199254740991n</span><br>n1+=<span class="hljs-number">10n</span>; <span class="hljs-comment">// 9007199254741001n</span><br></code></pre></td></tr></table></figure>
+<p>可以看到，这里的数值正常了</p>
+<h3 id="与Number类型的比较计算"><a href="#与Number类型的比较计算" class="headerlink" title="与Number类型的比较计算"></a>与Number类型的比较计算</h3><p>要注意的是，BigInt类型不能直接和Number类型混合计算，否则会报错</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> n = <span class="hljs-number">1n</span>+<span class="hljs-number">1</span>;<br><span class="hljs-comment">// Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions</span><br></code></pre></td></tr></table></figure>
+<p>在比较的时候，BigInt和Number类型的值是一样的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-number">1n</span>==<span class="hljs-number">1</span> <span class="hljs-comment">// true</span><br><span class="hljs-number">1n</span>&lt;<span class="hljs-number">2</span> <span class="hljs-comment">// true</span><br><span class="hljs-number">2n</span>&gt;<span class="hljs-number">1</span> <span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="转为布尔值的值"><a href="#转为布尔值的值" class="headerlink" title="转为布尔值的值"></a>转为布尔值的值</h3><p>BigInt变为布尔值是为true还是为false和Number一样，除了0n之外都为true  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">if</span>(<span class="hljs-number">0n</span>)&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"if"</span>);<br>&#125;<span class="hljs-keyword">else</span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"else"</span>);<br>&#125;<br><span class="hljs-comment">// "else"</span><br><span class="hljs-built_in">Boolean</span>(<span class="hljs-number">0n</span>); <span class="hljs-comment">// false</span><br><span class="hljs-built_in">Boolean</span>(<span class="hljs-number">1n</span>); <span class="hljs-comment">// true</span><br><span class="hljs-built_in">Boolean</span>(<span class="hljs-number">-1n</span>); <span class="hljs-comment">// true</span><br><br><span class="hljs-number">0n</span>||<span class="hljs-number">1n</span>; <span class="hljs-comment">// 1n</span><br><span class="hljs-number">0n</span>&amp;&amp;<span class="hljs-number">1n</span>; <span class="hljs-comment">// 0n</span><br></code></pre></td></tr></table></figure>
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BigInt"><span class="toc-number">1.</span> <span class="toc-text">BigInt</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建BigInt"><span class="toc-number">1.0.1.</span> <span class="toc-text">创建BigInt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对BigInt类型的判断"><span class="toc-number">1.0.2.</span> <span class="toc-text">对BigInt类型的判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#超过安全数的计算"><span class="toc-number">1.0.3.</span> <span class="toc-text">超过安全数的计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#与Number类型的比较计算"><span class="toc-number">1.0.4.</span> <span class="toc-text">与Number类型的比较计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转为布尔值的值"><span class="toc-number">1.0.5.</span> <span class="toc-text">转为布尔值的值</span></a></li></ol></li></ol></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        <script src="/js/script.js"></script>
+    </body>
+
+</html>

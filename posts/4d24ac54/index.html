@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">2</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>跨域问题解决与具体实现</span>
+    </h1>
+    <div class="articleContent">
+        <h1 id="同源策略限制"><a href="#同源策略限制" class="headerlink" title="同源策略限制"></a>同源策略限制</h1><p>跨域指的是当两个url的协议，域名，端口三者有一个不同，就会发生跨域。之所以会有跨域，是因为浏览器的同源策略限制。<br>同源策略限制了一个源的脚本与另一个不同源的脚本之间的交互，这是一种安全保障机制。<br>是否同源的判断，只要看两个源的url端口和域名是否相同，只要有一个不同，那就是不同源。</p>
+<a id="more"></a>
+<h1 id="跨域的解决方法"><a href="#跨域的解决方法" class="headerlink" title="跨域的解决方法"></a>跨域的解决方法</h1><h2 id="jsonp"><a href="#jsonp" class="headerlink" title="jsonp"></a>jsonp</h2><hr>
+<p>jsonp简单来说就是通过在html中插入一个script标签，利用其src属性来发起请求，通过在src中为callback添加对应的回调函数来达到对响应数据进行处理的目的  </p>
+<p>如下例子<br>发起请求的客户端</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><br>        <span class="hljs-keyword">let</span> sendJSONP = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">url, callbackName</span>) </span>&#123;<br>            <span class="hljs-comment">// 新建script标签</span><br>            <span class="hljs-keyword">let</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"script"</span>);<br>            <span class="hljs-comment">// 为script标签添加请求送达的服务器url和得到响应的回调函数</span><br>            script.src = <span class="hljs-string">`<span class="hljs-subst">$&#123;url&#125;</span>&amp;callback=<span class="hljs-subst">$&#123;callbackName&#125;</span>`</span>;<br>            <span class="hljs-comment">// 在head标签中插入script标签</span><br>            <span class="hljs-built_in">document</span>.head.appendChild(script);<br>        &#125;;<br><br>        <span class="hljs-keyword">let</span> getResponse = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>&#123;<br>            <span class="hljs-comment">// 打印响应信息</span><br>            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`the response you get is "<span class="hljs-subst">$&#123;data&#125;</span>"`</span>);<br>        &#125;;<br><br>        <span class="hljs-comment">// 发起请求，这里的url为目标url</span><br>        sendJSONP(<span class="hljs-string">'url/?name=Mike &amp;age=1'</span>, <span class="hljs-string">'getResponse'</span>);<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>服务端 node</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">'util'</span>),<br>    http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>),<br>    url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>);<br><br><span class="hljs-keyword">let</span> data = <span class="hljs-built_in">JSON</span>.stringify(&#123;<br>    <span class="hljs-attr">message</span>: <span class="hljs-string">"I HAVE ALREADY RECEIVED"</span><br>&#125;);<br><br>http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>&#123;<br>    req = url.parse(req.url, <span class="hljs-literal">true</span>);<br>    <span class="hljs-keyword">if</span> (!req.query.callback) <br>        res.end();<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`name is <span class="hljs-subst">$&#123;req.query.name&#125;</span>and his age is <span class="hljs-subst">$&#123;req.query.age&#125;</span>`</span>);<br>    res.writeHead(<span class="hljs-number">200</span>, &#123; <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'appliction/javascript'</span> &#125;)<br>    res.end(req.query.callback + <span class="hljs-string">"('"</span> + data + <span class="hljs-string">"')"</span>)<br>&#125;).listen(<span class="hljs-number">3000</span>)<br></code></pre></td></tr></table></figure>
+<p>这里打开服务器，然后打开我们写的页面<br><img src="https://img-blog.csdnimg.cn/20191025192514213.png" alt="在这里插入图片描述"><br>可以看到服务端控制台已经打印出对应的内容<br><img src="https://img-blog.csdnimg.cn/20191025192605869.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>客户端也打印出相应的响应信息</p>
+<p>通过jsonp我们可以跨域发送请求，而且这种方式兼容老的浏览器，但是要注意的是，jsonp只允许发送get请求，而且因为我们是将script标签插入html中，所以无法做到异步请求</p>
+<h2 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h2><hr>
+<p>CORS是一个w3c标准，全称是“跨域资源共享”，通过额外的HTTP头来告诉浏览器，让运行在一个origin上的Web应用被准许访问不同域的服务器上指定的资源。<br>在我们常见的请求中，有很多都是跨域访问的，如img的src属性经常访问不同域的资源，但是出于安全性的考虑，脚本发出的请求，例如XMLHttpRequest和Fetch API遵循同源策略，不能访问不同域的资源。<br>如果要在脚本中也能访问不同域的资源，可以在服务器中设置CORS接口，这里主要是要服务器和浏览器（兼容性）的支持，前端的请求不需要做出改变。  </p>
+<p>CORS分简单请求和非简单请求</p>
+<h3 id="简单请求"><a href="#简单请求" class="headerlink" title="简单请求"></a>简单请求</h3><p>符合简单请求的条件<br>请求方式为下面三个其中一个  </p>
+<ul>
+<li>get</li>
+<li>head</li>
+<li>post</li>
+</ul>
+<p>content-type的值仅限下面三个其中之一</p>
+<ul>
+<li>text/plain</li>
+<li>multipart/form-data</li>
+<li>application/x-www-form-urlencoded  </li>
+</ul>
+<p>对于简单请求，浏览器直接发出CORS请求，也即是说，会自动在请求中添加origin字段。<br>当服务器接收到请求时，发现发出Origin指定的源不在允许访问的列表内，在响应时就会返回一个没有<strong>Access-Control-Allow-Origin</strong>字段的正常HTTP响应。而浏览器发现没有<strong>Access-Control-Allow-Origin</strong>字段后，就会知道请求出错，会在控制台中提示。要注意的是，这种错误的状态码是200，所以无法通过状态码来判断是否正确。<br><img src="https://img-blog.csdnimg.cn/20191025220128723.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191025215941405.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>可以看到，即使报错，状态码仍是200。</p>
+<p>我们可以通过设置<strong>Access-Control-Allow-Origin</strong>来让请求得以跨域</p>
+<p>举个使用node设置CORS白名单的例子<br>3000端口的服务端文件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>),<br>    url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>);<br><br><span class="hljs-keyword">let</span> data = <span class="hljs-built_in">JSON</span>.stringify(&#123;<br>    <span class="hljs-attr">message</span>: <span class="hljs-string">"I HAVE ALREADY RECEIVED"</span><br>&#125;);<br><br>http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>&#123;<br>    <span class="hljs-comment">// 设置http://localhost:3001可访问当前服务端的资源</span><br>    res.setHeader(<span class="hljs-string">'Access-Control-Allow-Origin'</span>, <span class="hljs-string">'http://localhost:3001'</span>);<br>    req = url.parse(req.url, <span class="hljs-literal">true</span>);<br>    <span class="hljs-keyword">if</span> (!req.query.callback) <br>        res.end();<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`name is <span class="hljs-subst">$&#123;req.query.name&#125;</span>and his age is <span class="hljs-subst">$&#123;req.query.age&#125;</span>`</span>);<br>    res.end(req.query.callback + <span class="hljs-string">"('"</span> + data + <span class="hljs-string">"')"</span>)<br>&#125;).listen(<span class="hljs-number">3000</span>)<br></code></pre></td></tr></table></figure>
+<p>3001端口的服务端文件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);<br><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);<br><br>http.createServer(<span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> &#123;<br>    <span class="hljs-keyword">const</span> html = fs.readFileSync(<span class="hljs-string">'test.html'</span>, <span class="hljs-string">'utf-8'</span>);<br>    res.writeHead(<span class="hljs-number">200</span>, &#123;<br>        <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'text/html'</span><br>    &#125;);<br>    res.end(html);<br><br>&#125;).listen(<span class="hljs-number">3001</span>);<br></code></pre></td></tr></table></figure>
+<p>发起请求的页面</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript"><br>        <span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();<br>        xhr.open(<span class="hljs-string">'get'</span>, <span class="hljs-string">'http://localhost:3000/?name=Mike &amp;age=1'</span>)<br>        xhr.send()<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20191025222012811.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191025222056271.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>可以看到，这里已经有<strong>Access-Control-Allow-Origin</strong>字段了，而且也不报错了。</p>
+<p>如果将</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">res.setHeader(<span class="hljs-string">'Access-Control-Allow-Origin'</span>, <span class="hljs-string">'http://localhost:3001'</span>);<br></code></pre></td></tr></table></figure>
+<p>改为</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">res.setHeader(<span class="hljs-string">'Access-Control-Allow-Origin'</span>, <span class="hljs-string">'*'</span>);<br></code></pre></td></tr></table></figure>
+<p>我们甚至可以在本地（’file://‘）获取服务端的资源</p>
+<h3 id="非简单请求"><a href="#非简单请求" class="headerlink" title="非简单请求"></a>非简单请求</h3><p>上面已经提及了简单请求是什么了，其他的请求为非简单请求。<br>对于非简单请求的CORS请求，会在正式请求前发送一个预请求，询问服务器发起请求的页面所在的域名是否在可访问服务器资源的名单中，如果在的话，正式发起请求，否则报错。  </p>
+<p>预请求的method为options，我们试着将上面的get请求改为put请求</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">xhr.open(<span class="hljs-string">'put'</span>, <span class="hljs-string">'http://localhost:3000/?name=Mike &amp;age=1'</span>)<br></code></pre></td></tr></table></figure>
+<p>看看控制台<br><img src="https://img-blog.csdnimg.cn/20191025223637628.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>可以看到，这里的method已经变成了OPTIONS了。  </p>
+<p>同样地，和上面配置允许访问的域名一样，这里我们可以通过设置put请求可访问资源来实现跨域，在3000端口的服务端文件加上一行代码设置</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs javascript">http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>&#123;<br>    res.setHeader(<span class="hljs-string">'Access-Control-Allow-Origin'</span>, <span class="hljs-string">'*'</span>);<br>    <span class="hljs-comment">// ----------下面一行是增加的设置-------------------</span><br>    res.setHeader(<span class="hljs-string">'Access-Control-Allow-Methods'</span>,<span class="hljs-string">'PUT'</span>)<br>    <span class="hljs-comment">// ----------上面一行是增加的设置-------------------</span><br>    req = url.parse(req.url, <span class="hljs-literal">true</span>);<br>    <span class="hljs-keyword">if</span> (!req.query.callback) <br>        res.end();<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`name is <span class="hljs-subst">$&#123;req.query.name&#125;</span>and his age is <span class="hljs-subst">$&#123;req.query.age&#125;</span>`</span>);<br>    res.end(req.query.callback + <span class="hljs-string">"('"</span> + data + <span class="hljs-string">"')"</span>)<br>&#125;).listen(<span class="hljs-number">3000</span>)<br></code></pre></td></tr></table></figure>
+
+<p>重启服务器，再次刷新页面，可以发现不报错了，查看控制台network，发现发起了两个请求<br><img src="https://img-blog.csdnimg.cn/20191025224502673.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191025224507141.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>而且我们可以看到，两个请求虽然名字一样，但是Request Method是不一样的，显然一个是预请求，另一个才是真正的请求。</p>
+<p>此外，一旦第一次预请求成功确定该请求可访问服务器资源，后面的请求就不必再发起预请求了<br>修改代码如下</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-comment">&lt;!-- 点击发送请求 --&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">"send()"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript"><br>        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">send</span><span class="hljs-params">()</span> </span>&#123;<br>            <span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();<br>            xhr.open(<span class="hljs-string">'put'</span>, <span class="hljs-string">'http://localhost:3000/?name=Mike &amp;age=1'</span>)<br>            xhr.send()<br>        &#125;<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>除了第一次点击时会发起两个请求，后面点击都只会发起一个请求。<br>（这样说其实不太准确，应该是在预请求得到响应后，每次发起请求都不再发起预请求，如果这里快速点击按钮，可能会发起多个预请求）</p>
+<h2 id="document-domain"><a href="#document-domain" class="headerlink" title="document.domain"></a>document.domain</h2><hr>
+<p>document.domain的处理方式，感觉就像是域名的缩减<br><a href="http://www.first.hello.com" target="_blank" rel="noopener">www.first.hello.com</a><br><a href="http://www.second.hello.com" target="_blank" rel="noopener">www.second.hello.com</a>  </p>
+<p>这里两个网址的域名一个为first.hello.com，一个为second.hello.com</p>
+<p>可以通过将first.hello.com和second.hello.com的document.domain设置为hello.com就可以做到发送请求时不跨域</p>
+<h2 id="window-postMessage"><a href="#window-postMessage" class="headerlink" title="window.postMessage()"></a>window.postMessage()</h2><hr>
+<p>通过postMessage，我们可以向目标窗口发送MessageEvent消息<br>MessageEvent四个主要属性</p>
+<ol>
+<li>message：类型</li>
+<li>data：发送的内容</li>
+<li>origin：调用postMessaged的窗口地址</li>
+<li>source：调用postMessage的窗口信息</li>
+</ol>
+<p>postMessage可以在一个窗口的引用对象上使用，比如当我们在窗口A使用window.open打开一个窗口B后，在打开的窗口B就可以使用window.opener来调用postMessage，这样就可以在打开的窗口B中，将信息发送给不同域的窗口A</p>
+<p>举个例子<br>在CSDN首页使用window.open打开百度页面</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-built_in">window</span>.open(<span class="hljs-string">"https://www.baidu.com"</span>)<br></code></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20191024152643155.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后在CSDN页面监听其他页面发送的信息，打印出监听的信息（e.data）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'message'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>&#123;<br>    <span class="hljs-built_in">console</span>.log(e.data);<br>&#125;,<span class="hljs-literal">false</span>)<br></code></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20191024152937393.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在百度页面中，向CSDN首页发送信息</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-built_in">window</span>.opener.postMessage(&#123;<br>    <span class="hljs-attr">data</span>:<span class="hljs-number">123</span><br>&#125;,<span class="hljs-string">"https://www.csdn.net/"</span>);<br></code></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20191024153125693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在CSDN首页的控制台中，可以看到已经有东西打印出来了<br><img src="https://img-blog.csdnimg.cn/20191024153215183.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>除了使用window.open打开的页面来实现之外，也可以通过iframe的contentWindow属性来实现父窗口向不同域的子窗口发送信息的目的。<br>假设页面中有这个iframe标签，src的指向和当前页面的地址不同域</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.baidu.com"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"iframe"</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>在iframe窗口中设置监听</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'message'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>&#123;<br>    <span class="hljs-built_in">console</span>.log(e.data);<br>&#125;,<span class="hljs-literal">false</span>)<br></code></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20191024154526463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>回到top发送信息</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'iframe'</span>).contentWindow.postMessage(&#123;<span class="hljs-attr">data</span>:<span class="hljs-number">123</span>&#125;,<span class="hljs-string">'https://www.baidu.com'</span>)<br></code></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20191024154933846.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>这里打印出的<code>{data:123}</code>是在子页面中打印出来的</p>
+<p>可以通过设置控制台选项来让控制台只显示一个窗口的内容<br><img src="https://img-blog.csdnimg.cn/20191024155149374.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>可以看到，的确是在子页面打印出的数据，子页面的确收到了不同域的父窗口的信息</p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#同源策略限制"><span class="toc-number">1.</span> <span class="toc-text">同源策略限制</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#跨域的解决方法"><span class="toc-number">2.</span> <span class="toc-text">跨域的解决方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jsonp"><span class="toc-number">2.1.</span> <span class="toc-text">jsonp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CORS"><span class="toc-number">2.2.</span> <span class="toc-text">CORS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#简单请求"><span class="toc-number">2.2.1.</span> <span class="toc-text">简单请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非简单请求"><span class="toc-number">2.2.2.</span> <span class="toc-text">非简单请求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#document-domain"><span class="toc-number">2.3.</span> <span class="toc-text">document.domain</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-postMessage"><span class="toc-number">2.4.</span> <span class="toc-text">window.postMessage()</span></a></li></ol></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        <script src="/js/script.js"></script>
+    </body>
+
+</html>

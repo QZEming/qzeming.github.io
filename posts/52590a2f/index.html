@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">2</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>个人博客搭建笔记----hexo根目录下的_config.yml配置解释</span>
+    </h1>
+    <div class="articleContent">
+        <p>我们在使用hexo初始化一个项目的时候，在根目录下会有一个配置文件_config.yml，这个文件配置了所写博客里面的内容，我们从根目录的该文件来说明每个配置的作用</p>
+<a id="more"></a>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Hexo Configuration</span><br><span class="hljs-comment">## Docs: https://hexo.io/docs/configuration.html</span><br><span class="hljs-comment">## Source: https://github.com/hexojs/hexo/</span><br></code></pre></td></tr></table></figure>
+<p>Hexo Configuration下的两行表示hexo文档的相关文档，Docs指的是hexo的文档，Source指的是hexo的GitHub源码</p>
+<h1 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Site</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">Hexo</span><br><span class="hljs-attr">subtitle:</span> <span class="hljs-string">''</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">''</span><br><span class="hljs-attr">keywords:</span><br><span class="hljs-attr">author:</span> <span class="hljs-string">John</span> <span class="hljs-string">Doe</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">en</span><br><span class="hljs-attr">timezone:</span> <span class="hljs-string">''</span><br></code></pre></td></tr></table></figure>
+<p>Site下面是网站相关的一些信息配置<br><strong>title</strong>：网站的名字，会写在hexo generator命令生成后的public文件夹下的index.html文件的title标签里<br><img src="https://img-blog.csdnimg.cn/20200213014320663.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>我们也可以在默认的主题的首页左下角找到<br><img src="https://img-blog.csdnimg.cn/20200213000749491.png" alt="在这里插入图片描述"><br><strong>subtitle</strong>：网站的副标题，生成的时候默认为空，我们可以试着给他赋个值看它会出现在哪<br><img src="https://img-blog.csdnimg.cn/20200213020628542.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在这个主题里，它写在背景图中间，在控制台找到该属性，找到这个属性对应的标签<br><img src="https://img-blog.csdnimg.cn/20200213020730263.png" alt="在这里插入图片描述"><br><strong>description</strong>：主要用于SEO，告诉搜索引擎一个关于站点的简单描述，在官方文档中建议在这段描述中增加自己的一些关键词，总之我写了之后是在网页中找不到我写的描述，可能是这个主题里面没把描述写出来，也可能我没看到<br><strong>keywords</strong>：网站的关键词，使用半角逗号分隔开多个关键词，关键词对SEO的优化有一定的作用<br><strong>author</strong>：顾名思义就是作者，这个也只是署个名而已<br><strong>language</strong>：这里就写了网站使用的语言<br><strong>timezone</strong>：网站对应的时区，一般情况下不用去刻意配置，会默认使用电脑的时区，但如果发布到其他地方的服务器，可能会使用当地服务器的时区，此时如果有需要用到本电脑的时区就要手动设置时区了，一般中国的时区可以设置为Asia/Shanghai</p>
+<h1 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># URL</span><br><span class="hljs-comment">## 如果您的网站位于子目录中，请将url设置为'http://yoursite.com/child'，将root设置为'/child/'</span><br><span class="hljs-attr">url:</span> <span class="hljs-string">http://yoursite.com</span><br><span class="hljs-attr">root:</span> <span class="hljs-string">/</span><br><span class="hljs-attr">permalink:</span> <span class="hljs-string">:year/:month/:day/:title/</span><br><span class="hljs-attr">permalink_defaults:</span><br><span class="hljs-attr">pretty_urls:</span><br>  <span class="hljs-attr">trailing_index:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 设置为false时会将末尾的index.html去掉</span><br>  <span class="hljs-attr">trailing_html:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 设置为false时会将末尾的.html去掉，对index.html无效</span><br></code></pre></td></tr></table></figure>
+<p><strong>url</strong>：网站的网址<br><strong>root</strong>：网站的根目录<br><strong>permalink</strong>：文章的永久链接格式，可以在permalink这里配置，如默认中的配置，在hello world文章中就会是这样的url<br><img src="https://img-blog.csdnimg.cn/20200213111842930.png" alt="在这里插入图片描述"><br>在使用hexo g生成的public文件夹里面，文件夹的层级也会按这个配置<br><img src="https://img-blog.csdnimg.cn/20200213112831650.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>对应上面的年，月，天和标题，我们自己配置时，使用:加上要设置的对应属性，以/分隔，可以配置的有以下内容<br><img src="https://img-blog.csdnimg.cn/20200213112052730.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>这里要注意的是，如果使用id的话，在使用hexo clean后重新hexo g会使得id发生改变，将permalink改为:year/:month/:day/:title/:id/使用hexo g构造文件，然后使用hexo clean后重新使用hexo g构造，发现前后两次文章的id是不一样的<br><img src="https://img-blog.csdnimg.cn/20200213113115775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200213113144368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>除了上面的变量外，也可以使用Font-matter中的值，Font-matter是文章文件最上方以—分隔的区域，用于指定个别文件的变量，比如默认生成的hello-world.md中</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">World</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<p>可选的值有<br><img src="https://img-blog.csdnimg.cn/20200213113630227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>permalink_defaults</strong>：为permalink中各项的默认值</p>
+<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Directory</span><br><span class="hljs-attr">source_dir:</span> <span class="hljs-string">source</span><br><span class="hljs-attr">public_dir:</span> <span class="hljs-string">public</span><br><span class="hljs-attr">tag_dir:</span> <span class="hljs-string">tags</span><br><span class="hljs-attr">archive_dir:</span> <span class="hljs-string">archives</span><br><span class="hljs-attr">category_dir:</span> <span class="hljs-string">categories</span><br><span class="hljs-attr">code_dir:</span> <span class="hljs-string">downloads/code</span><br><span class="hljs-attr">i18n_dir:</span> <span class="hljs-string">:lang</span><br><span class="hljs-attr">skip_render:</span><br></code></pre></td></tr></table></figure>
+<p><strong>source_dir</strong>：存放hexo文章的文件夹，我们写的md文件都放在这个配置对应的文件夹下，默认值是source<br><strong>public_dir</strong>：存放hexo g生成的文件，执行hexo g后根目录就会出现这个文件夹，默认值是public<br><strong>tag_dir</strong>：按标签存放文章的目录，默认值是tags，如果我们给文章添加标签，使用hexo g时public文件夹下就会多出一个tags文件夹（根据我们的配置文件夹名不同），这里给hello-world.md添加一个tags<br><img src="https://img-blog.csdnimg.cn/20200213114549239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>再使用hexo g，发现public文件夹下多出了一个tags文件夹<br><img src="https://img-blog.csdnimg.cn/20200213114612520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>archive_dir</strong>：归档文件夹，存放归档文件，默认值为archives<br><strong>category_dir</strong>：分类文件夹，按分类存放的文件，和上面的tags一样，只要在文章中的Font-matter添加了categories就会在使用hexo g构造时出现相应的文件夹<br><strong>code_dir</strong>：Include code 文件夹，source_dir 下的子目录，默认值为downloads/code<br><strong>i18n_dir</strong>：国际化（i18n）文件夹，默认值:lang<br><strong>skip_render</strong>：跳过指定文件的渲染，匹配到的文件将会被不做改动复制到public文件夹下，如果路径对应的是我们的文章，那会直接忽略掉该文章，我们这样设置来忽略掉hello-world.md文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">skip_render:</span> <span class="hljs-string">"_posts/hello-world.md"</span><br></code></pre></td></tr></table></figure>
+<p>执行hexo clean清除之前渲染的内容后重新使用hexo g构造<br><img src="https://img-blog.csdnimg.cn/20200213120544735.png" alt="在这里插入图片描述"><br>可见生成的文件夹只有一些基础的内容，没有和hello-world.md相关的东西</p>
+<h1 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Writing</span><br><span class="hljs-attr">new_post_name:</span> <span class="hljs-string">:title.md</span> <br><span class="hljs-attr">default_layout:</span> <span class="hljs-string">post</span><br><span class="hljs-attr">titlecase:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># Transform title into titlecase</span><br><span class="hljs-attr">external_link:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># Open external links in new tab</span><br>  <span class="hljs-attr">field:</span> <span class="hljs-string">site</span> <span class="hljs-comment"># Apply to the whole site</span><br>  <span class="hljs-attr">exclude:</span> <span class="hljs-string">''</span><br><span class="hljs-attr">filename_case:</span> <span class="hljs-number">0</span><br><span class="hljs-attr">render_drafts:</span> <span class="hljs-literal">false</span><br><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">false</span><br><span class="hljs-attr">relative_link:</span> <span class="hljs-literal">false</span><br><span class="hljs-attr">future:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">highlight:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">line_number:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">auto_detect:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">tab_replace:</span> <span class="hljs-string">''</span><br>  <span class="hljs-attr">wrap:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">hljs:</span> <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
+<p><strong>new_post_name</strong>：新文章的默认名称，我们是使用hexo new来构造文章的，生成的文章名就是通过这里配置的，默认为:title.md，也就是标题.md<br><strong>default_layout</strong>：预设布局，hexo new可以创建三种文件，post/帖子，draft/草稿，page/页面，这里设置默认值在使用hexo new就可以直接创建对应默认类型的文章，设置了post就等同于说在命令行执行hexo new &lt;name&gt;和执行hexo new post &lt;name&gt;是一样的，也可以设置为draft和page<br><strong>titlecase</strong>：把标题转换为 title case<br><strong>external_link</strong></p>
+<ul>
+<li>enable：是否在新标签中打开链接</li>
+<li>fileds：external_link.enable的配置对当前网站（site）生效或仅对文章（post）生效，默认为site</li>
+<li>exclude：需要排除的域名</li>
+</ul>
+<p><strong>filename_case</strong>：把文件名称转换为小写(1)或者大写(2)，默认不转换(0)<br><strong>render_drafts</strong>：是否渲染草稿文件，默认为false不渲染<br><strong>post_asset_folder</strong>：是否启动资源文件夹，对于我们的网站，如果我们的文章里面有图片，我们可以在source文件夹下建立一个统一的images文件夹来存放图片，但是如果有的文章有很多的资源文件如图片，我们可以通过设置该配置为true，这样在source文件夹下创建文件的同时也会创建一个同名文件夹来存放相应的资源，比如我设置为true，然后执行hexo new newPost<br><img src="https://img-blog.csdnimg.cn/20200213142619638.png" alt="在这里插入图片描述"><br>可以看到出现了一个newPost文件夹<br><strong>relative_link</strong>：是否把链接改为与根目录的相对地址，默认为false<br><strong>future</strong>：是否显示当前时间之后的文章，默认为true，如果设置为false的话，我们设置的日期如果是未来的日期的话，就不会显示<br><strong>highlight</strong>：代码块的设置</p>
+<ul>
+<li>enable：开启代码高亮，默认为true</li>
+<li>auto_detect：如果未指定语言，就自动检测，默认为false</li>
+<li>line_number：显示代码的行数，默认为true</li>
+<li>tab_replace：用n个空格来代表tab键，如果值为空，则不会代替tab键</li>
+<li>wrap：是否将代码放在table标签里，默认为true</li>
+<li>hljs：是否对CSS类使用hljs-*前缀，默认为false</li>
+</ul>
+<h1 id="主页设置"><a href="#主页设置" class="headerlink" title="主页设置"></a>主页设置</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index_generator:</span><br>  <span class="hljs-attr">path:</span> <span class="hljs-string">''</span><br>  <span class="hljs-attr">per_page:</span> <span class="hljs-number">10</span><br>  <span class="hljs-attr">order_by:</span> <span class="hljs-string">-date</span><br></code></pre></td></tr></table></figure>
+<p><strong>index_generator</strong>：主页相关的设置</p>
+<ul>
+<li>path：主页对应的路径，默认为’’，即域名根目录就是主页的路径</li>
+<li>per_page：每页显示的帖子数，默认为10</li>
+<li>order_by：帖子的排序，默认为-date，即按日期倒序排</li>
+</ul>
+<h1 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Category &amp; Tag</span><br><span class="hljs-attr">default_category:</span> <span class="hljs-string">uncategorized</span> <span class="hljs-comment"># 默认分类</span><br><span class="hljs-attr">category_map:</span> <span class="hljs-comment"># 分类别名</span><br><span class="hljs-attr">tag_map:</span> <span class="hljs-comment"># 标签别名</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="元数据元素"><a href="#元数据元素" class="headerlink" title="元数据元素"></a>元数据元素</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Metadata elements</span><br><span class="hljs-comment">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span><br><span class="hljs-attr">meta_generator:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<p>是否在页面开头插入下面的meta标签，默认为true<br><img src="https://img-blog.csdnimg.cn/20200213174854263.png" alt="在这里插入图片描述"></p>
+<h1 id="日期-时间格式"><a href="#日期-时间格式" class="headerlink" title="日期/时间格式"></a>日期/时间格式</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Date / Time format</span><br><span class="hljs-comment">## Hexo uses Moment.js to parse and display date</span><br><span class="hljs-comment">## You can customize the date format as defined in</span><br><span class="hljs-comment">## http://momentjs.com/docs/#/displaying/format/</span><br><span class="hljs-attr">date_format:</span> <span class="hljs-string">YYYY-MM-DD</span><br><span class="hljs-attr">time_format:</span> <span class="hljs-string">HH:mm:ss</span><br><span class="hljs-comment">## Use post's date for updated date unless set in front-matter</span><br><span class="hljs-attr">use_date_for_updated:</span> <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
+<p><strong>date_format</strong>：日期格式，默认为YYYY-MM-DD，即年月日<br><strong>time_format</strong>：时间格式，默认为HH:mm:ss，即时分秒<br><strong>use_date_for_updated</strong>：启用以后，如果 Front Matter 中没有指定 updated（文件更新日期），post.updated 将会使用 date 的值而不是文件的创建时间，默认值为true</p>
+<h1 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Pagination</span><br><span class="hljs-comment">## Set per_page to 0 to disable pagination</span><br><span class="hljs-attr">per_page:</span> <span class="hljs-number">10</span><br><span class="hljs-attr">pagination_dir:</span> <span class="hljs-string">page</span><br></code></pre></td></tr></table></figure>
+<p><strong>per_page</strong>：分页时每页的文章数，如果为0则不分页，默认为10<br><strong>pagination_dir</strong>分页的目录，默认为page，对应于public文件夹下的archives文件夹下的page文件夹，如果只有一页是不会生成这个文件夹的<br><img src="https://img-blog.csdnimg.cn/20200213180200123.png" alt="在这里插入图片描述"></p>
+<h1 id="包括或不包括目录和文件"><a href="#包括或不包括目录和文件" class="headerlink" title="包括或不包括目录和文件"></a>包括或不包括目录和文件</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Include / Exclude file(s)</span><br><span class="hljs-comment">## include:/exclude: options only apply to the 'source/' folder</span><br><span class="hljs-attr">include:</span><br><span class="hljs-attr">exclude:</span><br><span class="hljs-attr">ignore:</span><br></code></pre></td></tr></table></figure>
+<p><strong>include</strong>：Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。<br><strong>exclude</strong>：Hexo 会忽略这些文件和目录<br><strong>ignore</strong>：忽略的文件<br>要注意的是，这里要写入的是数组，而yaml的数组要用-值表示数组中一个元素或者直接采用js中数组的写法[]</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">include:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">".nojekyll"</span><br>  <span class="hljs-comment"># 包括 'source/css/_typing.css'</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">"css/_typing.css"</span><br>  <span class="hljs-comment"># 包括 'source/_css/' 中的任何文件，但不包括子目录及其其中的文件。</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">"_css/*"</span><br>  <span class="hljs-comment"># 包含 'source/_css/' 中的任何文件和子目录下的任何文件</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">"_css/**/*"</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Extensions</span><br><span class="hljs-comment">## Plugins: https://hexo.io/plugins/</span><br><span class="hljs-comment">## Themes: https://hexo.io/themes/</span><br><span class="hljs-attr">theme:</span> <span class="hljs-string">landscape</span> <span class="hljs-comment"># 当前使用的主题名</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Deployment</span><br><span class="hljs-comment">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">''</span><br></code></pre></td></tr></table></figure>
+<p>hexo提供了快速方便的一键部署功能hexo deploy，但我们至少需要在_config.yml文件中的deploy中至少配置一个type，比如</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br></code></pre></td></tr></table></figure>
+<p>此外还有几个配置</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">&lt;repository</span> <span class="hljs-string">url&gt;</span> <span class="hljs-comment"># 库地址</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">[branch]</span> <span class="hljs-comment"># 分支名称</span><br>  <span class="hljs-attr">message:</span> <span class="hljs-string">[message]</span> <span class="hljs-comment"># 自定义提交信息</span><br></code></pre></td></tr></table></figure>
+<hr>
+<p>参考文档：<br><a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">hexo官方中文文档</a><br><a href="https://hexo.io/docs/configuration.html" target="_blank" rel="noopener">hexo官方英文文档</a>（有些中文文档没有的英文文档的才有）<br><a href="https://hexo.io/docs/front-matter" target="_blank" rel="noopener">hexo fromt-matter</a><br><a href="https://hexo.io/zh-cn/docs/one-command-deployment.html" target="_blank" rel="noopener">hexo 部署</a></p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#网站"><span class="toc-number">1.</span> <span class="toc-text">网站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#网址"><span class="toc-number">2.</span> <span class="toc-text">网址</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#目录"><span class="toc-number">3.</span> <span class="toc-text">目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文章"><span class="toc-number">4.</span> <span class="toc-text">文章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#主页设置"><span class="toc-number">5.</span> <span class="toc-text">主页设置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#分类和标签"><span class="toc-number">6.</span> <span class="toc-text">分类和标签</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#元数据元素"><span class="toc-number">7.</span> <span class="toc-text">元数据元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#日期-时间格式"><span class="toc-number">8.</span> <span class="toc-text">日期&#x2F;时间格式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#分页"><span class="toc-number">9.</span> <span class="toc-text">分页</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#包括或不包括目录和文件"><span class="toc-number">10.</span> <span class="toc-text">包括或不包括目录和文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#主题"><span class="toc-number">11.</span> <span class="toc-text">主题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#部署"><span class="toc-number">12.</span> <span class="toc-text">部署</span></a></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        <script src="/js/script.js"></script>
+    </body>
+
+</html>

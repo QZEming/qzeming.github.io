@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">2</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>前端工程化--发布一个自动生成微信开发文件的npm包</span>
+    </h1>
+    <div class="articleContent">
+        <p>做为一个前端开发者，要是连npm包也没用过那也是太low了，我们知道，我们用到的npm包实际上也是别人开发发布上去的，那我们如何去发布自己的npm包呢</p>
+<a id="more"></a>
+<p>我们知道，在开发微信小程序的时候，每个页面对应的文件放在一个文件夹下，这个文件夹的名字和里面文件的文件名都要一样，而每次写一个新的页面我们都要先创建一个文件夹，再按这个文件夹的名字来创建wxml，wxss，js，json文件，万一写错了还会报错，这里写一个generator来完成这个创建工作</p>
+<h1 id="编写generator"><a href="#编写generator" class="headerlink" title="编写generator"></a>编写generator</h1><p>新建一个文件夹generator-wxfile<br>npm init初始化内容，一切选项按默认的来<br><img src="https://img-blog.csdnimg.cn/20200201152805701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>接下来下载npm包yeoman-generator</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">npm i yeoman-generator<br></code></pre></td></tr></table></figure>
+<p>创建如图目录<br><img src="https://img-blog.csdnimg.cn/20200201163041659.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>templates中存放的是模板文件，就是我们最终要放到本地的文件的模板，，我们看看基础的模板文件需要什么，wxml和wxss不需要什么东西，我们在json文件内写入一个{}</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs json">&#123;&#125;<br></code></pre></td></tr></table></figure>
+<p>在js文件里写入各个生命周期函数，这里的第3行&lt;%= fileName%&gt;是用了ejs语法，用来标识文件名</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><code class="hljs javascript">Page(&#123;<br>    <span class="hljs-attr">data</span>: &#123;<br>      <span class="hljs-attr">text</span>: <span class="hljs-string">"This is &lt;%= fileName%&gt; data."</span><br>    &#125;,<br>    <span class="hljs-attr">onLoad</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">options</span>) </span>&#123;<br>      <span class="hljs-comment">// 页面创建时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onShow</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 页面出现在前台时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onReady</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 页面首次渲染完毕时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onHide</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 页面从前台变为后台时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onUnload</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 页面销毁时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onPullDownRefresh</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 触发下拉刷新时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onReachBottom</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 页面触底时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onShareAppMessage</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 页面被用户分享时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onPageScroll</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 页面滚动时执行</span><br>    &#125;,<br>    <span class="hljs-attr">onResize</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-comment">// 页面尺寸变化时执行</span><br>    &#125;,<br>    onTabItemTap(item) &#123;<br>      <span class="hljs-comment">// tab 点击时执行</span><br>      <span class="hljs-built_in">console</span>.log(item.index)<br>      <span class="hljs-built_in">console</span>.log(item.pagePath)<br>      <span class="hljs-built_in">console</span>.log(item.text)<br>    &#125;,<br>    <span class="hljs-comment">// 事件响应函数</span><br>    <span class="hljs-attr">viewTap</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>      <span class="hljs-keyword">this</span>.setData(&#123;<br>        <span class="hljs-attr">text</span>: <span class="hljs-string">'Set some data for updating view.'</span><br>      &#125;, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-comment">// this is setData callback</span><br>      &#125;)<br>    &#125;,<br>    <span class="hljs-comment">// 自由数据</span><br>    <span class="hljs-attr">customData</span>: &#123;<br>      <span class="hljs-attr">hi</span>: <span class="hljs-string">'MINA'</span><br>    &#125;<br>  &#125;)<br></code></pre></td></tr></table></figure>
+<p>接下来编写index.js文件，引入yeoman-generator模块，输出一个generator模块，具体的generator构建看<a href="https://blog.csdn.net/zemprogram/article/details/104125933" target="_blank" rel="noopener">前端工程化 通过yeoman-generator将文件加载到本地</a>，这里再引入一个fs模块用于创建文件夹</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> Generator = <span class="hljs-built_in">require</span>(<span class="hljs-string">"yeoman-generator"</span>)<br><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">"fs"</span>)<br><br><span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Generator</span></span>&#123;<br>    prompting()&#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.prompt([&#123; <span class="hljs-comment">// 询问用户要创建的文件夹的名字</span><br>            <span class="hljs-attr">type</span>:<span class="hljs-string">"input"</span>,<br>            <span class="hljs-attr">name</span>:<span class="hljs-string">"fileName"</span>,<br>            <span class="hljs-attr">message</span>:<span class="hljs-string">"your file name is"</span>,<br>            <span class="hljs-attr">default</span>:<span class="hljs-string">"page"</span><br>        &#125;]).then(<span class="hljs-function"><span class="hljs-params">answer</span>=&gt;</span>&#123;<br>            <span class="hljs-keyword">this</span>.answer = answer <span class="hljs-comment">// 将回答放到answer属性中</span><br>        &#125;)<br>    &#125;<br>    writing()&#123;<br>        <span class="hljs-keyword">const</span> fileName = <span class="hljs-keyword">this</span>.answer.fileName<br>        <span class="hljs-keyword">const</span> tempFile = [<span class="hljs-string">"fileName.js"</span>,<span class="hljs-string">"fileName.json"</span>,<span class="hljs-string">"fileName.wxml"</span>,<span class="hljs-string">"fileName.wxss"</span>]<br>            .map(<span class="hljs-function"><span class="hljs-params">path</span>=&gt;</span><span class="hljs-keyword">this</span>.templatePath(path))<br>        <span class="hljs-keyword">const</span> outputFile = [<span class="hljs-string">`<span class="hljs-subst">$&#123;fileName&#125;</span>/<span class="hljs-subst">$&#123;fileName&#125;</span>.js`</span>,<span class="hljs-string">`<span class="hljs-subst">$&#123;fileName&#125;</span>/<span class="hljs-subst">$&#123;fileName&#125;</span>.json`</span>,<span class="hljs-string">`<span class="hljs-subst">$&#123;fileName&#125;</span>/<span class="hljs-subst">$&#123;fileName&#125;</span>.wxml`</span>,<span class="hljs-string">`<span class="hljs-subst">$&#123;fileName&#125;</span>/<span class="hljs-subst">$&#123;fileName&#125;</span>.wxss`</span>]<br>            .map(<span class="hljs-function"><span class="hljs-params">path</span>=&gt;</span><span class="hljs-keyword">this</span>.destinationPath(path))<br>        fs.mkdirSync(fileName) <span class="hljs-comment">// 创建文件夹</span><br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;tempFile.length;i++)&#123;<br>            <span class="hljs-keyword">this</span>.fs.copyTpl(tempFile[i],outputFile[i],<span class="hljs-keyword">this</span>.answer) <span class="hljs-comment">// 文件写入</span><br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>执行npm link，将模块链接到全局，在本地测试一下，新建一个文件夹执行yo wxfile<br><img src="https://img-blog.csdnimg.cn/20200201163528560.png" alt="在这里插入图片描述"><br>这样就创建成功了，而且查看js文件，发现第三行的text的值变成了”This is newPage data.”</p>
+<h1 id="发布到npm上"><a href="#发布到npm上" class="headerlink" title="发布到npm上"></a>发布到npm上</h1><p>执行npm publish就可以发布了，下面这样就是发布成功了<br><img src="https://img-blog.csdnimg.cn/20200201164129781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>当然，也可能会遇到踩坑的情况，可以看下<a href="https://blog.csdn.net/zemprogram/article/details/104135553" target="_blank" rel="noopener">npm publish发布时的踩坑记录</a></p>
+<p>到这里就发布成功了，可以通过npm i <a href="mailto:generator-wxfile@1.0.0">generator-wxfile@1.0.0</a> -g来将这个generator下载到全局使用，也可以先下载我的试试看和你做的效果是不是一样<br>上面说的是1.0.0版本的功能，后面我会对这个npm包做一些修改<br>在1.0.1版本中，我在添加文件的同时，将相应的路由写入了app.json文件的pages属性中，但是yo wxfile要在app.json文件所在的目录执行<br>后面的版本还在持续更新中</p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#编写generator"><span class="toc-number">1.</span> <span class="toc-text">编写generator</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#发布到npm上"><span class="toc-number">2.</span> <span class="toc-text">发布到npm上</span></a></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        <script src="/js/script.js"></script>
+    </body>
+
+</html>

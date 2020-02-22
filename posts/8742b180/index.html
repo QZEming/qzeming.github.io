@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">2</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>axios原理深入源码解析</span>
+    </h1>
+    <div class="articleContent">
+        <h1 id="axios"><a href="#axios" class="headerlink" title="axios"></a>axios</h1><hr>
+<p>axios的<a href="https://github.com/axios/axios" target="_blank" rel="noopener">github地址</a>上明确写了axios的特征是<br>Make XMLHttpRequests from the browser（从浏览器发起XMLHttpRequests请求）<br>Make http requests from node.js（从node.js发起http请求）<br>Supports the Promise API（支持PromiseAPI）<br>Intercept request and response（拦截请求和响应）<br>Transform request and response data（转换请求和响应数据）<br>Cancel requests（取消请求）<br>Automatic transforms for JSON data（自动转换json数据）<br>Client side support for protecting against XSRF（客户端支持自动防止XSRF）<br>下面就这些特征查看源码来解析</p>
+<a id="more"></a>
+<h3 id="可以在浏览器和服务器上发起请求"><a href="#可以在浏览器和服务器上发起请求" class="headerlink" title="可以在浏览器和服务器上发起请求"></a>可以在浏览器和服务器上发起请求</h3><p>上面已经写了，axios可以在浏览器发起XMLHttpRequests请求，而在node.js可以发起http请求，也即是说，axios可以在浏览器和服务器上都可以发起请求<br>看看axios的源码目录<br><img src="https://img-blog.csdnimg.cn/20191126170956723.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>其中xhr.js是浏览器上发起请求，http.js是服务器上发起请求<br>我们能看到，xhr.js中有一行代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> request = <span class="hljs-keyword">new</span> XMLHttpRequest();<br></code></pre></td></tr></table></figure>
+<p>可以明确看到，在浏览器上的请求是基于XMLHttpRequest的<br>而http.js中的请求，可以在最后看到</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">if</span> (utils.isStream(data)) &#123;<br>  data.on(<span class="hljs-string">'error'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleStreamError</span>(<span class="hljs-params">err</span>) </span>&#123;<br>    reject(enhanceError(err, config, <span class="hljs-literal">null</span>, req));<br>  &#125;).pipe(req);<br>&#125; <span class="hljs-keyword">else</span> &#123;<br>  req.end(data);<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>通过在这段代码前对data进行处理，在这里最后发出请求</p>
+<h3 id="支持promise-API"><a href="#支持promise-API" class="headerlink" title="支持promise API"></a>支持promise API</h3><p>我们知道，promise是ES6中出现的语法，很好地处理了异步，而axios中支持promise<br>关于这一点，我们从axios的使用就可以看出来axios的get方法返回了一个promise，然后我们对其进行操作，其他的请求也是一样</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript">axios.get(<span class="hljs-string">'url'</span>)<br>	.then(<span class="hljs-function"><span class="hljs-params">res</span>=&gt;</span>&#123;<br>		<span class="hljs-comment">// 响应处理</span><br>	&#125;).catch(<span class="hljs-function"><span class="hljs-params">err</span>=&gt;</span>&#123;<br>		<span class="hljs-comment">// 错误处理</span><br>&#125;)<br></code></pre></td></tr></table></figure>
+<p>在<a href="https://github.com/axios/axios/blob/master/lib/core/Axios.js" target="_blank" rel="noopener">github上的源码</a>也可以看到这部分明确返回了一个promise</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs javascript">Axios.prototype.request = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">request</span>(<span class="hljs-params">config</span>) </span>&#123;<br>  <span class="hljs-comment">/*eslint no-param-reassign:0*/</span><br>  <span class="hljs-comment">// Allow for axios('example/url'[, config]) a la fetch API</span><br>  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> config === <span class="hljs-string">'string'</span>) &#123;<br>    config = <span class="hljs-built_in">arguments</span>[<span class="hljs-number">1</span>] || &#123;&#125;;<br>    config.url = <span class="hljs-built_in">arguments</span>[<span class="hljs-number">0</span>];<br>  &#125; <span class="hljs-keyword">else</span> &#123;<br>    config = config || &#123;&#125;;<br>  &#125;<br><br>  config = mergeConfig(<span class="hljs-keyword">this</span>.defaults, config);<br><br>  <span class="hljs-comment">// Set config.method</span><br>  <span class="hljs-keyword">if</span> (config.method) &#123;<br>    config.method = config.method.toLowerCase();<br>  &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.defaults.method) &#123;<br>    config.method = <span class="hljs-keyword">this</span>.defaults.method.toLowerCase();<br>  &#125; <span class="hljs-keyword">else</span> &#123;<br>    config.method = <span class="hljs-string">'get'</span>;<br>  &#125;<br><br>  <span class="hljs-comment">// Hook up interceptors middleware</span><br>  <span class="hljs-keyword">var</span> chain = [dispatchRequest, <span class="hljs-literal">undefined</span>];<br>  <span class="hljs-keyword">var</span> promise = <span class="hljs-built_in">Promise</span>.resolve(config);<br><br>  <span class="hljs-keyword">this</span>.interceptors.request.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unshiftRequestInterceptors</span>(<span class="hljs-params">interceptor</span>) </span>&#123;<br>    chain.unshift(interceptor.fulfilled, interceptor.rejected);<br>  &#125;);<br><br>  <span class="hljs-keyword">this</span>.interceptors.response.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pushResponseInterceptors</span>(<span class="hljs-params">interceptor</span>) </span>&#123;<br>    chain.push(interceptor.fulfilled, interceptor.rejected);<br>  &#125;);<br><br>  <span class="hljs-keyword">while</span> (chain.length) &#123;<br>    promise = promise.then(chain.shift(), chain.shift());<br>  &#125;<br><br>  <span class="hljs-keyword">return</span> promise;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<h3 id="拦截请求和响应及转换数据"><a href="#拦截请求和响应及转换数据" class="headerlink" title="拦截请求和响应及转换数据"></a>拦截请求和响应及转换数据</h3><p>拦截器的相关代码也在上面promise里面的代码，我将相关的代码拿出来</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 将拦截器放在第一个，undefined放在第二个</span><br><span class="hljs-comment">// 在后面的处理中，是两个两个处理的</span><br><span class="hljs-comment">// 因为使用了promise.then，其第一个参数对应的是resolve第二个参数对应的是rejected</span><br><span class="hljs-comment">// 拦截器会对应于resolve，undefined会对应于rejected</span><br><span class="hljs-keyword">var</span> chain = [dispatchRequest, <span class="hljs-literal">undefined</span>];<br><span class="hljs-keyword">var</span> promise = <span class="hljs-built_in">Promise</span>.resolve(config);<br><span class="hljs-comment">// 将请求拦截器中间件添加到chain数组头部</span><br><span class="hljs-keyword">this</span>.interceptors.request.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unshiftRequestInterceptors</span>(<span class="hljs-params">interceptor</span>) </span>&#123;<br>  chain.unshift(interceptor.fulfilled, interceptor.rejected);<br>&#125;);<br><span class="hljs-comment">// 将响应拦截器中间件添加到chain数组尾部</span><br><span class="hljs-keyword">this</span>.interceptors.response.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pushResponseInterceptors</span>(<span class="hljs-params">interceptor</span>) </span>&#123;<br>  chain.push(interceptor.fulfilled, interceptor.rejected);<br>&#125;);<br><span class="hljs-comment">// 依次使用promise处理chain数组内的东西</span><br><span class="hljs-keyword">while</span> (chain.length) &#123;<br>  <span class="hljs-comment">// 这里使用shift方法，每次调用两次这个方法，即是每次拿出数组中的两个拦截器</span><br>  promise = promise.then(chain.shift(), chain.shift());<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>而找寻里面的dispatchRequest，会发现它是从<a href="https://github.com/axios/axios/blob/master/lib/core/dispatchRequest.js" target="_blank" rel="noopener">dispatchRequest.js</a>中import过来的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> dispatchRequest = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./dispatchRequest'</span>);<br></code></pre></td></tr></table></figure>
+<p>在<a href="https://github.com/axios/axios/blob/master/lib/core/dispatchRequest.js" target="_blank" rel="noopener">dispatchRequest.js</a>中，我们可以找到拦截请求和响应的相关代码，在这里对请求和响应的数据做了转换</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 处理请求的数据</span><br>response.data = transformData(<br>  response.data,<br>  response.headers,<br>  config.transformResponse<br>);<br><span class="hljs-comment">// 处理响应的数据</span><br><span class="hljs-keyword">var</span> adapter = config.adapter || defaults.adapter;<br><br><span class="hljs-keyword">return</span> adapter(config).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onAdapterResolution</span>(<span class="hljs-params">response</span>) </span>&#123;<br>  throwIfCancellationRequested(config);<br><br>  <span class="hljs-comment">// Transform response data</span><br>  response.data = transformData(<br>    response.data,<br>    response.headers,<br>    config.transformResponse<br>  );<br><br>  <span class="hljs-keyword">return</span> response;<br>&#125;, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onAdapterRejection</span>(<span class="hljs-params">reason</span>) </span>&#123;<br>  <span class="hljs-keyword">if</span> (!isCancel(reason)) &#123;<br>    throwIfCancellationRequested(config);<br><br>    <span class="hljs-comment">// Transform response data</span><br>    <span class="hljs-keyword">if</span> (reason &amp;&amp; reason.response) &#123;<br>      reason.response.data = transformData(<br>        reason.response.data,<br>        reason.response.headers,<br>        config.transformResponse<br>      );<br>    &#125;<br>  &#125;<br></code></pre></td></tr></table></figure>
+<h3 id="取消请求"><a href="#取消请求" class="headerlink" title="取消请求"></a>取消请求</h3><p>axios提供了取消请求的接口，实际上在源码中还是通过最关键的一步<code>request.abort()</code>来取消请求，使用isCancel来作为是否已经取消的标识，使用Cancel来作为重复取消时抛出的错误，使用CancelToken来作为取消请求的核心处理，在处理中采取promise异步的方法<br>具体的过程详见<a href="https://blog.csdn.net/zemprogram/article/details/103202132" target="_blank" rel="noopener">axios请求取消步骤源码详解</a><br>axios的取消请求相比于我们直接使用abort，因为在promise中写入重复触发时会抛出cancel对象，所以无需我们自己去解决按钮被连续多次点击的问题，同时取消请求也能在我们发出多个相关联请求时，使用最新的数据。</p>
+<h3 id="防止XSRF攻击"><a href="#防止XSRF攻击" class="headerlink" title="防止XSRF攻击"></a>防止XSRF攻击</h3><p>首先我们说说XSRF攻击是什么，简单来说，XSRF攻击就是当我们访问A页面，在拿到相应的cookie后，去访问一个不安全的B页面，而这个B页面通过script，img，video这些标签的src属性，发起了请求，而因为此时A页面的cookie还没失效，在避过同源策略的同时，向A页面所在的服务器发起一个请求，而这个请求会带上之前的cookie，于是会导致一些安全问题。</p>
+<p>为了防止XSRF攻击，axios采用了在给请求添加一个自定义属性，传入一个token，在服务器判断该属性值是否一样<br>看看源码内容<a href="https://github.com/axios/axios/blob/master/lib/adapters/xhr.js" target="_blank" rel="noopener">xhr.js</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 判断是否为标准的浏览器环境</span><br><span class="hljs-keyword">if</span> (utils.isStandardBrowserEnv()) &#123;<br>  <span class="hljs-keyword">var</span> cookies = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./../helpers/cookies'</span>);<br><br>  <span class="hljs-comment">// isURLSameOrigin判断是否有跨域，如果有跨域的话需要有凭证</span><br>  <span class="hljs-comment">// 凭证的作用是判断当前请求为跨域类型时是否在请求中协带cookie</span><br>  <span class="hljs-comment">// 满足上面条件后，判断是否有config.xsrfcookieName</span><br>  <span class="hljs-comment">// 如果有的话，使用cookies的read方法处理值后赋值给xsrfValue</span><br>  <span class="hljs-keyword">var</span> xsrfValue = (config.withCredentials || isURLSameOrigin(fullPath)) &amp;&amp; config.xsrfCookieName ?<br>    cookies.read(config.xsrfCookieName) :<br>    <span class="hljs-literal">undefined</span>;<br><br>  <span class="hljs-keyword">if</span> (xsrfValue) &#123;<br>    requestHeaders[config.xsrfHeaderName] = xsrfValue;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>首先axios会判断当前环境是否为标准的浏览器环境，如果是标准的浏览器环境的话，就会继续执行。对于XSRF攻击来说，最基本的就是跨域了，所以我们对发出请求的域和当前的域做同源判断，如果是跨域的话，就必须有凭证<code>config.withCredentials || isURLSameOrigin(fullPath)</code>，凭证简单来说就是当前请求在跨域时是否可以带上cookie。<br>在满足上面条件时，即是同源或者跨域但是有凭证这两种情况，同源的我们自然不必再处理，而对于跨域的我们接下去看，当config中有xsrfCookieName时，将config.xsrfCookieName的内容使用cookies.read处理后返回给xsrfValue<br>cookies.read在<a href="https://github.com/axios/axios/blob/master/lib/helpers/cookies.js" target="_blank" rel="noopener">cookies.js</a>中</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript">read: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">read</span>(<span class="hljs-params">name</span>) </span>&#123;<br>  <span class="hljs-keyword">var</span> match = <span class="hljs-built_in">document</span>.cookie.match(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">'(^|;\\s*)('</span> + name + <span class="hljs-string">')=([^;]*)'</span>));<br>  <span class="hljs-keyword">return</span> (match ? <span class="hljs-built_in">decodeURIComponent</span>(match[<span class="hljs-number">3</span>]) : <span class="hljs-literal">null</span>);<br>&#125;,<br></code></pre></td></tr></table></figure>
+<p>最后，当xsrfValue存在时将其加入请求头中，这里的config.xsrfHeaderName就是自定义的属性，在<a href="https://github.com/axios/axios/blob/master/lib/defaults.js" target="_blank" rel="noopener">defaults.js</a>中可见</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">xsrfHeaderName: <span class="hljs-string">'X-XSRF-TOKEN'</span>,<br></code></pre></td></tr></table></figure>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><hr>
+<ol>
+<li>不支持jsonp，需要自己封装</li>
+<li>基于XMLHttpRequest实现，所以无法在service worker，web worker中使用</li>
+</ol>
+<p>（有待补充）</p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#axios"><span class="toc-number">1.</span> <span class="toc-text">axios</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#可以在浏览器和服务器上发起请求"><span class="toc-number">1.0.1.</span> <span class="toc-text">可以在浏览器和服务器上发起请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#支持promise-API"><span class="toc-number">1.0.2.</span> <span class="toc-text">支持promise API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拦截请求和响应及转换数据"><span class="toc-number">1.0.3.</span> <span class="toc-text">拦截请求和响应及转换数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#取消请求"><span class="toc-number">1.0.4.</span> <span class="toc-text">取消请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#防止XSRF攻击"><span class="toc-number">1.0.5.</span> <span class="toc-text">防止XSRF攻击</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#缺点"><span class="toc-number">1.1.</span> <span class="toc-text">缺点</span></a></li></ol></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        <script src="/js/script.js"></script>
+    </body>
+
+</html>

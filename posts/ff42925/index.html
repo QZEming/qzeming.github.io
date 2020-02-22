@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">2</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>js内存泄漏及垃圾回收</span>
+    </h1>
+    <div class="articleContent">
+        <h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><hr>
+<p>我们知道，程序的运行需要操作系统或者运行时提供内存，而对于持续运行的程序，内存会被持续占用，适时地回收当前不执行的程序占用的内存是很重要的，没有及时地回收内存，轻则造成系统性能变差，重则进程崩溃</p>
+<p>那么，什么是内存泄漏呢，简单来说，内存中的某个空间被占用，在应当回收的时间没有被回收，就算是内存泄漏了</p>
+<a id="more"></a>
+<p>有些语言需要自己手动去清除占用内存而又没有在执行的程序，而像JavaScript这类语言有自己的垃圾回收机制，可以对内存进行管理</p>
+<h3 id="垃圾回收机制"><a href="#垃圾回收机制" class="headerlink" title="垃圾回收机制"></a>垃圾回收机制</h3><hr>
+<ol>
+<li>标记清除<br>垃圾收集器在运行的时候会给存储在内存中的所有变量都加上标记，然后会去掉环境中的变量以及被环境中的变量引用的变量的标记，此后再被标记的变量为将要删除的变量，最后垃圾收集器完成内存清除工作，销毁那些带标记的变量并回收它们的占用空间</li>
+<li>引用计数<br>跟踪每个值被引用的次数。如果一个值被赋予一个变量，则引用次数为1，假如这个值被其他变量引用，那么这个引用次数就加一，如果引用这个值的变量引用了别的变量，那么这个值的引用次数就减一。在下次垃圾收集器运行时，引用次数为0的值所占用的内存就会被释放。</li>
+</ol>
+<p>但是引用计数会存在一定的问题</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-keyword">var</span> objA = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();<br>    <span class="hljs-keyword">var</span> objB = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();<br><br>    objA.quoteObj = objB;<br>    objB.quoteObj = objA;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>在这个函数中，声明了两个Object对象，而这两个对象又通过属性相互引用，这里的objA和objB的引用次数都变成了2，而且在函数调用完毕后，这两个对象依然存在，即使objA和objB指向了别的值，这里两个<code>new Object()</code>的引用次数仍会为1，永远不会为0，这样就会一直占用内存空间，无法被清除。</p>
+<p>虽然有垃圾回收机制，但我们还是需要对一些用到的内存进行处理，利用垃圾回收机制，尽量让没有用到的内存尽快得到释放</p>
+<h3 id="几种内存泄漏的情况"><a href="#几种内存泄漏的情况" class="headerlink" title="几种内存泄漏的情况"></a>几种内存泄漏的情况</h3><h4 id="1-意外的全局变量"><a href="#1-意外的全局变量" class="headerlink" title="1. 意外的全局变量"></a>1. 意外的全局变量</h4><p>全局变量所占用的内存，直到页面关闭才会被回收，所以要谨慎使用全局变量</p>
+<p>我们知道，如果我们在声明一个变量的时候，没有添加声明符号var,let,const，那么这个变量就会变成一个全局变量，比如下面的函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle</span>(<span class="hljs-params">str</span>)</span>&#123;<br>    decoration = <span class="hljs-string">'..........'</span>;<br>    <span class="hljs-keyword">return</span> str+decoration<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>在执行完这个函数后，由于这里的decoration变量没有使用声明符，所以在这个函数使用完之后，这个变量所占有的内存本该被回收，却因为变成了全局变量而一直被占用，知道手动清除（赋值为null）或者页面关闭，这就造成了内存泄漏</p>
+<h4 id="2-使用计时器"><a href="#2-使用计时器" class="headerlink" title="2. 使用计时器"></a>2. 使用计时器</h4><p>我们在开发的时候经常会用到setTimeout，setInterval这两个计时器，而这两个计时器在使用时往往很容易引发内存泄漏</p>
+<p>第一种泄漏的情况比较常见，如果我们使用计时器，却没有及时地清除计时器，那么计时器的回调函数占用的内存会一直存在，假如当前计时器的回调函数用到了页面的DOM元素，那么在页面销毁的时候，由于定时器占有该页面部分引用，会造成页面的内存无法被正常回收，这样重复地打开关闭这个页面，就会造成内存的不停泄漏</p>
+<p>第二种比较少见的情况，在使用定时器的时候，第一个参数传入了字符串，比如下面这样</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> t1 = setTimeout((<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f1</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-keyword">var</span> d = <span class="hljs-number">1</span>;<br>&#125;).toString(),<span class="hljs-number">0</span>)<br></code></pre></td></tr></table></figure>
+<p>这样的定时器，即使使用clearTimeout清除掉，f1还是存在的，此时如果在控制台打印f1的话，会发现它的函数体被打印出来，这说明这里的内存泄漏了</p>
+<h4 id="3-滥用闭包"><a href="#3-滥用闭包" class="headerlink" title="3. 滥用闭包"></a>3. 滥用闭包</h4><p>我们知道，闭包简单来说就是在一个函数内部，引用另一个函数内部的变量，但是这样会使得在当前函数执行完毕后，因为当前函数内部的变量还被另一个函数引用着，所以当前函数所占用的内存无法被回收，这就造成了内存泄漏</p>
+<h4 id="4-被js引用的DOM对象"><a href="#4-被js引用的DOM对象" class="headerlink" title="4. 被js引用的DOM对象"></a>4. 被js引用的DOM对象</h4><p>对于一般的DOM对象来说，如果不再挂载在DOM树上，那么这个对象就应该被回收了，但如果当前有一个js对象指向这个DOM对象的话，就不能回收这块内存</p>
+<p>比如下面的结构和js对象</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"father"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"child"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><br>    <span class="hljs-keyword">let</span> node = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'child'</span>)<br></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>如果当前的father div块被删除，一般来说子div占用的内存应该也会被回收，但因为node指向了该DOM对象，所以占用的内存不会被回收，这就造成了内存泄漏<br>所以如果对某个DOM对象进行了引用，要记得做清除处理</p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#内存泄漏"><span class="toc-number">1.</span> <span class="toc-text">内存泄漏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义"><span class="toc-number">1.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#垃圾回收机制"><span class="toc-number">1.2.</span> <span class="toc-text">垃圾回收机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#几种内存泄漏的情况"><span class="toc-number">1.3.</span> <span class="toc-text">几种内存泄漏的情况</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-意外的全局变量"><span class="toc-number">1.3.1.</span> <span class="toc-text">1. 意外的全局变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-使用计时器"><span class="toc-number">1.3.2.</span> <span class="toc-text">2. 使用计时器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-滥用闭包"><span class="toc-number">1.3.3.</span> <span class="toc-text">3. 滥用闭包</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-被js引用的DOM对象"><span class="toc-number">1.3.4.</span> <span class="toc-text">4. 被js引用的DOM对象</span></a></li></ol></li></ol></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        <script src="/js/script.js"></script>
+    </body>
+
+</html>
