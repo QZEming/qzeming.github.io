@@ -99,51 +99,12 @@
     
         <div class="singleDirectory">
     <h2 class="directoryTitle">
-        <a href=posts/52590a2f/>
-            个人博客搭建笔记----hexo根目录下的_config.yml配置解释
+        <a href=posts/702a5607/>
+            vue学习笔记-解析diff算法
         </a>
     </h2>
     <div class="directoryLabel">
-        <span class="directoryDate icon-calendar">2020-02-13 </span>
-        <div class="directoryTags icon-tag">
-            
-                <a class="articleTag-link" href="/tags/hexo/" rel="tag">hexo</a>
-                    
-        </div>
-    </div>
-    <article class="directoryExcerpt">
-        <p>我们在使用hexo初始化一个项目的时候，在根目录下会有一个配置文件_config.yml，这个文件配置了所写博客里面的内容，我们从根目录的该文件来说明每个配置的作用</p>
-    </article>
-</div>
-            
-        <div class="singleDirectory">
-    <h2 class="directoryTitle">
-        <a href=posts/8742b180/>
-            axios原理深入源码解析
-        </a>
-    </h2>
-    <div class="directoryLabel">
-        <span class="directoryDate icon-calendar">2019-11-26 </span>
-        <div class="directoryTags icon-tag">
-            
-                <a class="articleTag-link" href="/tags/axios/" rel="tag">axios</a>
-                    
-        </div>
-    </div>
-    <article class="directoryExcerpt">
-        <h1 id="axios"><a href="#axios" class="headerlink" title="axios"></a>axios</h1><hr>
-<p>axios的<a href="https://github.com/axios/axios" target="_blank" rel="noopener">github地址</a>上明确写了axios的特征是<br>Make XMLHttpRequests from the browser（从浏览器发起XMLHttpRequests请求）<br>Make http requests from node.js（从node.js发起http请求）<br>Supports the Promise API（支持PromiseAPI）<br>Intercept request and response（拦截请求和响应）<br>Transform request and response data（转换请求和响应数据）<br>Cancel requests（取消请求）<br>Automatic transforms for JSON data（自动转换json数据）<br>Client side support for protecting against XSRF（客户端支持自动防止XSRF）<br>下面就这些特征查看源码来解析</p>
-    </article>
-</div>
-            
-        <div class="singleDirectory">
-    <h2 class="directoryTitle">
-        <a href=posts/561f0192/>
-            vue loader配置及对vue文件（vue单文件组件）的处理
-        </a>
-    </h2>
-    <div class="directoryLabel">
-        <span class="directoryDate icon-calendar">2019-08-3 </span>
+        <span class="directoryDate icon-calendar">2020-02-24 </span>
         <div class="directoryTags icon-tag">
             
                 <a class="articleTag-link" href="/tags/vue/" rel="tag">vue</a>
@@ -151,26 +112,7 @@
         </div>
     </div>
     <article class="directoryExcerpt">
-        <p>通常情况下，我们会使用vue cli直接创建一个项目的脚手架，如果我们要自己用webpack来配置vue项目的话，就要用到vue loader</p>
-    </article>
-</div>
-            
-        <div class="singleDirectory">
-    <h2 class="directoryTitle">
-        <a href=posts/bf1e52c1/>
-            vue问题笔记ref获取不到指定的DOM节点问题解决
-        </a>
-    </h2>
-    <div class="directoryLabel">
-        <span class="directoryDate icon-calendar">2019-07-13 </span>
-        <div class="directoryTags icon-tag">
-            
-                <a class="articleTag-link" href="/tags/vue/" rel="tag">vue</a>
-                    
-        </div>
-    </div>
-    <article class="directoryExcerpt">
-        <p>在vue中不建议操作DOM，但是如果我们在没办法的情况下，可以通过ref来进行DOM操作，而在使用DOM时，可能会有获取不到ref对应DOM节点的问题<br>像下面这种情况，这是执行了console.log(this.$refs)的情况  </p>
+        <p>在vue中，DOM被抽象为一个以JavaScript对象为节点的virtual DOM(虚拟DOM)树，当数据发生改变时，会通过修改virtual DOM，使用diff算法，修改局部的内容，然后将这部分内容以打补丁的方式来修改真实的DOM，来达到视图修改的作用。<br>因为通过diff算法，能得出需要修改的最小单位，所以我们在更新视图的时候，只需要修改这些最小单位，这么做减小了更新的消耗。</p>
     </article>
 </div>
             

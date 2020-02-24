@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">3</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div class="asideContent">
+        
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/vue/">vue</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+                
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>Vue学习笔记---Vue单文件组件（SFC）规范</span>
+    </h1>
+    <div class="articleContent">
+        <p>.vue文件用于表示一个单一组件，其内使用类html语法，顶级标签有template,script,style和自定义的标签，一个完整简单的vue单文件如下</p>
+<a id="more"></a>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example"</span>&gt;</span>&#123;&#123;msg&#125;&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;<br>    data()&#123;<br>        <span class="hljs-keyword">return</span>&#123;<br>            <span class="hljs-attr">msg</span>:<span class="hljs-string">"hello world"</span><br>        &#125;<br>    &#125;<br>&#125;<br></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"><br><span class="hljs-selector-class">.example</span>&#123;<br>    <br>&#125;<br></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">custom-label</span>&gt;</span>自定义标签<span class="hljs-tag">&lt;/<span class="hljs-name">custom-label</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<h2 id="模板-lt-template-gt"><a href="#模板-lt-template-gt" class="headerlink" title="模板&lt;template&gt;"></a>模板&lt;template&gt;</h2><hr>
+<ul>
+<li>template里面包含该组件的html结构，可以在该组件内使用其他组件，需要在script中导入并写在components里面</li>
+<li>每个.vue文件只能有一个template标签</li>
+<li>&lt;template&gt;标签下的根标签只能有一个，多于一个时在编译时会报错</li>
+<li>&lt;template&gt;标签内的内容将被提取并传递给 vue-template-compiler 为字符串，预处理为 JavaScript 渲染函数，并最终注入到从&lt;script&gt; 导出的组件中<h2 id="脚本-lt-script-gt"><a href="#脚本-lt-script-gt" class="headerlink" title="脚本&lt;script&gt;"></a>脚本&lt;script&gt;</h2></li>
+</ul>
+<hr>
+<ul>
+<li>每个.vue文件只会包含一个&lt;script&gt;</li>
+<li>该脚本会作为一个ES Module来执行，通过export显示指定输出，再通过import输入，在这里其他组件就是通过使用import导入，再在export default中的components中输出</li>
+<li>在webpack中对.js配置的规则都会用于该标签上</li>
+<li>脚本默认导出一个Vue.js的组件选项对象，也可以由Vue.extend()创建的扩展对象<h2 id="样式-lt-style-gt"><a href="#样式-lt-style-gt" class="headerlink" title="样式&lt;style&gt;"></a>样式&lt;style&gt;</h2></li>
+</ul>
+<hr>
+<ul>
+<li>一个.vue文件可以有多个&lt;style&gt;标签，由此我们就可以通过使用不同的lang属性，在同一个vue组件中同时使用less和sass（虽然一般不会这么做）</li>
+<li>可以在同一个组件中混用scoped和module属性</li>
+<li>webpack中配置css文件的配置会应用在该标签上，如果设置了lang属性，为less时配置less标签的配置会应用在该标签上，sass也一样<h2 id="自定义块"><a href="#自定义块" class="headerlink" title="自定义块"></a>自定义块</h2></li>
+</ul>
+<hr>
+<ul>
+<li>自定义块可以通过在webpack中配置，用一个loader来编译对应的自定义块，在rules中使用resourceQuery来配置对应的自定义块<br>配置&lt;custom&gt;标签<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript">&#123;<br>  <span class="hljs-attr">module</span>: &#123;<br>    <span class="hljs-attr">rules</span>: [<br>      &#123;<br>        <span class="hljs-attr">resourceQuery</span>: <span class="hljs-regexp">/blockType=custom/</span>,<br>        <span class="hljs-attr">loader</span>: <span class="hljs-string">'loader-to-use'</span><br>      &#125;<br>    ]<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+<li>如果找到自定义块的匹配规则，则会被对应的loader处理，否则会被忽略</li>
+</ul>
+<hr>
+<p>参考文档：<a href="https://vue-loader.vuejs.org/zh/spec.html" target="_blank" rel="noopener">Vue单文件组件规范</a><br><a href="https://vue-loader.vuejs.org/zh/guide/custom-blocks.html#example" target="_blank" rel="noopener">vue-loader文档</a></p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#模板-lt-template-gt"><span class="toc-number">1.</span> <span class="toc-text">模板&lt;template&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#脚本-lt-script-gt"><span class="toc-number">2.</span> <span class="toc-text">脚本&lt;script&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#样式-lt-style-gt"><span class="toc-number">3.</span> <span class="toc-text">样式&lt;style&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义块"><span class="toc-number">4.</span> <span class="toc-text">自定义块</span></a></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        <script src="/js/script.js"></script>
+    </body>
+
+</html>
