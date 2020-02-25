@@ -105,37 +105,44 @@
 </aside>
                     <main class="main">
     
-        <article class="articleContainer">
-    <h1 class="articleTitle">
-        <span>vue问题笔记ref获取不到指定的DOM节点问题解决</span>
-    </h1>
-    <div class="articleContent">
-        <p>在vue中不建议操作DOM，但是如果我们在没办法的情况下，可以通过ref来进行DOM操作，而在使用DOM时，可能会有获取不到ref对应DOM节点的问题<br>像下面这种情况，这是执行了console.log(this.$refs)的情况  </p>
-<a id="more"></a>
-<p><img src="https://user-gold-cdn.xitu.io/2020/2/20/17062434deeaf2c1?w=887&h=230&f=png&s=65657" alt="this.$refs无法正常获取"><br>在用console打印出来的时候明明看到可以按下箭头显示我们要的组件内容，但是在花括号里面却写的是undefined，此时如果要获取这个节点的属性值，会报无法从undefined取值的错误。</p>
-<p>之所以会这样，是因为vue在更新DOM是异步的，只要侦听到数据发生变化，Vue将开启一个队列，并缓存在同一事件循环中发生的所有数据变更。即是说，在我们更新数据时，组件不会立即重新渲染，而是在刷新队列时才进行渲染。</p>
-<p>在上面代码中，DOM节点还没创建出来的时候，就执行了这个方法，导致无法正确地获取DOM节点，所以我们应该在DOM节点创建后才执行这个方法。</p>
-<p>对于这个问题，其实只要做个异步处理就可以了，最简单的做法就是让这个方法延迟一点执行，使用一个setTimeout来将这个方法延迟执行。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript">setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.$refs);<br>&#125;,time)<br></code></pre></td></tr></table></figure>
-<p>虽然setTimeout可以解决这个问题，但是这个time我们无法确定，因为影响解析的因素很多，如果延迟的时间太长又可能造成其他问题，所以我们采用另一个方法：Vue.nextTick(callback)。</p>
-<p>Vue.nextTick(callback)可以让里面的方法在DOM节点全部解析后才执行。在组件内使用时可以直接使用this来代替Vue，this会自动绑定到当前的Vue实例上。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">this</span>.$nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.$refs);<br>&#125;)<br></code></pre></td></tr></table></figure>
-<p>同时，因为$nextTick()返回一个Promise对象，所以可以使用async/await语法完成同样的事情。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.$nextTick();<br><span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.$refs);<br></code></pre></td></tr></table></figure>
-<p>至此，问题解决</p>
-
-    </div>
-</article>
+                        <div class="directory">
+    
+        <div class="singleDirectory">
+    <h2 class="directoryTitle">
+        <a href=posts/f8b2c3e3/>
+            瀑布流布局的介绍和实现（JavaScript和纯css）
+        </a>
+    </h2>
+    <div class="directoryLabel">
+        <span class="directoryDate icon-calendar">2019-06-1 </span>
+        <div class="directoryTags icon-tag">
             
+                <a class="articleTag-link" href="/tags/css%E5%B8%83%E5%B1%80/" rel="tag">css布局</a>
+                    
+        </div>
+    </div>
+    <article class="directoryExcerpt">
+        <p>瀑布流布局在很多场景适用，最常见到的就是在商品网站，尤其是二手网站，由于用户上传的照片大小不一，如果压缩用户的照片或者切割照片可能会影响照片内容的呈现，如果不做任何处理，又会使整个页面看起来很乱，所以我们使用瀑布流布局来解决这个问题。</p>
+    </article>
+</div>
+            
+                <div class="pagination">
+    <a class="prev-btn invalid-btn"  >上一页</a>
+    
+        
+            <a 
+                    class="currentPage"
+            
+            
+                href=/ 
+            >1</a>
+            
+                <a class="next-btn invalid-btn"  >下一页</a>
+</div>
+</div>
+                            
 </main>
                         
-                            <aside class="articleDirectory">
-    <h2 class="asideTitle">目录</h2>
-    <div class="asideContainer">
-        
-    </div>
-</aside>
-                                
             </div>
             <footer class="footer">
     <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>

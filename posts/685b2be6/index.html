@@ -107,22 +107,21 @@
     
         <article class="articleContainer">
     <h1 class="articleTitle">
-        <span>vue问题笔记ref获取不到指定的DOM节点问题解决</span>
+        <span>wireshark学习笔记----抓包网络原理</span>
     </h1>
     <div class="articleContent">
-        <p>在vue中不建议操作DOM，但是如果我们在没办法的情况下，可以通过ref来进行DOM操作，而在使用DOM时，可能会有获取不到ref对应DOM节点的问题<br>像下面这种情况，这是执行了console.log(this.$refs)的情况  </p>
+        <p>抓包是我们常见的分析网络的一种方式，根据不同的抓包方式，网络原理也有所不同。</p>
 <a id="more"></a>
-<p><img src="https://user-gold-cdn.xitu.io/2020/2/20/17062434deeaf2c1?w=887&h=230&f=png&s=65657" alt="this.$refs无法正常获取"><br>在用console打印出来的时候明明看到可以按下箭头显示我们要的组件内容，但是在花括号里面却写的是undefined，此时如果要获取这个节点的属性值，会报无法从undefined取值的错误。</p>
-<p>之所以会这样，是因为vue在更新DOM是异步的，只要侦听到数据发生变化，Vue将开启一个队列，并缓存在同一事件循环中发生的所有数据变更。即是说，在我们更新数据时，组件不会立即重新渲染，而是在刷新队列时才进行渲染。</p>
-<p>在上面代码中，DOM节点还没创建出来的时候，就执行了这个方法，导致无法正确地获取DOM节点，所以我们应该在DOM节点创建后才执行这个方法。</p>
-<p>对于这个问题，其实只要做个异步处理就可以了，最简单的做法就是让这个方法延迟一点执行，使用一个setTimeout来将这个方法延迟执行。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript">setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.$refs);<br>&#125;,time)<br></code></pre></td></tr></table></figure>
-<p>虽然setTimeout可以解决这个问题，但是这个time我们无法确定，因为影响解析的因素很多，如果延迟的时间太长又可能造成其他问题，所以我们采用另一个方法：Vue.nextTick(callback)。</p>
-<p>Vue.nextTick(callback)可以让里面的方法在DOM节点全部解析后才执行。在组件内使用时可以直接使用this来代替Vue，this会自动绑定到当前的Vue实例上。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">this</span>.$nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.$refs);<br>&#125;)<br></code></pre></td></tr></table></figure>
-<p>同时，因为$nextTick()返回一个Promise对象，所以可以使用async/await语法完成同样的事情。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.$nextTick();<br><span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.$refs);<br></code></pre></td></tr></table></figure>
-<p>至此，问题解决</p>
+<h2 id="本机环境"><a href="#本机环境" class="headerlink" title="本机环境"></a>本机环境</h2><hr>
+<p>   直接抓包本机网卡进出流量，这种抓包是直接抓取本地与互联网上交互的数据包，直接在本机上抓取。</p>
+<h2 id="集线器环境"><a href="#集线器环境" class="headerlink" title="集线器环境"></a>集线器环境</h2><hr>
+<p>   集线器环境下，因为都是以广播域的形式来传输数据包的，所以我们在一个集线器环境下，就能收到当前局域网下的所有数据包，就能直接抓取这些数据包来进行分析。</p>
+<h2 id="交换机环境"><a href="#交换机环境" class="headerlink" title="交换机环境"></a>交换机环境</h2><hr>
+<p>在交换机环境中，因为数据包不再以广播的形式发送，如果我们要抓取同一交换机环境下的其他主机的数据包，必须采取一些其他的策略。</p>
+<h3 id="1-端口镜像"><a href="#1-端口镜像" class="headerlink" title="1. 端口镜像"></a>1. 端口镜像</h3><p>在交换机做端口镜像（SPAN技术）处理，将其他进入交换机的流量copy一份到本机<br>端口镜像实际上就是将交换机或者路由器与其他发给其他端口的数据转发一份到本端口，这样就可以获取交换机/路由器与其他端口交互的信息。<br>如下图：<br><img src="https://img-blog.csdnimg.cn/20190728013434447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在交换机与PC2和PC3的连接的端口上，可以看作图中的GE0/0/1和GE0/0/2上使用端口镜像，将PC2和PC3与交换机交互的数据包copy一份到交换机与PC1交互的端口上GE0/0/0，这样我们在PC1上就可以抓取交换机与PC2和PC3交互的数据包了。</p>
+<h3 id="2-ARP欺骗"><a href="#2-ARP欺骗" class="headerlink" title="2. ARP欺骗"></a>2. ARP欺骗</h3><p> 在交换机上，我们通过ARP协议来将ipv4地址转为MAC地址以发送数据到指定的设备上，而ARP欺骗，就是针对我们想要获取的信息，对源地址发出的ARP请求做出假的回复，使其发送到本机对应的MAC地址上。<br> 如下图：<br><img src="https://img-blog.csdnimg.cn/20190728014040877.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>这里PC2为了向PC3发送信息，此时又只知道IP3的IP地址，不知道其MAC地址，所以要通过ARP协议，发送一个广播帧，若IP地址为IP3，则返回ARP响应告知PC2 PC3的MAC地址，然而，PC1欺骗了PC2，告诉它自己的IP地址也是IP3，将自己的MAC地址发送给了PC2，这样一来，我们就能在PC1抓取PC2发送给PC3的数据包了。</p>
+<h3 id="3-MAC泛洪"><a href="#3-MAC泛洪" class="headerlink" title="3. MAC泛洪"></a>3. MAC泛洪</h3><p>MAC泛洪也是一种攻击方式，当我们在一台主机上，以足够快的速度发送去往位置目的的数据包，且数据包对应的MAC地址都不相同，那么就会将交换机/路由器上的路由表“爆掉”，使其他端口发送的数据包对应的MAC地址无法进入到交换机/路由器的路由表中，那么这些端口发送的信息都会变成以广播的形式发出，而我们就可以在本机上接收到这些广播信息了。<br>如下图：<br><img src="https://img-blog.csdnimg.cn/20190728015527338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>首先PC1发送大量泛洪垃圾包，将交换机上MAC表中PC2和PC3的MAC地址挤出MAC表，MAC表更换后，PC2和PC3的数据在发送到交换机上后，发现没有对应的MAC地址可以发送，而且也无法加入新的MAC地址，只能将数据以广播的形式发送，而PC1就理所当然地得到了这些数据包，成功抓包。</p>
+<p>文章参考<a href="https://www.bilibili.com/video/av46257479/?p=3" target="_blank" rel="noopener">教程</a><br>上面地图片是使用<strong>ensp</strong>绘制的</p>
 
     </div>
 </article>
@@ -132,7 +131,7 @@
                             <aside class="articleDirectory">
     <h2 class="asideTitle">目录</h2>
     <div class="asideContainer">
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#本机环境"><span class="toc-number">1.</span> <span class="toc-text">本机环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集线器环境"><span class="toc-number">2.</span> <span class="toc-text">集线器环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#交换机环境"><span class="toc-number">3.</span> <span class="toc-text">交换机环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-端口镜像"><span class="toc-number">3.1.</span> <span class="toc-text">1. 端口镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-ARP欺骗"><span class="toc-number">3.2.</span> <span class="toc-text">2. ARP欺骗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-MAC泛洪"><span class="toc-number">3.3.</span> <span class="toc-text">3. MAC泛洪</span></a></li></ol></li></ol>
     </div>
 </aside>
                                 

@@ -81,11 +81,12 @@ ul {
   right: 200px;
   margin-right: 10px;
   font-size: 24px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Raleway, sans-serif;
   color: rgba(201, 201, 201, 0.7);
   cursor: pointer;
 }
 .header .topNav a:hover {
+  text-shadow: 0px 0px 5px;
   color: #2ac3ff;
 }
 .header .topNav .chooseNav {
@@ -115,7 +116,7 @@ ul {
   border-radius: 50%;
 }
 .info .authorInfo p {
-  margin: 0px;
+  margin: 7px 0px 0px 0px;
 }
 .info .authorInfo .authorName {
   font-size: 28px;

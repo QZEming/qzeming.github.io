@@ -11,6 +11,16 @@
             <title>
                 前端小黑
             </title>
+            
+                <style>
+                    #myCanvas {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                </style>
+                
+
 <meta name="generator" content="Hexo 4.2.0"></head>
 
     <body>
@@ -23,15 +33,15 @@
     <nav class="topNav">
     
         <a href=/  class=>
-                    首页
+                    HOME
                 </a>
         
         <a href=/about  class=>
-                    关于
+                    ABOUT
                 </a>
         
         <a href=/archives  class=>
-                    归档
+                    ARCHIVE
                 </a>
         
         <a href=https://github.com/QZEming  class=>
@@ -74,11 +84,11 @@
 </div>
         <div class="tags asideContainer">
     <h3 class="asideTitle">
-        标签
+        Tags
     </h3>
     <div class="asideContent">
         
-            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/" rel="tag">ES6+</a><span class="article-tag-list-count">3</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">3</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript%E6%A8%A1%E5%9D%97%E5%8C%96/" rel="tag">JavaScript模块化</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/" rel="tag">react</a><span class="article-tag-list-count">6</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">react学习笔记</a><span class="article-tag-list-count">6</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">3</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+            <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/" rel="tag">ES6+</a><span class="article-tag-list-count">3</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="article-tag-list-count">3</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript%E6%A8%A1%E5%9D%97%E5%8C%96/" rel="tag">JavaScript模块化</a><span class="article-tag-list-count">5</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/axios/" rel="tag">axios</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css%E5%B8%83%E5%B1%80/" rel="tag">css布局</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/" rel="tag">react</a><span class="article-tag-list-count">6</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">react学习笔记</a><span class="article-tag-list-count">6</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wireshark/" rel="tag">wireshark</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" rel="tag">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
                 
     </div>
 </div>
@@ -88,7 +98,7 @@
     </h3>
     <div class="asideContent">
         
-            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">11</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/react/">react</a><span class="article-tag-list-count">6</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/vue/">vue</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
+            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/JavaScript/">JavaScript</a><span class="article-tag-list-count">11</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/css/">css</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/react/">react</a><span class="article-tag-list-count">6</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/vue/">vue</a><span class="article-tag-list-count">2</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/wireshark/">wireshark</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a><span class="article-tag-list-count">1</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E6%A1%86%E6%9E%B6/">框架</a><span class="article-tag-list-count">4</span></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a><span class="article-tag-list-count">2</span></li></ul>
                 
     </div>
 </div>
@@ -197,6 +207,25 @@
             
         <div class="singleDirectory">
     <h2 class="directoryTitle">
+        <a href=posts/685b2be6/>
+            wireshark学习笔记----抓包网络原理
+        </a>
+    </h2>
+    <div class="directoryLabel">
+        <span class="directoryDate icon-calendar">2019-07-28 </span>
+        <div class="directoryTags icon-tag">
+            
+                <a class="articleTag-link" href="/tags/wireshark/" rel="tag">wireshark</a>
+                    
+        </div>
+    </div>
+    <article class="directoryExcerpt">
+        <p>抓包是我们常见的分析网络的一种方式，根据不同的抓包方式，网络原理也有所不同。</p>
+    </article>
+</div>
+            
+        <div class="singleDirectory">
+    <h2 class="directoryTitle">
         <a href=posts/bf1e52c1/>
             vue问题笔记ref获取不到指定的DOM节点问题解决
         </a>
@@ -211,6 +240,25 @@
     </div>
     <article class="directoryExcerpt">
         <p>在vue中不建议操作DOM，但是如果我们在没办法的情况下，可以通过ref来进行DOM操作，而在使用DOM时，可能会有获取不到ref对应DOM节点的问题<br>像下面这种情况，这是执行了console.log(this.$refs)的情况  </p>
+    </article>
+</div>
+            
+        <div class="singleDirectory">
+    <h2 class="directoryTitle">
+        <a href=posts/f8b2c3e3/>
+            瀑布流布局的介绍和实现（JavaScript和纯css）
+        </a>
+    </h2>
+    <div class="directoryLabel">
+        <span class="directoryDate icon-calendar">2019-06-1 </span>
+        <div class="directoryTags icon-tag">
+            
+                <a class="articleTag-link" href="/tags/css%E5%B8%83%E5%B1%80/" rel="tag">css布局</a>
+                    
+        </div>
+    </div>
+    <article class="directoryExcerpt">
+        <p>瀑布流布局在很多场景适用，最常见到的就是在商品网站，尤其是二手网站，由于用户上传的照片大小不一，如果压缩用户的照片或者切割照片可能会影响照片内容的呈现，如果不做任何处理，又会使整个页面看起来很乱，所以我们使用瀑布流布局来解决这个问题。</p>
     </article>
 </div>
             
@@ -259,7 +307,12 @@
                         hljs.initHighlightingOnLoad();
                     </script>
                     
-                        <script src="/js/script.js"></script>
+                        
+                            <canvas id="myCanvas">
+                                    </canvas>
+                            <script src="/js/canvas.js"></script>
+                            
+                                <script src="/js/script.js"></script>
     </body>
 
 </html>
