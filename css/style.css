@@ -86,8 +86,17 @@ ul {
   cursor: pointer;
 }
 .header .topNav a:hover {
-  text-shadow: 0px 0px 5px;
-  color: #2ac3ff;
+  animation: shadowShow 0.5s 1 forwards;
+}
+@keyframes shadowShow {
+  0% {
+    text-shadow: 0px 0px 0px;
+    color: rgba(201, 201, 201, 0.7);
+  }
+  100% {
+    text-shadow: 0px 0px 5px;
+    color: #2ac3ff;
+  }
 }
 .header .topNav .chooseNav {
   color: #c9c9c9;
@@ -264,25 +273,52 @@ ul {
 .footer p a:hover {
   opacity: 1;
 }
-.article-tag-list {
+.asideContent .article-tag-list {
   box-sizing: border-box;
   padding: 10px;
 }
-.article-tag-list .article-tag-list-item {
+.asideContent .article-tag-list .article-tag-list-item {
   display: flex;
   justify-content: space-between;
 }
-.article-tag-list .article-tag-list-item .article-tag-list-link {
+.asideContent .article-tag-list .article-tag-list-item .article-tag-list-link {
   opacity: 0.8;
   color: #444444;
 }
-.article-tag-list .article-tag-list-item .article-tag-list-link:hover {
+.asideContent .article-tag-list .article-tag-list-item .article-tag-list-link:hover {
   opacity: 1;
   color: #2ac3ff;
 }
-.article-tag-list .article-tag-list-item .article-tag-list-count {
+.asideContent .article-tag-list .article-tag-list-item .article-tag-list-count {
   opacity: 0.6;
   color: #444444;
+}
+.asideContent .conHandle {
+  margin: 0px;
+  padding: 5px 0px;
+  text-align: center;
+}
+.asideContent .conHandle span {
+  font-size: 14px;
+  cursor: pointer;
+  color: #444444;
+  opacity: 0.6;
+}
+.asideContent .conHandle span:hover {
+  color: #2ac3ff;
+}
+.shrinkContainer .article-tag-list {
+  max-height: 118px;
+  overflow: hidden;
+}
+.shrinkContainer #tagsPackUP {
+  display: none;
+}
+.spreadContainer .article-tag-list {
+  max-height: fit-content;
+}
+.spreadContainer #tagsSpread {
+  display: none;
 }
 .articleContainer {
   border-radius: 10px 0px 0px 0px;
