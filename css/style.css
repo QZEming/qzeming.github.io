@@ -307,17 +307,24 @@ ul {
 .asideContent .conHandle span:hover {
   color: #2ac3ff;
 }
-.shrinkContainer .article-tag-list {
-  max-height: 118px;
-  overflow: hidden;
+.shrinkContainer .part-list {
+  display: block;
 }
-.shrinkContainer #tagsPackUP {
+.shrinkContainer .whole-list {
   display: none;
 }
-.spreadContainer .article-tag-list {
-  max-height: fit-content;
+.shrinkContainer #tagsPackUP,
+.shrinkContainer #categoriesPackUP {
+  display: none;
 }
-.spreadContainer #tagsSpread {
+.spreadContainer .part-list {
+  display: none;
+}
+.spreadContainer .whole-list {
+  display: block;
+}
+.spreadContainer #tagsSpread,
+.spreadContainer #categoriesSpread {
   display: none;
 }
 .articleContainer {

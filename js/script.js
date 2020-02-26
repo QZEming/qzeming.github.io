@@ -25,12 +25,25 @@
             }   
         })
     })
-
     // 侧边栏标签收起和展开
-    document.querySelector("#tagsSpread").addEventListener('click',()=>{
+    let tagsSpread = document.querySelector("#tagsSpread");
+    tagsSpread&&tagsSpread.addEventListener('click',()=>{
         document.querySelector("#tagsContainer").className = "asideContent spreadContainer"
+
     })
-    document.querySelector("#tagsPackUP").addEventListener('click',()=>{
+    let tagsPackUP = document.querySelector("#tagsPackUP")
+    tagsPackUP&&tagsPackUP.addEventListener('click',()=>{
         document.querySelector("#tagsContainer").className = "asideContent shrinkContainer"
     })
+
+    let categoriesSpread = document.querySelector("#categoriesSpread");
+    categoriesSpread&&categoriesSpread.addEventListener('click',()=>{
+        document.querySelector("#categoriesContaner").className = "asideContent spreadContainer"
+
+    })
+    let categoriesPackUP = document.querySelector("#categoriesPackUP")
+    categoriesPackUP&&categoriesPackUP.addEventListener('click',()=>{
+        document.querySelector("#categoriesContaner").className = "asideContent shrinkContainer"
+    })
+    // 侧边栏分类收起和展开
 })()
