@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+            
+                <style>
+                    #myCanvas {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                </style>
+                
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    首页
+                </a>
+        
+        <a href=/about  class=>
+                    关于
+                </a>
+        
+        <a href=/archives  class=>
+                    归档
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        标签
+    </h3>
+    <div id="tagsContainer" class="asideContent shrinkContainer">
+        
+
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">6 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                            css动画
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/JavaScript设计模式 data-text=JavaScript设计模式 >
+                            JavaScript设计模式
+                        </a>
+                                <span class="article-tag-list-count">10 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                            ES6+
+                        </a>
+                                <span class="article-tag-list-count">3 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/JavaScript性能优化 data-text=JavaScript性能优化 >
+                            JavaScript性能优化
+                        </a>
+                                <span class="article-tag-list-count">3 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                        css动画
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript设计模式 data-text=JavaScript设计模式 >
+                        JavaScript设计模式
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                        ES6+
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript性能优化 data-text=JavaScript性能优化 >
+                        JavaScript性能优化
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react学习笔记 data-text=react学习笔记 >
+                        react学习笔记
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/hexo data-text=hexo >
+                        hexo
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript模块化 data-text=JavaScript模块化 >
+                        JavaScript模块化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/axios data-text=axios >
+                        axios
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="tagsSpread">展开</span>
+                    <span id="tagsPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div id="categoriesContaner" class="asideContent shrinkContainer">
+        
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">27 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/css data-text=css >
+                            css
+                        </a>
+                                <span class="article-tag-list-count">2 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/react data-text=react >
+                            react
+                        </a>
+                                <span class="article-tag-list-count">6 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/node data-text=node >
+                            node
+                        </a>
+                                <span class="article-tag-list-count">2 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">27 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/css data-text=css >
+                        css
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/框架 data-text=框架 >
+                        框架
+                    </a>
+                        <span class="article-tag-list-count">8 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="categoriesSpread">展开</span>
+                    <span id="categoriesPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>JavaScript类型判断总结</span>
+    </h1>
+    <div class="articleContent">
+        <p>在对类型的识别进行总结前，首先明确一下，在JavaScript中，有七种内置类型，null，undefined，boolean，number，String，Object，Symbol（ES6中新增），接下来对几种常见的类型识别进行总结。</p>
+<a id="more"></a>
+<h1 id="typeof"><a href="#typeof" class="headerlink" title="typeof"></a>typeof</h1><p>typeof运算符是我们常用的用于检测类型的一种方式，该运算符会返回一个字符串来表示其识别到的类型，我们使用typeof对七种内置类型的类型进行检测。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">typeof</span> <span class="hljs-number">1</span><br><span class="hljs-comment">// "number"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-string">"str"</span><br><span class="hljs-comment">// "string"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-literal">true</span><br><span class="hljs-comment">// "boolean"</span><br><span class="hljs-keyword">typeof</span> &#123;&#125;<br><span class="hljs-comment">// "object"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-literal">undefined</span><br><span class="hljs-comment">// "undefined"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-built_in">Symbol</span>()<br><span class="hljs-comment">// "symbol"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-literal">null</span><br><span class="hljs-comment">// "object"</span><br></code></pre></td></tr></table></figure>
+<p>可以发现，大部分的类型检测都符合我们的，但是null却莫名奇妙地返回了一个”object”，按我们的理解它应该返回一个”null”才对。这其实是这个检测方式的一种bug，至于在后面会不会得到修改，现在还不得而知，至少我们知道在代码编写中要避免使用typeof对可能变为null的变量进行类型检测。如果非要使用typeof检测null类型，就得同时判断其转为boolean类型是否为false，我将其封装在一个方法中如下代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">typeCheck</span>(<span class="hljs-params">n</span>)</span>&#123;<br>    <span class="hljs-keyword">if</span>(!n&amp;&amp;<span class="hljs-keyword">typeof</span> n===<span class="hljs-string">"object"</span>)<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">"null"</span><br>    <span class="hljs-keyword">else</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> n<br>&#125;<br>typeCheck(<span class="hljs-literal">null</span>)<br><span class="hljs-comment">// "null"</span><br></code></pre></td></tr></table></figure>
+<p>除了上面的内容，还有一个常用的“类型”，数组，当我们使用typeof检测数组时，会直接返回”object”</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">typeof</span> []<br><span class="hljs-comment">// "object"</span><br></code></pre></td></tr></table></figure>
+<p>我们见到的typeof返回的字符串除了上面见到的之外，还有一种特殊的返回字符串，就是对function使用typeof时会返回“function”</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fn</span>(<span class="hljs-params"></span>)</span>&#123;&#125;<br><span class="hljs-keyword">typeof</span> fn<br><span class="hljs-comment">// "function"</span><br></code></pre></td></tr></table></figure>
+<p>然而，正如我们所知道的，function实际上是object的子类，对于function的类型判断到底为哪个，取决于在代码中是否要区分方法和我们”传统“认知中的object，如果我们要模糊”function”和”object”，大可在上面的代码加以修改。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">typeCheck</span>(<span class="hljs-params">n</span>)</span>&#123;<br>    <span class="hljs-keyword">if</span>(!n&amp;&amp;<span class="hljs-keyword">typeof</span> n===<span class="hljs-string">"object"</span>)<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">"null"</span><br>    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> n===<span class="hljs-string">"function"</span>)<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">"object"</span><br>    <span class="hljs-keyword">else</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> n<br>&#125;<br>typeCheck(typeCheck)<br><span class="hljs-comment">// "object"</span><br></code></pre></td></tr></table></figure>
+<p>对于使用new运算符构建的对象，typeof统一返回”object”，即我们无法更细致地区分这些对象</p>
+<p>而我们常见的原生函数有String(),Number(),Boolean(),Array(),Object(),Function().RegExp().Date(),Error()。这些在使用typeof检测时都返回”object”。使用typeof时我们无法很好地区分这些内容。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>()<br><span class="hljs-comment">// "object"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>()<br><span class="hljs-comment">// "object"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>()<br><span class="hljs-comment">// "object"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>()<br><span class="hljs-comment">// "object"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>()<br><span class="hljs-comment">// "function"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>()<br><span class="hljs-comment">// "object"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()<br><span class="hljs-comment">// "object"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>()<br><span class="hljs-comment">// "object"</span><br></code></pre></td></tr></table></figure>
+<p>除了上面常见的情况外，还有一个最新的基本类型bigint，typeof可以判断该类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">typeof</span> <span class="hljs-number">1n</span><br><span class="hljs-comment">// "bigint"</span><br><span class="hljs-keyword">typeof</span> BigInt(<span class="hljs-string">"1"</span>)<br><span class="hljs-comment">// "bigint"</span><br></code></pre></td></tr></table></figure>
+<p>总的来说，typeof只能返回以下八个值其中一个：number，string，boolean，object，undefined，symbol，function，还有最新的bigint</p>
+<h1 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h1><p>如果我们要判断出对象是由哪些函数构建的，我们可以通过使用对象的constructor属性来判断</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>().constructor===<span class="hljs-built_in">String</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>().constructor===<span class="hljs-built_in">Number</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>().constructor===<span class="hljs-built_in">Array</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>().constructor===<span class="hljs-built_in">Boolean</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>().constructor===<span class="hljs-built_in">Object</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>().constructor===<span class="hljs-built_in">Function</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>().constructor===<span class="hljs-built_in">RegExp</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().constructor===<span class="hljs-built_in">Date</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>().constructor===<span class="hljs-built_in">Error</span><br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>正如我们所期待的，constructor出色地完成了我们的任务，成功辨别了对象由哪个函数构造的，那么constructor对于基本的内置类型又是否能完美判断呢</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 1.constructor===Number(错误写法)</span><br><span class="hljs-comment">// 数字字面量没有constructor</span><br><span class="hljs-keyword">var</span> num=<span class="hljs-number">1</span>;<br>num.constructor===<span class="hljs-built_in">Number</span><br><span class="hljs-comment">// true</span><br>BigInt(<span class="hljs-string">'1'</span>).constructor === BigInt<br><span class="hljs-comment">// true</span><br><span class="hljs-string">"str"</span>.constructor===<span class="hljs-built_in">String</span><br><span class="hljs-comment">// true</span><br><span class="hljs-literal">true</span>.constructor===<span class="hljs-built_in">Boolean</span><br><span class="hljs-comment">// true</span><br><span class="hljs-built_in">Symbol</span>().constructor===<span class="hljs-built_in">Symbol</span><br><span class="hljs-comment">// true</span><br><span class="hljs-comment">// &#123;&#125;.constructor===Object(错误写法)</span><br><span class="hljs-comment">// 对于一个直接构建的对象来说没有constructor属性</span><br><span class="hljs-comment">// 同样地null和undefined也没有constructor属性</span><br></code></pre></td></tr></table></figure>
+<p>可以看到，对于基本的内置属性，constructor只能判断其中的四种，其实，还有第五种，就是我们上面提及的BigInt</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> num = <span class="hljs-number">1n</span><br>num.constructor==BigInt<br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>除此之外，constructor还有一个需要注意的点，就是在使用继承的时候，它可能不会出现我们期待的结果</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">People</span>(<span class="hljs-params"></span>)</span>&#123;&#125;<br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params"></span>)</span>&#123;&#125;<br>Student.prototype=<span class="hljs-keyword">new</span> People()<br><span class="hljs-keyword">new</span> Student().constructor===Student<br><span class="hljs-comment">// false</span><br><span class="hljs-keyword">new</span> Student().constructor===People<br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>可以看到Student方法构建的对象的constructor是People，这是因为在调用new Student().constructor时，我们要找到constructor属性，明显的是这个对象没有constructor属性，所以我们沿着原型链寻找该属性，而Student.prototype是new People()，而new People()中也没有constructor属性，沿着原型链我们在new People().prototype找到了该属性其值为People，所以最后出现了我们期待以外的结果。</p>
+<h1 id="Object-prototype-toString"><a href="#Object-prototype-toString" class="headerlink" title="Object.prototype.toString"></a>Object.prototype.toString</h1><p>首先我们还是来看看Object.prototype.toString对八种内置类型的检测，Object.prototype.toString返回的是”[Object (class)]”，class的部分就是我们要的内容。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-number">1</span>)<br><span class="hljs-comment">// "[object Number]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-string">"str"</span>)<br><span class="hljs-comment">// "[object String]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(&#123;&#125;)<br><span class="hljs-comment">// "[object Object]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">null</span>)<br><span class="hljs-comment">// "[object Null]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">undefined</span>)<br><span class="hljs-comment">// "[object Undefined]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-built_in">Symbol</span>())<br><span class="hljs-comment">// "[object Symbol]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">true</span>)<br><span class="hljs-comment">// "[object Boolean]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-number">1n</span>)<br><span class="hljs-comment">// "[object BigInt]"</span><br></code></pre></td></tr></table></figure>
+<p>可以看到，Object.prototype.toString完美地回应了我们的期待，那来看看对于方法会返回什么</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fn</span>(<span class="hljs-params"></span>)</span>&#123;&#125;<br><span class="hljs-built_in">Object</span>.prototype.toString.call(fn)<br><span class="hljs-comment">// "[object Function]"</span><br></code></pre></td></tr></table></figure>
+<p>可以看到，Object.prototype.toString和typeof一样，即使function是Object的子类，还是把它判断成了”Function“。</p>
+<p>接着来看看对于原生函数的构造时会有什么检测结果</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>())<br><span class="hljs-comment">// "[object String]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>())<br><span class="hljs-comment">// "[object Number]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>())<br><span class="hljs-comment">// "[object Boolean]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>())<br><span class="hljs-comment">// "[object Array]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>())<br><span class="hljs-comment">// "[object Object]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>())<br><span class="hljs-comment">// "[object Function]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>())<br><span class="hljs-comment">// "[object RegExp]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>())<br><span class="hljs-comment">// "[object Date]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>())<br><span class="hljs-comment">// "[object Error]"</span><br></code></pre></td></tr></table></figure>
+<p>可以看到如果我们想分辨出原生函数构造对象是由什么原生函数构造的，Object.prototype.toString是一个好的选择，而对于自定义的对象，Object.prototype就无法正确判断了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params"></span>)</span>&#123;&#125;<br><span class="hljs-keyword">var</span> person = <span class="hljs-keyword">new</span> Person()<br><span class="hljs-built_in">Object</span>.prototype.toString.call(person)<br><span class="hljs-comment">// "[object Object]"</span><br></code></pre></td></tr></table></figure>
+<h3 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h3><p>instanceof在对继承对象的判断上正确</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">People</span>(<span class="hljs-params"></span>)</span>&#123;&#125;<br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params"></span>)</span>&#123;&#125;<br><span class="hljs-keyword">new</span> Student() <span class="hljs-keyword">instanceof</span> Student<br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> Student() <span class="hljs-keyword">instanceof</span> People<br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>但是在对原始类型的判断上不尽人意</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-number">1</span> <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Number</span><br><span class="hljs-comment">// false</span><br><span class="hljs-literal">true</span> <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Boolean</span><br><span class="hljs-comment">// false</span><br><span class="hljs-string">"str"</span> <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">String</span><br><span class="hljs-comment">// false</span><br></code></pre></td></tr></table></figure>
+<p>然而，如果我们使用new来创建相应的对象，那instanceof可以正确判别</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>(<span class="hljs-number">1</span>) <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Number</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>(<span class="hljs-literal">true</span>) <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Boolean</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">'str'</span>) <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">String</span><br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>对于原生类型来说，instanceof能正确判别</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span><br><span class="hljs-comment">// true</span><br>/abc/ <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">RegExp</span><br><span class="hljs-comment">// true</span><br>(&#123;&#125;) <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span><br><span class="hljs-comment">// true</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fn</span>(<span class="hljs-params"></span>)</span>&#123;&#125;<br>fn <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Function</span><br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>但是BigInt却无法正确判别</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-number">1n</span> <span class="hljs-keyword">instanceof</span> BigInt <span class="hljs-comment">// false</span><br>BigInt(<span class="hljs-number">1</span>) <span class="hljs-keyword">instanceof</span> BigInt <span class="hljs-comment">// false</span><br></code></pre></td></tr></table></figure>
+<h1 id="不同用法的总结"><a href="#不同用法的总结" class="headerlink" title="不同用法的总结"></a>不同用法的总结</h1><h2 id="typeof-1"><a href="#typeof-1" class="headerlink" title="typeof"></a>typeof</h2><ol>
+<li><p>对其他内置类型的检测正确，在对null进行类型检测时会返回”object”</p>
+</li>
+<li><p>对方法进行检测时，会返回”function”</p>
+</li>
+<li><p>typeof对于对象统一返回”object”，即使使用了不同的原生函数，typeof无法区分这些原生函数构造的对象</p>
+</li>
+</ol>
+<h2 id="constructor"><a href="#constructor" class="headerlink" title="constructor"></a>constructor</h2><ol>
+<li><p>对于内置类型只能判断Number（需要将值赋给变量才能判断），Boolean，Object，Symbol，其他三种无法判断</p>
+</li>
+<li><p>对于对象能返回构造对象的构造函数名</p>
+</li>
+<li><p>当使用继承时会返回原型链末端的构造函数名</p>
+</li>
+</ol>
+<h2 id="Object-prototype-toString-1"><a href="#Object-prototype-toString-1" class="headerlink" title="Object.prototype.toString"></a>Object.prototype.toString</h2><ol>
+<li><p>对于所有内置对象都可以判断</p>
+</li>
+<li><p>对于对象能返回构造对象的构造函数名，但自定义对象只能返回object</p>
+</li>
+</ol>
+<h2 id="instanceof-1"><a href="#instanceof-1" class="headerlink" title="instanceof"></a>instanceof</h2><ol>
+<li><p>对于对象能返回构造对象的构造函数名</p>
+</li>
+<li><p>能正确判断继承的对象</p>
+</li>
+<li><p>对于原始类型字面量无法正确判断（Number，Boolean，String），对new构造的对象可以正确判断，可以正确判断原生类型（RegExp，Array，Function，Object）</p>
+</li>
+</ol>
+<h1 id="对ES6中的类型的判断"><a href="#对ES6中的类型的判断" class="headerlink" title="对ES6中的类型的判断"></a>对ES6中的类型的判断</h1><p>上面的内容基本都是对ES6之前的类型的判断，接下来看看对于ES6中的新类型上面的四种方法能否正确判断</p>
+<h2 id="Map和Set"><a href="#Map和Set" class="headerlink" title="Map和Set"></a>Map和Set</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// typeof</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()<br><span class="hljs-comment">// "object"</span><br><span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()<br><span class="hljs-comment">// "object"</span><br> <br><span class="hljs-comment">// Object.prototype.toString</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>())<br><span class="hljs-comment">// "[object Map]"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>())<br><span class="hljs-comment">// "[object Set]"</span><br> <br><span class="hljs-comment">// constructor</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>().constructor===<span class="hljs-built_in">Map</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>().constructor===<span class="hljs-built_in">Set</span><br><span class="hljs-comment">// true</span><br> <br><span class="hljs-comment">// instanceof</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>() <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Map</span><br><span class="hljs-comment">// true</span><br><span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>() <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Set</span><br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>可以看到，对于类数组Map和Set，只有typeof没有返回我们所期待的类型</p>
+<h2 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> p=<span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve,reject</span>)=&gt;</span>&#123;&#125;)<br><span class="hljs-keyword">typeof</span> p<br><span class="hljs-comment">// "object"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(p)<br><span class="hljs-comment">// "[object Promise]"</span><br>p.constructor===<span class="hljs-built_in">Promise</span><br><span class="hljs-comment">// true</span><br>p <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Promise</span><br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>可以看到同样是typeof没有返回我们期待的类型</p>
+<h2 id="Proxy"><a href="#Proxy" class="headerlink" title="Proxy"></a>Proxy</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> p=<span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(&#123;&#125;,&#123;&#125;)<br><span class="hljs-keyword">typeof</span> p<br><span class="hljs-comment">// "object"</span><br><span class="hljs-built_in">Object</span>.prototype.toString.call(p)<br><span class="hljs-comment">// "[object Object]"</span><br>p.constructor===<span class="hljs-built_in">Proxy</span><br><span class="hljs-comment">// false</span><br>p <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Proxy</span><br><span class="hljs-comment">// Uncaught TypeError: Function has non-object prototype 'undefined' in instanceof check</span><br></code></pre></td></tr></table></figure>
+<p>可以看到没有一个返回我们期待的结果，instanceof甚至报错了，如果我们要明确知道某个变量实际上是代理的话，仅靠上面的方法是行不通的</p>
+<p>以上就是我对JavaScript中类型检测的总结，若有什么补充之处和错漏之处请各位指出</p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#typeof"><span class="toc-number">1.</span> <span class="toc-text">typeof</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#constructor-NaN"><span class="toc-number">2.</span> <span class="toc-text">constructor</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Object-prototype-toString"><span class="toc-number">3.</span> <span class="toc-text">Object.prototype.toString</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#instanceof"><span class="toc-number">3.0.1.</span> <span class="toc-text">instanceof</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#不同用法的总结"><span class="toc-number">4.</span> <span class="toc-text">不同用法的总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#typeof-1"><span class="toc-number">4.1.</span> <span class="toc-text">typeof</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#constructor"><span class="toc-number">4.2.</span> <span class="toc-text">constructor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Object-prototype-toString-1"><span class="toc-number">4.3.</span> <span class="toc-text">Object.prototype.toString</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#instanceof-1"><span class="toc-number">4.4.</span> <span class="toc-text">instanceof</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#对ES6中的类型的判断"><span class="toc-number">5.</span> <span class="toc-text">对ES6中的类型的判断</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Map和Set"><span class="toc-number">5.1.</span> <span class="toc-text">Map和Set</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Promise"><span class="toc-number">5.2.</span> <span class="toc-text">Promise</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Proxy"><span class="toc-number">5.3.</span> <span class="toc-text">Proxy</span></a></li></ol></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        
+                            <canvas id="myCanvas">
+                                    </canvas>
+                            <script src="/js/canvas.js"></script>
+                            
+                                <script src="/js/script.js"></script>
+    </body>
+
+</html>
