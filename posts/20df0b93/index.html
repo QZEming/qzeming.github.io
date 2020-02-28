@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+            
+                <style>
+                    #myCanvas {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                </style>
+                
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div id="tagsContainer" class="asideContent shrinkContainer">
+        
+
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">9 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/性能优化 data-text=性能优化 >
+                            性能优化
+                        </a>
+                                <span class="article-tag-list-count">4 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                            css动画
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                            ES6+
+                        </a>
+                                <span class="article-tag-list-count">3 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">9 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/性能优化 data-text=性能优化 >
+                        性能优化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                        css动画
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                        ES6+
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript设计模式 data-text=JavaScript设计模式 >
+                        JavaScript设计模式
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/leetcode data-text=leetcode >
+                        leetcode
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react学习笔记 data-text=react学习笔记 >
+                        react学习笔记
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/hexo data-text=hexo >
+                        hexo
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript模块化 data-text=JavaScript模块化 >
+                        JavaScript模块化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/axios data-text=axios >
+                        axios
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="tagsSpread">展开</span>
+                    <span id="tagsPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div id="categoriesContaner" class="asideContent shrinkContainer">
+        
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">30 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/浏览器 data-text=浏览器 >
+                            浏览器
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/css data-text=css >
+                            css
+                        </a>
+                                <span class="article-tag-list-count">2 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">30 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/浏览器 data-text=浏览器 >
+                        浏览器
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/css data-text=css >
+                        css
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/算法 data-text=算法 >
+                        算法
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/框架 data-text=框架 >
+                        框架
+                    </a>
+                        <span class="article-tag-list-count">8 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="categoriesSpread">展开</span>
+                    <span id="categoriesPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+                <div class="asideContainer newPostContainer">
+    <h3 class="asideTitle">
+        new posts
+    </h3>
+    <div class="asideContent">
+        
+            
+                
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/7c5bc56b/ class="article-tag-list-link">
+                        javascript实现类
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/20df0b93/ class="article-tag-list-link">
+                        chrome浏览器控制台性能监控
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/ebe1d9f6/ class="article-tag-list-link">
+                        Vue学习笔记---Vue单文件组件（SFC）规范
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/702a5607/ class="article-tag-list-link">
+                        vue学习笔记-解析diff算法
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/65d0e2c0/ class="article-tag-list-link">
+                        个人博客搭建笔记----hexo踩坑记录
+                            </a>
+                        </div>
+                    </div>
+                    
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>chrome浏览器控制台性能监控</span>
+    </h1>
+    <div class="articleContent">
+        <p>要实现对性能的优化，首先就要做到能合理有效地监控性能，发现哪里的性能出现问题，才能更好地去优化性能，这里我们说说如何通过chrome进行性能监控</p>
+<a id="more"></a>
+<h1 id="1-通过使用performance-monitor来监控"><a href="#1-通过使用performance-monitor来监控" class="headerlink" title="1. 通过使用performance monitor来监控"></a>1. 通过使用performance monitor来监控</h1><p>在控制台使用ctrl+shift+p打开command menu，输入performance monitor来监听</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/28/170879e92192e22b?w=726&h=118&f=png&s=11841" alt=""><br>可以监听如图的内容<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/170879f03e41404e?w=1443&h=447&f=png&s=59157" alt=""><br>这里的数据比较直观，也就不多说了</p>
+<h1 id="2-performance"><a href="#2-performance" class="headerlink" title="2. performance"></a>2. performance</h1><p>performance是chrome控制台用来监控性能指标的一个利器</p>
+<p>点击左上角的圆形按钮可以开始录制，按stop停止录制，就会把这段时间的性能监控反映出来，也可以通过刷新按钮重载页面，可以监控页面初始化时的性能  </p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708a9f872f9e626?w=1605&h=977&f=png&s=144332" alt=""><br>拿到performance的性能报告图，这里我分成四个部分来说，首先看到第一部分</p>
+<h2 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h2><p><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708a10d879704f1?w=1439&h=170&f=png&s=123338" alt=""><br>从上到下四个数据</p>
+<ul>
+<li>FPS：主要和动画性能有关，表示每秒的帧数。上图中出现了红色的长条，说明这部分动画性能有卡帧，需要进行优化，而像下图这样，绿色长条，就说明性能还可以，而绿色长条越高，说明性能越好<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708a17f64a1d71d?w=422&h=98&f=png&s=24352" alt=""></li>
+<li>CPU：和底部的summary对应，显示了页面加载过程中，各阶段对CPU的占用时间，占用时间越多，表示该部分越需要被优化，其中不同的颜色就对应着不同的部分，相应部分对应的内容可以在底部的summary里面看到，不同颜色含义为<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708a20ad8a838c6?w=163&h=204&f=png&s=4575" alt=""><ul>
+<li>蓝色（Loading）：网络通信和html解析</li>
+<li>黄色（Scripting）：JavaScript执行</li>
+<li>紫色（Rendering）：样式计算和布局，对css的解析，即重排</li>
+<li>绿色（Painting）：重绘</li>
+<li>灰色（System）：其他事件花费的时间</li>
+<li>白色（Idle）：空闲时间</li>
+</ul>
+</li>
+<li>NET：主要显示了请求的顺序和花费的时间，深蓝色的优先级比浅蓝色高，我们也可以在下面的network查看更具体的顺序和耗时<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708a4ac612ab4c1?w=1311&h=380&f=png&s=106537" alt=""><br>点击network里面的内容在summary中会显示出具体的内容<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708a4d2a6278cd6?w=644&h=363&f=png&s=33537" alt=""></li>
+<li>HEAP：表示js堆内存的消耗<br>线的上升就表示这个时间点js执行消耗了一些内存<h2 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h2>我们刚刚说第一部分的内容时实际上也说到了下面三个部分的内容，接下来看看第二个部分里面内容最多的火焰图，main</li>
+</ul>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708a8c4ed8d050d?w=1567&h=468&f=png&s=75070" alt=""><br>火焰图的第一行表示发生的事件，下面的各行是上面事件的子项</p>
+<p>当我们使用左上角的刷新去监控页面时，在这里会出现三条虚线，这里我们放大看看</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708a8e10dd57526?w=431&h=439&f=png&s=31690" alt=""><br>这三条虚线各有含义</p>
+<ul>
+<li>蓝色：DOM加载完成</li>
+<li>绿色：开始绘制页面</li>
+<li>红色：页面加载完成<h2 id="第三部分"><a href="#第三部分" class="headerlink" title="第三部分"></a>第三部分</h2>看一下第三部分，这部分内容直观地显示了一些性能的详细信息，包括js堆内存，文档，节点，监听器和GPU</li>
+</ul>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708aa2dc620c679?w=1598&h=288&f=png&s=19476" alt=""><br>不同内容对应的颜色也已经在图中标明了，这里就不再多说</p>
+<h2 id="第四部分"><a href="#第四部分" class="headerlink" title="第四部分"></a>第四部分</h2><p>接下来看看最后一部分</p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>我们看下图，这里是刚才已经说过了的CPU占用时间的总结，与上面不同的是，上面展示的是一个各个部分在不同时间的消耗，而这里采取的是一个扇形图的方式，可以让我们直观地看到各个部分CPU消耗的占比，我们也就能更好地找到需要优化的内容<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708aa8999b66c25?w=859&h=364&f=png&s=30909" alt=""></p>
+<h3 id="Bottom-Up"><a href="#Bottom-Up" class="headerlink" title="Bottom-Up"></a>Bottom-Up</h3><p>这里显示的是各个部分具体的内存消耗对应的一些内容，根据时间消耗的长短，反向列出事件列表，<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708aaffe8db0ff6?w=1055&h=606&f=png&s=63637" alt=""><br>这里也可以通过filter和分组group来更精确地找到内容<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708aafbb9440c1a?w=388&h=57&f=png&s=2706" alt=""><br>对于html的解析和css的解析我们可能做不了太多优化，更多地是看看时间消耗，把时间消耗多的那段解析减少，这里更多的是看看黄色的scripting的内容<br>如下图，可以看到，这里的script可以通过细分，去准确地找到消耗这些CPU的是代码中的哪一行，方便我们进行一个性能上的优化<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708aacf3492ca78?w=1050&h=174&f=png&s=22881" alt=""></p>
+<h3 id="Call-Tree"><a href="#Call-Tree" class="headerlink" title="Call Tree"></a>Call Tree</h3><p>以树形图的形式展示各项事件，这样事件调用跟踪会显得更为详细和直观，其他和bottom-up基本是一样的<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708ab22f3740e18?w=1073&h=447&f=png&s=48829" alt=""></p>
+<h3 id="Event-Log"><a href="#Event-Log" class="headerlink" title="Event Log"></a>Event Log</h3><p>事件日志，可以让我们更好地看到事件的详细信息，如图<br><img src="https://user-gold-cdn.xitu.io/2020/2/28/1708ab3f5df0cf43?w=1071&h=619&f=png&s=66928" alt=""><br>比Bottom-Up和Call Tree多了右边的内容，更详细地展示事件信息</p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-通过使用performance-monitor来监控"><span class="toc-number">1.</span> <span class="toc-text">1. 通过使用performance monitor来监控</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-performance"><span class="toc-number">2.</span> <span class="toc-text">2. performance</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一部分"><span class="toc-number">2.1.</span> <span class="toc-text">第一部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二部分"><span class="toc-number">2.2.</span> <span class="toc-text">第二部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三部分"><span class="toc-number">2.3.</span> <span class="toc-text">第三部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第四部分"><span class="toc-number">2.4.</span> <span class="toc-text">第四部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Summary"><span class="toc-number">2.4.1.</span> <span class="toc-text">Summary</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bottom-Up"><span class="toc-number">2.4.2.</span> <span class="toc-text">Bottom-Up</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Call-Tree"><span class="toc-number">2.4.3.</span> <span class="toc-text">Call Tree</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Event-Log"><span class="toc-number">2.4.4.</span> <span class="toc-text">Event Log</span></a></li></ol></li></ol></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        
+                            <canvas id="myCanvas">
+                                    </canvas>
+                            <script src="/js/canvas.js"></script>
+                            
+                                <script src="/js/script.js"></script>
+    </body>
+
+</html>

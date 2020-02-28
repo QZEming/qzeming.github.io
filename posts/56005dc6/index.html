@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+            
+                <style>
+                    #myCanvas {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                </style>
+                
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    HOME
+                </a>
+        
+        <a href=/about  class=>
+                    ABOUT
+                </a>
+        
+        <a href=/archives  class=>
+                    ARCHIVE
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="avatar">
+</nav>
+</header>
+            <div class="mainContainer">
+                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        Tags
+    </h3>
+    <div id="tagsContainer" class="asideContent shrinkContainer">
+        
+
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">9 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/性能优化 data-text=性能优化 >
+                            性能优化
+                        </a>
+                                <span class="article-tag-list-count">4 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                            css动画
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                            ES6+
+                        </a>
+                                <span class="article-tag-list-count">3 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">9 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/性能优化 data-text=性能优化 >
+                        性能优化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                        css动画
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                        ES6+
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript设计模式 data-text=JavaScript设计模式 >
+                        JavaScript设计模式
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/leetcode data-text=leetcode >
+                        leetcode
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react学习笔记 data-text=react学习笔记 >
+                        react学习笔记
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/hexo data-text=hexo >
+                        hexo
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript模块化 data-text=JavaScript模块化 >
+                        JavaScript模块化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/axios data-text=axios >
+                        axios
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="tagsSpread">展开</span>
+                    <span id="tagsPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div id="categoriesContaner" class="asideContent shrinkContainer">
+        
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">30 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/浏览器 data-text=浏览器 >
+                            浏览器
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/css data-text=css >
+                            css
+                        </a>
+                                <span class="article-tag-list-count">2 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">30 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/浏览器 data-text=浏览器 >
+                        浏览器
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/css data-text=css >
+                        css
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/算法 data-text=算法 >
+                        算法
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/框架 data-text=框架 >
+                        框架
+                    </a>
+                        <span class="article-tag-list-count">8 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="categoriesSpread">展开</span>
+                    <span id="categoriesPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+                <div class="asideContainer newPostContainer">
+    <h3 class="asideTitle">
+        new posts
+    </h3>
+    <div class="asideContent">
+        
+            
+                
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/7c5bc56b/ class="article-tag-list-link">
+                        javascript实现类
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/20df0b93/ class="article-tag-list-link">
+                        chrome浏览器控制台性能监控
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/ebe1d9f6/ class="article-tag-list-link">
+                        Vue学习笔记---Vue单文件组件（SFC）规范
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/702a5607/ class="article-tag-list-link">
+                        vue学习笔记-解析diff算法
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/65d0e2c0/ class="article-tag-list-link">
+                        个人博客搭建笔记----hexo踩坑记录
+                            </a>
+                        </div>
+                    </div>
+                    
+    </div>
+</div>
+</aside>
+                    <main class="main">
+    
+        <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>JavaScript正则表达式基础</span>
+    </h1>
+    <div class="articleContent">
+        <p>正则表达式在匹配字符串上十分实用，这里就简单写出在JavaScript中的正则表达式实用基础。</p>
+<a id="more"></a>
+<p>首先介绍一下JavaScript中测试正则表达式是否匹配的方法test，该方法传入要匹配的字符串，如果匹配成功返回true，失败返回false。下面都会用这个方法来测试正则表达式的匹配。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript">/a/.test(<span class="hljs-string">'a'</span>);<br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<h1 id="正则表达式的创建"><a href="#正则表达式的创建" class="headerlink" title="正则表达式的创建"></a>正则表达式的创建</h1><p>可以实用字面量直接创建，也可以用构造函数创建。</p>
+<p>使用字面量，将正则表达式内容写在两个/之间，而使用构造函数时，将正则表达式内容作为参数传入</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> r=<span class="hljs-regexp">/a/</span>; <span class="hljs-comment">// 用字面量创建</span><br> <br><span class="hljs-keyword">var</span> r=<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">'a'</span>); <span class="hljs-comment">// 用构造函数创建</span><br></code></pre></td></tr></table></figure>
+<p>接下来介绍正则表达式内的字符含义</p>
+<h1 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h1><p>\t 水平制表符（tab）</p>
+<p>\v 垂直制表符</p>
+<p>\n 换行符</p>
+<p>\r 回车符</p>
+<p>\0 空字符</p>
+<p>\f 换页符</p>
+<h1 id="与类有关的字符"><a href="#与类有关的字符" class="headerlink" title="与类有关的字符"></a>与类有关的字符</h1><p>[] 将里面的内容归为一类，匹配到其中任一个即为匹配成功</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript">/[abc]/.test(<span class="hljs-string">'a'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[abc]/</span>.test(<span class="hljs-string">'b'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[abc]/</span>.test(<span class="hljs-string">'c'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[abc]/</span>.test(<span class="hljs-string">'d'</span>);<br><span class="hljs-comment">// false</span><br></code></pre></td></tr></table></figure>
+<p>^ 构建反向类，匹配到其中任一个为匹配失败</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript">/[^abc]/.test(<span class="hljs-string">'a'</span>);<br><span class="hljs-comment">// false</span><br><span class="hljs-regexp">/[^abc]/</span>.test(<span class="hljs-string">'b'</span>);<br><span class="hljs-comment">// false</span><br><span class="hljs-regexp">/[^abc]/</span>.test(<span class="hljs-string">'c'</span>);<br><span class="hljs-comment">// false</span><br><span class="hljs-regexp">/[^abc]/</span>.test(<span class="hljs-string">'d'</span>);<br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<ul>
+<li>构建范围类，即匹配连续的字符（数字上的连续和字母上的连续），可以连写<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript">/[<span class="hljs-number">1</span><span class="hljs-number">-9</span>]/.test(<span class="hljs-string">'1'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[1-9]/</span>.test(<span class="hljs-string">'12'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[1-9]/</span>.test(<span class="hljs-string">'120'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[a-z]/</span>.test(<span class="hljs-string">'ab'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[a-z]/</span>.test(<span class="hljs-string">'abc'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[A-Z]/</span>.test(<span class="hljs-string">'AB'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[A-Z]/</span>.test(<span class="hljs-string">'ABC'</span>);<br><span class="hljs-comment">// true</span><br><span class="hljs-regexp">/[1-9a-z]/</span>.test(<span class="hljs-string">'1aa1'</span>);<br><span class="hljs-comment">// true  连写</span><br></code></pre></td></tr></table></figure>
+<h1 id="预定义字符"><a href="#预定义字符" class="headerlink" title="预定义字符"></a>预定义字符</h1>下面的字符都是可以使用上面的字符来实现的，但是使用预定义字符更为方便</li>
+</ul>
+<p>\d 数字字符</p>
+<p>\D 非数字字符</p>
+<p>\s 空白符</p>
+<p>\S 非空白符</p>
+<p>\w 单词字符（字母和数字下划线）</p>
+<p>\W 非单词字符</p>
+<h1 id="边界匹配字符"><a href="#边界匹配字符" class="headerlink" title="边界匹配字符"></a>边界匹配字符</h1><p>^ 以。。。开始</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript">/^a/.test(<span class="hljs-string">'1a'</span>)<br><span class="hljs-comment">// false</span><br>/^a/.test(<span class="hljs-string">'a1'</span>)<br><span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
+<p>$ 以。。。结束</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript">/a$/.test(<span class="hljs-string">'1a'</span>)<br><span class="hljs-comment">// true</span><br>/a$/.test(<span class="hljs-string">'a1'</span>)<br><span class="hljs-comment">// false</span><br></code></pre></td></tr></table></figure>
+<p>\b 单词边界</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-string">'there is an apple'</span>.replace(<span class="hljs-regexp">/\b/g</span>,<span class="hljs-string">'x'</span>);<br><span class="hljs-comment">// "xtherex xisx xanx xapplex"</span><br> <br><span class="hljs-comment">// g是修饰符，在下文会提及，这里使用字符串的方法将单词边界替换为x</span><br></code></pre></td></tr></table></figure>
+<p>\B 非单词边界</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-string">'there is an apple'</span>.replace(<span class="hljs-regexp">/\B/g</span>,<span class="hljs-string">'x'</span>);<br><span class="hljs-comment">// "txhxexrxe ixs axn axpxpxlxe"</span><br></code></pre></td></tr></table></figure>
+<h1 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h1><p>通过<a href="https://regexper.com/#%5Cn%0A这个网站来可视化看出次数" target="_blank" rel="noopener">https://regexper.com/#%5Cn%0A这个网站来可视化看出次数</a></p>
+<p>? 最多出现1次</p>
+<p>\d?</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/27/1708500cb4ee5ade?w=218&h=110&f=png&s=7578" alt=""></p>
+<p>上图的含义为，可以不经digit（数字）走过这条路，即数字出现0次的匹配，也可以经过一次</p>
+<p>+ 最少出现1次</p>
+<p>\d+</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/27/1708501166f19d8b?w=190&h=96&f=png&s=7560" alt=""></p>
+<p>上图的含义为经过一次或无限次循环经过，即匹配一个或者匹配无数个重复的</p>
+<p>* 出现任意次</p>
+<p>\d*</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/27/17085014eb61e798?w=205&h=120&f=png&s=9073" alt=""></p>
+<p>{n} 出现n次</p>
+<p>\d{2}</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/27/17085035e2da04f1?w=204&h=132&f=png&s=9229" alt=""></p>
+<p>上图含义为经过一次后还能再经过一次，即为两次</p>
+<p>{n,m} 出现n到m次</p>
+<p>\d{2,5}</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/27/1708503f1875c412?w=214&h=124&f=png&s=9965" alt=""></p>
+<p>{n,} 至少出现n次</p>
+<p>\d{2,}</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/27/17085043740665ed?w=215&h=116&f=png&s=9629" alt=""></p>
+<h1 id="贪婪模式"><a href="#贪婪模式" class="headerlink" title="贪婪模式"></a>贪婪模式</h1><p>正则表达式在可以匹配多个也可以匹配少个的情况下，会默认尽可能地匹配多个</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-string">'123456789'</span>.replace(<span class="hljs-regexp">/\d&#123;3,6&#125;/g</span>,<span class="hljs-string">'x'</span>)<br><span class="hljs-comment">// "xx"</span><br></code></pre></td></tr></table></figure>
+<p>上面代码中，既可以匹配三次，也可以匹配两次，最后匹配了两次（尽可能地匹配多个就导致了匹配次数的下降）</p>
+<h1 id="非贪婪模式"><a href="#非贪婪模式" class="headerlink" title="非贪婪模式"></a>非贪婪模式</h1><p>要尽可能匹配少个的话，只需要在两次后面加上?即可</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-string">'123456789'</span>.replace(<span class="hljs-regexp">/\d&#123;3,6&#125;?/g</span>,<span class="hljs-string">'x'</span>)<br><span class="hljs-comment">// "xxx"</span><br></code></pre></td></tr></table></figure>
+<h1 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h1><p>() 可用于实现分组</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">(<span class="hljs-number">123</span>)&#123;<span class="hljs-number">5</span>&#125;<br></code></pre></td></tr></table></figure>
+
+
+<p>| 用于实现或，即选取分组内的任一个</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-string">'abdacd'</span>.replace(<span class="hljs-regexp">/a(b|c)d/g</span>,<span class="hljs-string">'x'</span>)<br><span class="hljs-comment">// "xx"</span><br></code></pre></td></tr></table></figure>
+<p>$ 用于反向引用，引用分组的内容</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-string">'2019-02-22'</span>.replace(<span class="hljs-regexp">/(\d&#123;4&#125;)-(\d&#123;2&#125;)-(\d&#123;2&#125;)/</span>,<span class="hljs-string">'$2/$3/$1'</span>)<br><span class="hljs-comment">// "02/22/2019"</span><br></code></pre></td></tr></table></figure>
+<h1 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h1><p>g 全文搜索，添加后会一直匹配</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-string">'aa'</span>.replace(<span class="hljs-regexp">/a/</span>,<span class="hljs-string">'x'</span>);<br><span class="hljs-comment">// "xa"</span><br><span class="hljs-string">'aa'</span>.replace(<span class="hljs-regexp">/a/g</span>,<span class="hljs-string">'x'</span>);<br><span class="hljs-comment">// "xx"</span><br></code></pre></td></tr></table></figure>
+<p>i 忽略大小写，默认大小写敏感，添加忽略大小写</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-string">'A'</span>.replace(<span class="hljs-regexp">/a/</span>,<span class="hljs-string">'x'</span>);<br><span class="hljs-comment">// "A"</span><br><span class="hljs-string">'A'</span>.replace(<span class="hljs-regexp">/a/i</span>,<span class="hljs-string">'x'</span>);<br><span class="hljs-comment">// "x"</span><br></code></pre></td></tr></table></figure>
+<p>m 多行搜索</p>
+<p>当有多行时，添加能匹配多行</p>
+
+    </div>
+</article>
+            
+</main>
+                        
+                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#正则表达式的创建"><span class="toc-number">1.</span> <span class="toc-text">正则表达式的创建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#元字符"><span class="toc-number">2.</span> <span class="toc-text">元字符</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#与类有关的字符"><span class="toc-number">3.</span> <span class="toc-text">与类有关的字符</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#预定义字符"><span class="toc-number">4.</span> <span class="toc-text">预定义字符</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#边界匹配字符"><span class="toc-number">5.</span> <span class="toc-text">边界匹配字符</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#量词"><span class="toc-number">6.</span> <span class="toc-text">量词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#贪婪模式"><span class="toc-number">7.</span> <span class="toc-text">贪婪模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#非贪婪模式"><span class="toc-number">8.</span> <span class="toc-text">非贪婪模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#分组"><span class="toc-number">9.</span> <span class="toc-text">分组</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#修饰符"><span class="toc-number">10.</span> <span class="toc-text">修饰符</span></a></li></ol>
+    </div>
+</aside>
+                                
+            </div>
+            <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                
+                    <script src="/js/highlight.js"></script>
+                    <script>
+                        hljs.initHighlightingOnLoad();
+                    </script>
+                    
+                        
+                            <canvas id="myCanvas">
+                                    </canvas>
+                            <script src="/js/canvas.js"></script>
+                            
+                                <script src="/js/script.js"></script>
+    </body>
+
+</html>

@@ -20,7 +20,6 @@
         }
         requestAnimationFrame(function fn(){
             if(move()){
-                console.log(1)
                 requestAnimationFrame(fn)
             }   
         })

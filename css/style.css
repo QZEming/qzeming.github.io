@@ -327,6 +327,11 @@ ul {
 .spreadContainer #categoriesSpread {
   display: none;
 }
+.newPostContainer .article-tag-list-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .articleContainer {
   border-radius: 10px 0px 0px 0px;
   background-color: #fdfcf8;
