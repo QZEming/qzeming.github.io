@@ -21,25 +21,27 @@
                 </style>
                 
                     
-                        <style>
-                            #bgCanvas {
-                                background-color: #eee;
-                                z-index: -1;
-                                position: fixed;
-                                display: block;
-                                top: 0px;
-                                margin: 0 auto;
-                            }
                             
-                            body {
-                                background: transparent;
-                            }
-                        </style>
-                        
+                                <style>
+                                    #bgCanvas {
+                                        background-color: #eee;
+                                        z-index: -1;
+                                        position: fixed;
+                                        display: block;
+                                        top: 0px;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    body {
+                                        background: transparent;
+                                    }
+                                </style>
+                                
 
 <meta name="generator" content="Hexo 4.2.0"></head>
 
     <body>
+        <!-- 头部 -->
         <header id="header" class="header">
     <div class="avatarContainer">
         <h1 class="blogName">
@@ -49,15 +51,15 @@
     <nav class="topNav">
     
         <a href=/  class=>
-                    首页
+                    HOME
                 </a>
         
         <a href=/about  class=>
-                    关于
+                    ABOUT
                 </a>
         
         <a href=/archives  class=>
-                    归档
+                    ARCHIVE
                 </a>
         
         <a href=https://github.com/QZEming  class=>
@@ -71,8 +73,10 @@
             <img src="/img/assets/code.png" alt="avatar">
 </nav>
 </header>
-            <div class="mainContainer">
-                <aside class="aside">
+            <!-- 主要部分 -->
+            
+                                <div class="mainContainer">
+                                    <aside class="aside">
     <div class="info asideContainer">
     <div class="imgContainer">
         <img src=/img/assets/logo.png alt="作者头像">
@@ -100,7 +104,7 @@
 </div>
         <div class="tags asideContainer">
     <h3 class="asideTitle">
-        标签
+        Tags
     </h3>
     <div id="tagsContainer" class="asideContent shrinkContainer">
         
@@ -571,7 +575,7 @@
 </div>
                 <div class="asideContainer newPostContainer">
     <h3 class="asideTitle">
-        最新文章
+        new posts
     </h3>
     <div class="asideContent">
         
@@ -620,7 +624,7 @@
     </div>
 </div>
 </aside>
-                    <main class="main">
+                                        <main class="main">
     
         <article class="articleContainer">
     <h1 class="articleTitle">
@@ -645,35 +649,37 @@
 </article>
             
 </main>
-                        
-                            <aside class="articleDirectory">
+                                            
+                                                <aside class="articleDirectory">
     <h2 class="asideTitle">目录</h2>
     <div class="asideContainer">
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#对条件语句的优化"><span class="toc-number">1.</span> <span class="toc-text">对条件语句的优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#条件的顺序"><span class="toc-number">1.1.</span> <span class="toc-text">条件的顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#减少到达正确分支的条件数量"><span class="toc-number">1.2.</span> <span class="toc-text">减少到达正确分支的条件数量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用查找表"><span class="toc-number">1.3.</span> <span class="toc-text">使用查找表</span></a></li></ol></li></ol>
     </div>
 </aside>
+                                                    
+                                </div>
                                 
-            </div>
-            <footer class="footer">
+                                    <!-- 底部 -->
+                                    <footer class="footer">
     <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
 </footer>
-                <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
-                
-                    <script src="/js/highlight.js"></script>
-                    <script>
-                        hljs.initHighlightingOnLoad();
-                    </script>
-                    
-                        
-                            <canvas id="myCanvas">
+                                        <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                        
+                                            <script src="/js/highlight.js"></script>
+                                            <script>
+                                                hljs.initHighlightingOnLoad();
+                                            </script>
+                                            
+                                                
+                                                    <canvas id="myCanvas">
                                     </canvas>
-                            <script src="/js/canvas.js"></script>
-                            
-                                
-                                    <canvas id="bgCanvas"></canvas>
-                                    <script src="/js/bgCanvas.js"></script>
-                                    
-                                        <script src="/js/script.js"></script>
+                                                    <script src="/js/canvas.js"></script>
+                                                    
+                                                        
+                                                            <canvas id="bgCanvas"></canvas>
+                                                            <script src="/js/bgCanvas.js"></script>
+                                                            
+                                                                <script src="/js/script.js"></script>
     </body>
 
 </html>

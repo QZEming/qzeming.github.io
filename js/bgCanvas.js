@@ -390,7 +390,7 @@ window.onmousemove = function(e){
 
 var clearCanvas = function() {
 
-    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight)
+    canvas.width = window.innerWidth;
 
 
 };
