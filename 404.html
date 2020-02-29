@@ -624,53 +624,15 @@
     
         <article class="articleContainer">
     <h1 class="articleTitle">
-        <span>JavaScript设计模式笔记（二）策略模式</span>
+        <span>404</span>
     </h1>
     <div class="articleContent">
-        <h1 id="什么是策略模式"><a href="#什么是策略模式" class="headerlink" title="什么是策略模式"></a>什么是策略模式</h1><p>策略模式的定义为：</p>
-<blockquote>
-<p>定义一系列的算法，把它们一个个封装起来，并且使它们可以相互替换<br>—-《JavaScript设计模式与开发实践》</p>
-</blockquote>
-<a id="more"></a>
-<p>即是说，当一个对象要完成某件事，该对象有多个完成该事的方法，我们把这些方法都封装起来，该对象知道的只有在哪个情况下要使用其中的哪个方法，而并不知道该方法的具体实现。</p>
-<p>在策略模式中，我们需要有一方明确怎么实现各种方法，还要有一方判断要调用哪一个方法，我们将前者称作策略方，将后者称为调用方，假如现在我们有这样的需求，要给一个公司里面的员工发工资，员工分为a，b，c三个等级，每个等级的员工的工资不一样，现在我们要查询某个员工的工资。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> strategies = &#123; <span class="hljs-comment">// 策略方</span><br>    <span class="hljs-attr">a</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">10000</span><br>    &#125;,<br>    <span class="hljs-attr">b</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">8000</span><br>    &#125;,<br>    <span class="hljs-attr">c</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">5000</span><br>    &#125;<br>&#125;<br> <br><span class="hljs-keyword">var</span> calculateSalary = <span class="hljs-function">(<span class="hljs-params">name, rank</span>) =&gt;</span> &#123; <span class="hljs-comment">// 调用方</span><br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">$&#123;name&#125;</span>的工资是<span class="hljs-subst">$&#123;strategies[rank]()&#125;</span>`</span>)<br>&#125;<br> <br>calculateSalary(<span class="hljs-string">'jack'</span>, <span class="hljs-string">'a'</span>) <span class="hljs-comment">// jack的工资是10000</span><br>calculateSalary(<span class="hljs-string">'Mary'</span>, <span class="hljs-string">'b'</span>) <span class="hljs-comment">// Mary的工资是8000</span><br></code></pre></td></tr></table></figure>
-<p>策略方定下三种查工资的方式，然后在调用方调用其中的某一种方式，这就是策略模式。</p>
-<h2 id="策略模式的优点"><a href="#策略模式的优点" class="headerlink" title="策略模式的优点"></a>策略模式的优点</h2><ol>
-<li><p>减少了许多条件选择语句，直接使用属性来选择其中一种方式，这样的方式看起来也更加直观</p>
-</li>
-<li><p>将策略方/方法的实现和调用方/调用方法的选择很好地分开，当我们要修改其中一种方式时，只需修改策略方上的方法即可，调用方不用做任何修改，扩展方面也很方便，假如上面的需求中，突然多了一个职位“s”，工资不同于上面几种，这个时候我们只要在策略方中添加一个方法即可</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> strategies = &#123; <span class="hljs-comment">// 策略方</span><br>    <span class="hljs-attr">a</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">10000</span><br>    &#125;,<br>    <span class="hljs-attr">b</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">8000</span><br>    &#125;,<br>    <span class="hljs-attr">c</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">5000</span><br>    &#125;,<br>    <span class="hljs-attr">s</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">12000</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
-<li><p>策略方的方法可以在多个地方重复调用，减少了代码多次重复的复制粘贴</p>
-</li>
-</ol>
-<h2 id="策略模式的缺点"><a href="#策略模式的缺点" class="headerlink" title="策略模式的缺点"></a>策略模式的缺点</h2><ol>
-<li>污染命名空间</li>
-</ol>
-<p>如上的代码中在全局中定义了一个全局的对象用于表示策略方，这样的做法会使得该名字占用了一个变量名，如果在后面某个部分不小心使用了该变量名，那毫无疑问会引起许多报错</p>
-<ol start="2">
-<li>增加在作用域中的类或对象</li>
-</ol>
-<p>使用策略模式，我们要完成一个事情，必须至少增添一个类或对象，这样可能会在代码中创建过多的类，我们可以通过在全局中将所要用到的类/对象作为属性放在一个对象中，这样会尽可能地减少对象的创建</p>
-<ol start="3">
-<li>违反最少知识原则</li>
-</ol>
-<p>虽然计算方面的内容会由策略方来完成，但是选择的任务还是落在调用方上，因此调用方必须对策略方的方法有一定的了解，而这个是违反了最少知识原则</p>
-<hr>
-<p>参考自曾探的《JavaScript设计模式与开发实践》</p>
-
+        
     </div>
 </article>
             
 </main>
                         
-                            <aside class="articleDirectory">
-    <h2 class="asideTitle">目录</h2>
-    <div class="asideContainer">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什么是策略模式"><span class="toc-number">1.</span> <span class="toc-text">什么是策略模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#策略模式的优点"><span class="toc-number">1.1.</span> <span class="toc-text">策略模式的优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#策略模式的缺点"><span class="toc-number">1.2.</span> <span class="toc-text">策略模式的缺点</span></a></li></ol></li></ol>
-    </div>
-</aside>
-                                
             </div>
             <footer class="footer">
     <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>

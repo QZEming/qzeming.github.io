@@ -182,7 +182,7 @@ Eye.prototype.draw = function() {
 };
 
 function init() {
-	canvas = document.querySelector('canvas');
+	canvas = document.querySelector('#myCanvas');
 	ctx = canvas.getContext('2d');
 	mouseIdleMax = 100;
 	PI = Math.PI;
