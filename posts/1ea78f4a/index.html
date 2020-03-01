@@ -51,15 +51,15 @@
     <nav class="topNav">
     
         <a href=/  class=>
-                    首页
+                    HOME
                 </a>
         
         <a href=/about  class=>
-                    关于
+                    ABOUT
                 </a>
         
         <a href=/archives  class=>
-                    归档
+                    ARCHIVE
                 </a>
         
         <a href=https://github.com/QZEming  class=>
@@ -75,8 +75,8 @@
 </header>
             <!-- 主要部分 -->
             
-                                <div class="mainContainer">
-                                    <aside class="aside">
+                            <div class="mainContainer">
+                                <aside class="aside">
     <div class="info asideContainer">
     <div class="imgContainer">
         <img src=/img/assets/logo.png alt="作者头像">
@@ -104,7 +104,7 @@
 </div>
         <div class="tags asideContainer">
     <h3 class="asideTitle">
-        标签
+        Tags
     </h3>
     <div id="tagsContainer" class="asideContent shrinkContainer">
         
@@ -154,8 +154,8 @@
                                     
                         
                             <div class="article-tag-list-item">
-                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
-                            npm
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
                         </a>
                                 <span class="article-tag-list-count">1 </span>
                             </div>
@@ -164,8 +164,8 @@
                                     
                         
                             <div class="article-tag-list-item">
-                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
-                            css布局
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
                         </a>
                                 <span class="article-tag-list-count">1 </span>
                             </div>
@@ -254,15 +254,15 @@
                     </div>
                     
                     <div class="article-tag-list-item">
-                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
-                        npm
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
                     </a>
                         <span class="article-tag-list-count">1 </span>
                     </div>
                     
                     <div class="article-tag-list-item">
-                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
-                        css布局
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
                     </a>
                         <span class="article-tag-list-count">1 </span>
                     </div>
@@ -575,7 +575,7 @@
 </div>
                 <div class="asideContainer newPostContainer">
     <h3 class="asideTitle">
-        最新文章
+        new posts
     </h3>
     <div class="asideContent">
         
@@ -624,9 +624,9 @@
     </div>
 </div>
 </aside>
-                                        <main class="main">
+                                    <main class="main">
     
-        <article class="articleContainer">
+                <article class="articleContainer">
     <h1 class="articleTitle">
         <span>JavaScript防抖和节流</span>
     </h1>
@@ -645,39 +645,39 @@
 <h2 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br> <br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>节流<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br> <br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"norBtn"</span>&gt;</span>普通<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"refBtn"</span>&gt;</span>节流<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><br>        <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>            <span class="hljs-keyword">let</span> norBtn = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'norBtn'</span>);<br>            <span class="hljs-keyword">let</span> refBtn = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'refBtn'</span>);<br>            norBtn.addEventListener(<span class="hljs-string">'click'</span>, normal);<br>            refBtn.addEventListener(<span class="hljs-string">'click'</span>, reduceFlow(ref, <span class="hljs-number">1000</span>));<br>        &#125;<br> <br>        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reduceFlow</span>(<span class="hljs-params">fn, time</span>) </span>&#123;<br>            <span class="hljs-keyword">let</span> flag = <span class="hljs-literal">true</span>;<br>            <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">if</span> (flag) &#123;<br>                    flag = <span class="hljs-literal">false</span>;<br>                    setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123;<br>                        fn.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);<br>                        flag = <span class="hljs-literal">true</span>;<br>                    &#125;, time);<br>                &#125;<br>            &#125;<br>        &#125;<br> <br>        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">normal</span>(<span class="hljs-params"></span>) </span>&#123;<br>            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"normal"</span>);<br>        &#125;<br> <br>        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ref</span>(<span class="hljs-params"></span>) </span>&#123;<br>            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"ref"</span>);<br>        &#125;<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br> <br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
     </div>
 </article>
-            
+                    
 </main>
-                                            
-                                                <aside class="articleDirectory">
+                                        
+                                            <aside class="articleDirectory">
     <h2 class="asideTitle">目录</h2>
     <div class="asideContainer">
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#防抖"><span class="toc-number">1.</span> <span class="toc-text">防抖</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#理解概念"><span class="toc-number">1.1.</span> <span class="toc-text">理解概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例子"><span class="toc-number">1.2.</span> <span class="toc-text">例子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用"><span class="toc-number">1.3.</span> <span class="toc-text">应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#节流"><span class="toc-number">2.</span> <span class="toc-text">节流</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#理解概念-1"><span class="toc-number">2.1.</span> <span class="toc-text">理解概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例子-1"><span class="toc-number">2.2.</span> <span class="toc-text">例子</span></a></li></ol></li></ol>
     </div>
 </aside>
-                                                    
-                                </div>
-                                
-                                    <!-- 底部 -->
-                                    <footer class="footer">
+                                                
+                            </div>
+                            
+                                <!-- 底部 -->
+                                <footer class="footer">
     <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
 </footer>
-                                        <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    
+                                        <script src="/js/highlight.js"></script>
+                                        <script>
+                                            hljs.initHighlightingOnLoad();
+                                        </script>
                                         
-                                            <script src="/js/highlight.js"></script>
-                                            <script>
-                                                hljs.initHighlightingOnLoad();
-                                            </script>
                                             
-                                                
-                                                    <canvas id="myCanvas">
+                                                <canvas id="myCanvas">
                                     </canvas>
-                                                    <script src="/js/canvas.js"></script>
+                                                <script src="/js/canvas.js"></script>
+                                                
                                                     
+                                                        <canvas id="bgCanvas"></canvas>
+                                                        <script src="/js/bgCanvas.js"></script>
                                                         
-                                                            <canvas id="bgCanvas"></canvas>
-                                                            <script src="/js/bgCanvas.js"></script>
-                                                            
-                                                                <script src="/js/script.js"></script>
+                                                            <script src="/js/script.js"></script>
     </body>
 
 </html>

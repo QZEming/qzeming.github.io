@@ -51,15 +51,15 @@
     <nav class="topNav">
     
         <a href=/  class=>
-                    首页
+                    HOME
                 </a>
         
         <a href=/about  class=>
-                    关于
+                    ABOUT
                 </a>
         
         <a href=/archives  class=>
-                    归档
+                    ARCHIVE
                 </a>
         
         <a href=https://github.com/QZEming  class=>
@@ -75,8 +75,8 @@
 </header>
             <!-- 主要部分 -->
             
-                                <div class="mainContainer">
-                                    <aside class="aside">
+                            <div class="mainContainer">
+                                <aside class="aside">
     <div class="info asideContainer">
     <div class="imgContainer">
         <img src=/img/assets/logo.png alt="作者头像">
@@ -104,7 +104,7 @@
 </div>
         <div class="tags asideContainer">
     <h3 class="asideTitle">
-        标签
+        Tags
     </h3>
     <div id="tagsContainer" class="asideContent shrinkContainer">
         
@@ -154,8 +154,8 @@
                                     
                         
                             <div class="article-tag-list-item">
-                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
-                            npm
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
                         </a>
                                 <span class="article-tag-list-count">1 </span>
                             </div>
@@ -164,8 +164,8 @@
                                     
                         
                             <div class="article-tag-list-item">
-                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
-                            css布局
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
                         </a>
                                 <span class="article-tag-list-count">1 </span>
                             </div>
@@ -254,15 +254,15 @@
                     </div>
                     
                     <div class="article-tag-list-item">
-                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
-                        npm
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
                     </a>
                         <span class="article-tag-list-count">1 </span>
                     </div>
                     
                     <div class="article-tag-list-item">
-                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
-                        css布局
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
                     </a>
                         <span class="article-tag-list-count">1 </span>
                     </div>
@@ -575,7 +575,7 @@
 </div>
                 <div class="asideContainer newPostContainer">
     <h3 class="asideTitle">
-        最新文章
+        new posts
     </h3>
     <div class="asideContent">
         
@@ -624,9 +624,9 @@
     </div>
 </div>
 </aside>
-                                        <main class="main">
+                                    <main class="main">
     
-        <article class="articleContainer">
+                <article class="articleContainer">
     <h1 class="articleTitle">
         <span>typescript基础知识（四）接口</span>
     </h1>
@@ -657,39 +657,39 @@
 <figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">interface</span> Gen&#123;<br>    &lt;T&gt;(value:T):T;<br>&#125;<br> <br><span class="hljs-keyword">var</span> gen:Gen=<span class="hljs-function"><span class="hljs-keyword">function</span>&lt;<span class="hljs-title">T</span>&gt;(<span class="hljs-params">val:T</span>):<span class="hljs-title">T</span></span>&#123;<br>    <span class="hljs-keyword">return</span> val;<br>&#125;<br> <br>gen&lt;<span class="hljs-built_in">number</span>&gt;(<span class="hljs-number">2</span>);<br></code></pre></td></tr></table></figure>
     </div>
 </article>
-            
+                    
 </main>
-                                            
-                                                <aside class="articleDirectory">
+                                        
+                                            <aside class="articleDirectory">
     <h2 class="asideTitle">目录</h2>
     <div class="asideContainer">
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#属性接口"><span class="toc-number">1.</span> <span class="toc-text">属性接口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#可选属性接口"><span class="toc-number">2.</span> <span class="toc-text">可选属性接口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#函数接口"><span class="toc-number">3.</span> <span class="toc-text">函数接口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#可索引接口"><span class="toc-number">4.</span> <span class="toc-text">可索引接口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#类接口"><span class="toc-number">5.</span> <span class="toc-text">类接口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#接口间的继承"><span class="toc-number">6.</span> <span class="toc-text">接口间的继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#泛型接口"><span class="toc-number">7.</span> <span class="toc-text">泛型接口</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#泛型函数"><span class="toc-number">7.1.</span> <span class="toc-text">泛型函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#泛型类"><span class="toc-number">7.2.</span> <span class="toc-text">泛型类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#接口"><span class="toc-number">7.3.</span> <span class="toc-text">接口</span></a></li></ol></li></ol>
     </div>
 </aside>
-                                                    
-                                </div>
-                                
-                                    <!-- 底部 -->
-                                    <footer class="footer">
+                                                
+                            </div>
+                            
+                                <!-- 底部 -->
+                                <footer class="footer">
     <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
 </footer>
-                                        <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    
+                                        <script src="/js/highlight.js"></script>
+                                        <script>
+                                            hljs.initHighlightingOnLoad();
+                                        </script>
                                         
-                                            <script src="/js/highlight.js"></script>
-                                            <script>
-                                                hljs.initHighlightingOnLoad();
-                                            </script>
                                             
-                                                
-                                                    <canvas id="myCanvas">
+                                                <canvas id="myCanvas">
                                     </canvas>
-                                                    <script src="/js/canvas.js"></script>
+                                                <script src="/js/canvas.js"></script>
+                                                
                                                     
+                                                        <canvas id="bgCanvas"></canvas>
+                                                        <script src="/js/bgCanvas.js"></script>
                                                         
-                                                            <canvas id="bgCanvas"></canvas>
-                                                            <script src="/js/bgCanvas.js"></script>
-                                                            
-                                                                <script src="/js/script.js"></script>
+                                                            <script src="/js/script.js"></script>
     </body>
 
 </html>

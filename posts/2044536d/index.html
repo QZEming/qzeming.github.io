@@ -51,15 +51,15 @@
     <nav class="topNav">
     
         <a href=/  class=>
-                    首页
+                    HOME
                 </a>
         
         <a href=/about  class=>
-                    关于
+                    ABOUT
                 </a>
         
         <a href=/archives  class=>
-                    归档
+                    ARCHIVE
                 </a>
         
         <a href=https://github.com/QZEming  class=>
@@ -75,8 +75,8 @@
 </header>
             <!-- 主要部分 -->
             
-                                <div class="mainContainer">
-                                    <aside class="aside">
+                            <div class="mainContainer">
+                                <aside class="aside">
     <div class="info asideContainer">
     <div class="imgContainer">
         <img src=/img/assets/logo.png alt="作者头像">
@@ -104,7 +104,7 @@
 </div>
         <div class="tags asideContainer">
     <h3 class="asideTitle">
-        标签
+        Tags
     </h3>
     <div id="tagsContainer" class="asideContent shrinkContainer">
         
@@ -154,8 +154,8 @@
                                     
                         
                             <div class="article-tag-list-item">
-                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
-                            npm
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
                         </a>
                                 <span class="article-tag-list-count">1 </span>
                             </div>
@@ -164,8 +164,8 @@
                                     
                         
                             <div class="article-tag-list-item">
-                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
-                            css布局
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
                         </a>
                                 <span class="article-tag-list-count">1 </span>
                             </div>
@@ -254,15 +254,15 @@
                     </div>
                     
                     <div class="article-tag-list-item">
-                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
-                        npm
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
                     </a>
                         <span class="article-tag-list-count">1 </span>
                     </div>
                     
                     <div class="article-tag-list-item">
-                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
-                        css布局
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
                     </a>
                         <span class="article-tag-list-count">1 </span>
                     </div>
@@ -575,7 +575,7 @@
 </div>
                 <div class="asideContainer newPostContainer">
     <h3 class="asideTitle">
-        最新文章
+        new posts
     </h3>
     <div class="asideContent">
         
@@ -624,9 +624,9 @@
     </div>
 </div>
 </aside>
-                                        <main class="main">
+                                    <main class="main">
     
-        <article class="articleContainer">
+                <article class="articleContainer">
     <h1 class="articleTitle">
         <span>LeetCode42.接雨水Java实现</span>
     </h1>
@@ -640,39 +640,39 @@
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">trap</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] height)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> sum=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">int</span> maxLeft=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">int</span> maxRight=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">int</span> left=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">int</span> right=height.length-<span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">while</span>(left&lt;right)&#123;<br>            <span class="hljs-keyword">if</span>(height[left]&lt;=height[right])&#123;<br>                <span class="hljs-keyword">if</span>(height[left]&lt;maxLeft)&#123;<br>                    sum=sum+maxLeft-height[left];<br>                &#125;<span class="hljs-keyword">else</span>&#123;<br>                    maxLeft=height[left];<br>                &#125;<br>                left++;<br>            &#125;<span class="hljs-keyword">else</span>&#123;<br>                <span class="hljs-keyword">if</span>(height[right]&lt;maxRight)&#123;<br>                    sum=sum+maxRight-height[right];<br>                &#125;<span class="hljs-keyword">else</span>&#123;<br>                    maxRight=height[right];<br>                &#125;<br>                right--;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> sum;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
     </div>
 </article>
-            
+                    
 </main>
-                                            
-                                                <aside class="articleDirectory">
+                                        
+                                            <aside class="articleDirectory">
     <h2 class="asideTitle">目录</h2>
     <div class="asideContainer">
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#题目"><span class="toc-number">1.</span> <span class="toc-text">题目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#思路"><span class="toc-number">2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
     </div>
 </aside>
-                                                    
-                                </div>
-                                
-                                    <!-- 底部 -->
-                                    <footer class="footer">
+                                                
+                            </div>
+                            
+                                <!-- 底部 -->
+                                <footer class="footer">
     <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
 </footer>
-                                        <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    
+                                        <script src="/js/highlight.js"></script>
+                                        <script>
+                                            hljs.initHighlightingOnLoad();
+                                        </script>
                                         
-                                            <script src="/js/highlight.js"></script>
-                                            <script>
-                                                hljs.initHighlightingOnLoad();
-                                            </script>
                                             
-                                                
-                                                    <canvas id="myCanvas">
+                                                <canvas id="myCanvas">
                                     </canvas>
-                                                    <script src="/js/canvas.js"></script>
+                                                <script src="/js/canvas.js"></script>
+                                                
                                                     
+                                                        <canvas id="bgCanvas"></canvas>
+                                                        <script src="/js/bgCanvas.js"></script>
                                                         
-                                                            <canvas id="bgCanvas"></canvas>
-                                                            <script src="/js/bgCanvas.js"></script>
-                                                            
-                                                                <script src="/js/script.js"></script>
+                                                            <script src="/js/script.js"></script>
     </body>
 
 </html>

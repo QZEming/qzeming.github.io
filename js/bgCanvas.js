@@ -4,8 +4,8 @@ var requestAnimationFrame = window.requestAnimationFrame || function(callback) {
 };
 
 
-var canvas = document.getElementById("bgCanvas");
-var ctx = canvas.getContext("2d");
+var bgCanvas = document.getElementById("bgCanvas");
+var bgCtx = bgCanvas.getContext("2d");
 var maximumPossibleDistance;
 var centerX;
 var centerY;
@@ -20,13 +20,13 @@ var objects = [];
 var initAnimation = function(){
 
     
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    bgCanvas.width = window.innerWidth;
+    bgCanvas.height = window.innerHeight;
     
-    maximumPossibleDistance = Math.round(Math.sqrt((canvas.width * canvas.width) + (canvas.height * canvas.height)));  
+    maximumPossibleDistance = Math.round(Math.sqrt((bgCanvas.width * bgCanvas.width) + (bgCanvas.height * bgCanvas.height)));  
     
-    centerX = Math.floor(canvas.width / 2);
-    centerY = Math.floor(canvas.height / 2);
+    centerX = Math.floor(bgCanvas.width / 2);
+    centerY = Math.floor(bgCanvas.height / 2);
     
     objects.length = 0;
     clearCanvas();
@@ -254,11 +254,11 @@ Particle.prototype.testInteraction = function() {
 
     if (closestElement) {
 
-        ctx.beginPath();
-        ctx.moveTo(this.positionX + this.size / 2, this.positionY + this.size / 2);
-        ctx.lineTo(closestElement.positionX + closestElement.size * 0.5, closestElement.positionY + closestElement.size * 0.5);
-        ctx.strokeStyle = "rgba(" + options.connectionRed + ","+ options.connectionGreen +","+ options.connectionBlue +"," + options.connectionOpacity + ")";
-        ctx.stroke();
+        bgCtx.beginPath();
+        bgCtx.moveTo(this.positionX + this.size / 2, this.positionY + this.size / 2);
+        bgCtx.lineTo(closestElement.positionX + closestElement.size * 0.5, closestElement.positionY + closestElement.size * 0.5);
+        bgCtx.strokeStyle = "rgba(" + options.connectionRed + ","+ options.connectionGreen +","+ options.connectionBlue +"," + options.connectionOpacity + ")";
+        bgCtx.stroke();
         lines++
     }
 
@@ -293,11 +293,11 @@ MouseParticle.prototype.testInteraction = function() {
         if (options.drawMouseConnections) {
         
             var element = closestElements[x]
-            ctx.beginPath();
-            ctx.moveTo(this.positionX, this.positionY);
-            ctx.lineTo(element.positionX + element.size * 0.5, element.positionY + element.size * 0.5);
-            ctx.strokeStyle = "rgba(" + options.mouseConnectionRed + ","+ options.mouseConnectionGreen +","+ options.mouseConnectionBlue +"," + options.mouseConnectionOpacity + ")";
-            ctx.stroke();
+            bgCtx.beginPath();
+            bgCtx.moveTo(this.positionX, this.positionY);
+            bgCtx.lineTo(element.positionX + element.size * 0.5, element.positionY + element.size * 0.5);
+            bgCtx.strokeStyle = "rgba(" + options.mouseConnectionRed + ","+ options.mouseConnectionGreen +","+ options.mouseConnectionBlue +"," + options.mouseConnectionOpacity + ")";
+            bgCtx.stroke();
             lines++ 
         
         }
@@ -322,8 +322,8 @@ Particle.prototype.updateAnimation = function() {
 
     this.animateTo(this.vectorX, this.vectorY);
     this.testInteraction();
-    ctx.fillStyle = this.color;
-    ctx.fillRect(this.positionX, this.positionY, this.size, this.size);
+    bgCtx.fillStyle = this.color;
+    bgCtx.fillRect(this.positionX, this.positionY, this.size, this.size);
 
 };
 
@@ -380,17 +380,15 @@ var updatePosition = function() {
 
 };
 
-
-window.onmousemove = function(e){
-   
+addEventListener('mousemove',function(e){
+    mousemove&&mousemove(e)
     mousePositionX = e.clientX;
     mousePositionY = e.clientY;
-
-}
+})
 
 var clearCanvas = function() {
 
-    canvas.width = window.innerWidth;
+    bgCanvas.width = window.innerWidth;
 
 
 };
@@ -407,20 +405,20 @@ var stopAnimation = function(){
 // Init! //
 //-----------------------------------------------------
 
-var loop = function() {
+var bgLoop = function() {
 
     clearCanvas();
     updatePosition();
 
 
-    ctx.fillStyle = "#fff";
+    bgCtx.fillStyle = "#fff";
     lines = 0;
 
    
-    myAnimation = requestAnimationFrame(loop);
+    myAnimation = requestAnimationFrame(bgLoop);
     isRunning = true;
 
 };
 
 initAnimation();
-loop();
+bgLoop();

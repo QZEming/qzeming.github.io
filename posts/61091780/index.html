@@ -51,15 +51,15 @@
     <nav class="topNav">
     
         <a href=/  class=>
-                    首页
+                    HOME
                 </a>
         
         <a href=/about  class=>
-                    关于
+                    ABOUT
                 </a>
         
         <a href=/archives  class=>
-                    归档
+                    ARCHIVE
                 </a>
         
         <a href=https://github.com/QZEming  class=>
@@ -75,8 +75,8 @@
 </header>
             <!-- 主要部分 -->
             
-                                <div class="mainContainer">
-                                    <aside class="aside">
+                            <div class="mainContainer">
+                                <aside class="aside">
     <div class="info asideContainer">
     <div class="imgContainer">
         <img src=/img/assets/logo.png alt="作者头像">
@@ -104,7 +104,7 @@
 </div>
         <div class="tags asideContainer">
     <h3 class="asideTitle">
-        标签
+        Tags
     </h3>
     <div id="tagsContainer" class="asideContent shrinkContainer">
         
@@ -154,8 +154,8 @@
                                     
                         
                             <div class="article-tag-list-item">
-                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
-                            npm
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
                         </a>
                                 <span class="article-tag-list-count">1 </span>
                             </div>
@@ -164,8 +164,8 @@
                                     
                         
                             <div class="article-tag-list-item">
-                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
-                            css布局
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
                         </a>
                                 <span class="article-tag-list-count">1 </span>
                             </div>
@@ -254,15 +254,15 @@
                     </div>
                     
                     <div class="article-tag-list-item">
-                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
-                        npm
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
                     </a>
                         <span class="article-tag-list-count">1 </span>
                     </div>
                     
                     <div class="article-tag-list-item">
-                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
-                        css布局
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
                     </a>
                         <span class="article-tag-list-count">1 </span>
                     </div>
@@ -575,7 +575,7 @@
 </div>
                 <div class="asideContainer newPostContainer">
     <h3 class="asideTitle">
-        最新文章
+        new posts
     </h3>
     <div class="asideContent">
         
@@ -624,9 +624,9 @@
     </div>
 </div>
 </aside>
-                                        <main class="main">
+                                    <main class="main">
     
-        <article class="articleContainer">
+                <article class="articleContainer">
     <h1 class="articleTitle">
         <span>webpack学习笔记（二）loader--css的打包和注入html</span>
     </h1>
@@ -653,39 +653,39 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);<br> <br><span class="hljs-built_in">module</span>.exports = &#123;<br>    <span class="hljs-attr">entry</span>: <span class="hljs-string">"./src/index.js"</span>, <span class="hljs-comment">// 设置要打包的文件</span><br>    <span class="hljs-attr">output</span>: &#123;<br>        <span class="hljs-attr">filename</span>: <span class="hljs-string">'[name].js'</span>,<br>        <span class="hljs-attr">path</span>: path.resolve(__dirname, <span class="hljs-string">'dist'</span>)<br>    &#125;,<br>    <span class="hljs-attr">mode</span>: <span class="hljs-string">'development'</span>,<br>    <span class="hljs-attr">module</span>: &#123;<br>        <span class="hljs-attr">rules</span>: [&#123;<br>            <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.less$/</span>,<br>            <span class="hljs-attr">use</span>: [<span class="hljs-string">'style-loader'</span>, <span class="hljs-string">'css-loader'</span>, <span class="hljs-string">'less-loader'</span>]<br>        &#125;]<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
     </div>
 </article>
-            
+                    
 </main>
-                                            
-                                                <aside class="articleDirectory">
+                                        
+                                            <aside class="articleDirectory">
     <h2 class="asideTitle">目录</h2>
     <div class="asideContainer">
         
     </div>
 </aside>
-                                                    
-                                </div>
-                                
-                                    <!-- 底部 -->
-                                    <footer class="footer">
+                                                
+                            </div>
+                            
+                                <!-- 底部 -->
+                                <footer class="footer">
     <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
 </footer>
-                                        <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    
+                                        <script src="/js/highlight.js"></script>
+                                        <script>
+                                            hljs.initHighlightingOnLoad();
+                                        </script>
                                         
-                                            <script src="/js/highlight.js"></script>
-                                            <script>
-                                                hljs.initHighlightingOnLoad();
-                                            </script>
                                             
-                                                
-                                                    <canvas id="myCanvas">
+                                                <canvas id="myCanvas">
                                     </canvas>
-                                                    <script src="/js/canvas.js"></script>
+                                                <script src="/js/canvas.js"></script>
+                                                
                                                     
+                                                        <canvas id="bgCanvas"></canvas>
+                                                        <script src="/js/bgCanvas.js"></script>
                                                         
-                                                            <canvas id="bgCanvas"></canvas>
-                                                            <script src="/js/bgCanvas.js"></script>
-                                                            
-                                                                <script src="/js/script.js"></script>
+                                                            <script src="/js/script.js"></script>
     </body>
 
 </html>
