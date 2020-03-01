@@ -112,15 +112,75 @@
                                         </script>
                                         
                                             
-                                                <canvas id="myCanvas">
-                                    </canvas>
-                                                <script src="/js/canvas.js"></script>
                                                 
+                                                    <script>
+                                                        (function() {
+                                                            // 添加鼠标点击后随动画
+
+                                                            const clickColors = []
+                                                            const clickText = []
+                                                            
+                                                            clickColors.push("#FF0000")
+                                                            
+                                                            clickColors.push("#FF7F00")
+                                                            
+                                                            clickColors.push("#FFFF00 ")
+                                                            
+                                                            clickColors.push("#00FF00 ")
+                                                            
+                                                            clickColors.push("#00FFFF ")
+                                                            
+                                                            clickColors.push("#0000FF")
+                                                            
+                                                            clickColors.push("#8B00FF")
+                                                            
+                                                            
+                                                            clickText.push("html")
+                                                            
+                                                            clickText.push("css")
+                                                            
+                                                            clickText.push("javascript")
+                                                            
+                                                            clickText.push("vue")
+                                                            
+                                                            clickText.push("react")
+                                                            
+                                                            clickText.push("angular")
+                                                            
+                                                            clickText.push("jquery")
+                                                            
+
+                                                            function createClickEl(text) {
+                                                                let div = document.createElement("div")
+                                                                div.className = "floatText"
+                                                                div.innerText = text
+                                                                return div
+                                                            }
+                                                            window.addEventListener("click", function(e) {
+                                                                let rt = Math.floor(Math.random() * clickText.length)
+                                                                let el = createClickEl(clickText[rt])
+                                                                let rc = Math.floor(Math.random() * clickColors.length)
+                                                                el.style.left = e.pageX + "px"
+                                                                el.style.top = e.pageY + "px"
+                                                                el.style.color = clickColors[rc]
+                                                                document.querySelector('body').appendChild(el)
+                                                                setTimeout(() => {
+                                                                    document.querySelector('body').removeChild(el)
+                                                                }, 1000);
+                                                            })
+                                                        })()
+                                                    </script>
                                                     
-                                                        <canvas id="bgCanvas"></canvas>
-                                                        <script src="/js/bgCanvas.js"></script>
                                                         
-                                                            <script src="/js/script.js"></script>
+                                                            <canvas id="myCanvas">
+                                    </canvas>
+                                                            <script src="/js/canvas.js"></script>
+                                                            
+                                                                
+                                                                    <canvas id="bgCanvas"></canvas>
+                                                                    <script src="/js/bgCanvas.js"></script>
+                                                                    
+                                                                        <script src="/js/script.js"></script>
     </body>
 
 </html>

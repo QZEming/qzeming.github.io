@@ -275,11 +275,11 @@ ul {
 }
 .asideContent .article-tag-list {
   box-sizing: border-box;
-  padding: 10px;
 }
 .asideContent .article-tag-list .article-tag-list-item {
   display: flex;
   justify-content: space-between;
+  padding: 6px 10px;
 }
 .asideContent .article-tag-list .article-tag-list-item .article-tag-list-link {
   opacity: 0.8;
@@ -532,5 +532,23 @@ ul {
     right: -20px;
     opacity: 0;
     transform: rotate(360deg);
+  }
+}
+.floatText {
+  position: absolute;
+  animation: textFloat 2s 1 forwards;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@keyframes textFloat {
+  0% {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-60px);
+    opacity: 0.1;
   }
 }

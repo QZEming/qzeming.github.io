@@ -45,5 +45,4 @@
     categoriesPackUP&&categoriesPackUP.addEventListener("click",()=>{
         document.querySelector("#categoriesContaner").className = "asideContent shrinkContainer"
     })
-
 })()
