@@ -395,7 +395,6 @@ var clearCanvas = function() {
 
 var stopAnimation = function(){
 
-
   window.cancelAnimationFrame(myAnimation)
   isRunning = false;
 
@@ -410,11 +409,9 @@ var bgLoop = function() {
     clearCanvas();
     updatePosition();
 
-
     bgCtx.fillStyle = "#fff";
     lines = 0;
 
-   
     myAnimation = requestAnimationFrame(bgLoop);
     isRunning = true;
 
