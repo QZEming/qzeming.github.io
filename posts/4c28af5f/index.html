@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+            
+                <style>
+                    #myCanvas {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                </style>
+                
+                    
+                            
+                                <style>
+                                    #bgCanvas {
+                                        background-color: #eee;
+                                        z-index: -1;
+                                        position: fixed;
+                                        display: block;
+                                        top: 0px;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    body {
+                                        background: transparent;
+                                    }
+                                </style>
+                                
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <!-- 头部 -->
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    首页
+                </a>
+        
+        <a href=/about  class=>
+                    关于
+                </a>
+        
+        <a href=/archives  class=>
+                    归档
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="navBg">
+</nav>
+</header>
+            <!-- 主要部分 -->
+            
+                            <div class="mainContainer">
+                                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        标签
+    </h3>
+    <div id="tagsContainer" class="asideContent shrinkContainer">
+        
+
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">9 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                            css动画
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">9 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                        css动画
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                        ES6+
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript设计模式 data-text=JavaScript设计模式 >
+                        JavaScript设计模式
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/性能优化 data-text=性能优化 >
+                        性能优化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/leetcode data-text=leetcode >
+                        leetcode
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react学习笔记 data-text=react学习笔记 >
+                        react学习笔记
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/hexo data-text=hexo >
+                        hexo
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript模块化 data-text=JavaScript模块化 >
+                        JavaScript模块化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/axios data-text=axios >
+                        axios
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="tagsSpread">展开</span>
+                    <span id="tagsPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div id="categoriesContaner" class="asideContent shrinkContainer">
+        
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">30 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/css data-text=css >
+                            css
+                        </a>
+                                <span class="article-tag-list-count">2 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/算法 data-text=算法 >
+                            算法
+                        </a>
+                                <span class="article-tag-list-count">6 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">30 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/css data-text=css >
+                        css
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/算法 data-text=算法 >
+                        算法
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/框架 data-text=框架 >
+                        框架
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/性能检测与优化 data-text=性能检测与优化 >
+                        性能检测与优化
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="categoriesSpread">展开</span>
+                    <span id="categoriesPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+                <div class="asideContainer newPostContainer">
+    <h3 class="asideTitle">
+        最新文章
+    </h3>
+    <div class="asideContent">
+        
+            
+                
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/cd0c37cd/ class="article-tag-list-link">
+                        谈谈vue3.0要更新的内容相关笔记
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/fb11114e/ class="article-tag-list-link">
+                        减少回流重绘的方法及相关的性能测试结果分析
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/4c28af5f/ class="article-tag-list-link">
+                        个人博客搭建笔记----在自己的主题中添加自定义的404页面
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/a9492bb0/ class="article-tag-list-link">
+                        leetcode股票买卖问题js解法
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/7c5bc56b/ class="article-tag-list-link">
+                        javascript实现类
+                            </a>
+                        </div>
+                    </div>
+                    
+    </div>
+</div>
+</aside>
+                                    <main class="main">
+    
+                <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>个人博客搭建笔记----在自己的主题中添加自定义的404页面</span>
+    </h1>
+    <div class="articleContent">
+        <p>我们在网上经常可以看见一些自定义的404页面，虽然404是一件悲伤的事情，但是有好看的界面的话多少会开心一点，为了更好的用户体验，弄一个自定义的404页面是很必要的</p>
+<p>既然自定义的404页面这么重要，那自己定义的博客又怎么能少了呢</p>
+<p>我在自己的主题里面添加了自定义的404页面，如图所示（虽然也说不上好看，但至少比默认的好一些）<br><img src="https://img-blog.csdnimg.cn/20200301010541853.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3plbXByb2dyYW0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>（ps：我自己已经搭建了一个主题可以使用，在<a href="https://github.com/QZEming/hexo-theme-simp" target="_blank" rel="noopener">github</a>上有相关的使用指南，喜欢或者能够从中有所收获就帮忙点个star吧~，这也是我主题和博客继续更新的动力）</p>
+<p>那么接下来就进入本文的主题了，在hexo中，支持我们创建自己的page，并且会把page放到路由中，而404页面的创建，只需要在根目录的source文件夹下创建一个404.md文件，写入如下内容</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: 404<br>date: 2020-02-29 16:43:45<br>type: "404"<br><span class="hljs-section">layout: "404"<br>---</span><br></code></pre></td></tr></table></figure>
+<p>这样子就会有一个404的页面了，但是要具体404的实现，在本地是看不到的，要部署后才能看到，为了能在本地看到，我在根目录的文件夹下创建了404文件夹，并在里面新建了一个index.md，这里也可以直接使用<code>hexo new page 404</code>来创建</p>
+<p>在这个index.md里面，写入和上面一样的内容</p>
+<p>这样在本地输入<a href="http://localhost:4000/404/就可以看到404页面了" target="_blank" rel="noopener">http://localhost:4000/404/就可以看到404页面了</a></p>
+<p>接下来做一下自定义的内容，在我的主题中，我通过在layout中假如404.ejs，使用辅助函数is_page()和判断当前页面的标题即page.title是否为404（这里就是我们上面写的内容的title），如果是的话，就将404.ejs里面的内容引入，否则就是用别的内容</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">%</span> <span class="hljs-attr">if</span>(<span class="hljs-attr">is_page</span>()&amp;&amp;<span class="hljs-attr">page.title</span> == <span class="hljs-string">'404'</span>)&#123; %&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">%-</span> <span class="hljs-attr">partial</span>('<span class="hljs-attr">404.ejs</span>') %&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">%</span> &#125;<span class="hljs-attr">else</span>&#123; %&gt;</span><br>	<span class="hljs-comment">&lt;!-- ... --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">%</span> &#125; %&gt;</span><br></code></pre></td></tr></table></figure>
+<p>在404.ejs写入自定义的内容即可</p>
+
+    </div>
+</article>
+                    
+</main>
+                                        
+                                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        
+    </div>
+</aside>
+                                                
+                            </div>
+                            
+                                <!-- 底部 -->
+                                <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                                    <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    
+                                        <script src="/js/highlight.js"></script>
+                                        
+                                            <script>
+                                                
+                                                hljs.initHighlightingOnLoad();
+                                                
+                                                // 页面切换title改变 
+                                                
+                                                document.addEventListener('visibilitychange', function() {
+                                                    if (document.visibilityState == 'hidden') {
+                                                        document.querySelector("title").innerText = "页面要爆炸啦快回来！！！！！"
+                                                    } else {
+                                                        document.querySelector("title").innerText = "爆炸什么的当然是开玩笑的啦~"
+                                                    }
+                                                })
+                                                
+                                                // 复制到剪贴板时自动加出处
+                                                
+                                                window.addEventListener('copy', () => {
+                                                    let selection = window.getSelection()
+                                                    if (selection.toString().length >= 100) {
+                                                        const appendLink = `
+                                                        原文出自https://qzeming.github.io
+                                                        作者：前端小黑
+                                                        复制转载该文章内容请声明文章出处`
+                                                        if (window.clipboardData) { // Internet Explorer
+                                                            const copytext = selection.toString() + appendLink;
+                                                            window.clipboardData.setData("Text", copytext);
+                                                        } else {
+
+                                                            const copytext = selection.toString() + appendLink;
+                                                            var newdiv = document.createElement('div');
+                                                            newdiv.style.position = 'absolute';
+                                                            newdiv.style.left = '-99999px';
+                                                            document.body.appendChild(newdiv);
+                                                            newdiv.innerHTML = copytext;
+                                                            selection.selectAllChildren(newdiv);
+                                                            window.setTimeout(function() {
+                                                                document.body.removeChild(newdiv);
+                                                            }, 0);
+                                                        }
+                                                    }
+                                                })
+                                                
+                                            </script>
+                                            <!-- 鼠标点击字体浮现 -->
+                                            
+                                                
+                                                    <script>
+                                                        (function() {
+                                                            // 添加鼠标点击后随动画
+                                                            const clickColors = []
+                                                            const clickText = []
+                                                            
+                                                            clickColors.push("#FF0000")
+                                                            
+                                                            clickColors.push("#FF7F00")
+                                                            
+                                                            clickColors.push("#FFFF00 ")
+                                                            
+                                                            clickColors.push("#00FF00 ")
+                                                            
+                                                            clickColors.push("#00FFFF ")
+                                                            
+                                                            clickColors.push("#0000FF")
+                                                            
+                                                            clickColors.push("#8B00FF")
+                                                            
+                                                            
+                                                            clickText.push("html")
+                                                            
+                                                            clickText.push("css")
+                                                            
+                                                            clickText.push("javascript")
+                                                            
+                                                            clickText.push("vue")
+                                                            
+                                                            clickText.push("react")
+                                                            
+                                                            clickText.push("angular")
+                                                            
+                                                            clickText.push("jquery")
+                                                            
+
+                                                            function createClickEl(text) {
+                                                                let div = document.createElement("div")
+                                                                div.className = "floatText"
+                                                                div.innerText = text
+                                                                return div
+                                                            }
+                                                            window.addEventListener("click", function(e) {
+                                                                let rt = Math.floor(Math.random() * clickText.length)
+                                                                let el = createClickEl(clickText[rt])
+                                                                let rc = Math.floor(Math.random() * clickColors.length)
+                                                                el.style.left = e.pageX + "px"
+                                                                el.style.top = e.pageY + "px"
+                                                                el.style.color = clickColors[rc]
+                                                                document.querySelector('body').appendChild(el)
+                                                                setTimeout(() => {
+                                                                    document.querySelector('body').removeChild(el)
+                                                                }, 1000);
+                                                            })
+                                                        })()
+                                                    </script>
+                                                    
+                                                        
+                                                            <canvas id="myCanvas"></canvas>
+                                                            <script src="/js/canvas.js"></script>
+                                                            
+                                                                
+                                                                    <canvas id="bgCanvas"></canvas>
+                                                                    <script src="/js/bgCanvas.js"></script>
+                                                                    
+                                                                        <script src="/js/script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+            
+                <style>
+                    #myCanvas {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                </style>
+                
+                    
+                            
+                                <style>
+                                    #bgCanvas {
+                                        background-color: #eee;
+                                        z-index: -1;
+                                        position: fixed;
+                                        display: block;
+                                        top: 0px;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    body {
+                                        background: transparent;
+                                    }
+                                </style>
+                                
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <!-- 头部 -->
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    首页
+                </a>
+        
+        <a href=/about  class=>
+                    关于
+                </a>
+        
+        <a href=/archives  class=>
+                    归档
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="navBg">
+</nav>
+</header>
+            <!-- 主要部分 -->
+            
+                            <div class="mainContainer">
+                                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        标签
+    </h3>
+    <div id="tagsContainer" class="asideContent shrinkContainer">
+        
+
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">9 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                            css动画
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">9 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                        css动画
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                        ES6+
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript设计模式 data-text=JavaScript设计模式 >
+                        JavaScript设计模式
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/性能优化 data-text=性能优化 >
+                        性能优化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/leetcode data-text=leetcode >
+                        leetcode
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react学习笔记 data-text=react学习笔记 >
+                        react学习笔记
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/hexo data-text=hexo >
+                        hexo
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript模块化 data-text=JavaScript模块化 >
+                        JavaScript模块化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/axios data-text=axios >
+                        axios
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="tagsSpread">展开</span>
+                    <span id="tagsPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div id="categoriesContaner" class="asideContent shrinkContainer">
+        
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">30 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/css data-text=css >
+                            css
+                        </a>
+                                <span class="article-tag-list-count">2 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/算法 data-text=算法 >
+                            算法
+                        </a>
+                                <span class="article-tag-list-count">6 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">30 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/css data-text=css >
+                        css
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/算法 data-text=算法 >
+                        算法
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/框架 data-text=框架 >
+                        框架
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/性能检测与优化 data-text=性能检测与优化 >
+                        性能检测与优化
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="categoriesSpread">展开</span>
+                    <span id="categoriesPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+                <div class="asideContainer newPostContainer">
+    <h3 class="asideTitle">
+        最新文章
+    </h3>
+    <div class="asideContent">
+        
+            
+                
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/cd0c37cd/ class="article-tag-list-link">
+                        谈谈vue3.0要更新的内容相关笔记
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/fb11114e/ class="article-tag-list-link">
+                        减少回流重绘的方法及相关的性能测试结果分析
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/4c28af5f/ class="article-tag-list-link">
+                        个人博客搭建笔记----在自己的主题中添加自定义的404页面
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/a9492bb0/ class="article-tag-list-link">
+                        leetcode股票买卖问题js解法
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/7c5bc56b/ class="article-tag-list-link">
+                        javascript实现类
+                            </a>
+                        </div>
+                    </div>
+                    
+    </div>
+</div>
+</aside>
+                                    <main class="main">
+    
+                <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>减少回流重绘的方法及相关的性能测试结果分析</span>
+    </h1>
+    <div class="articleContent">
+        <p><strong>回流必将引起重绘，而重绘不一定引起回流</strong><br>我们经常会看到上面这句话，那么回流和重绘是什么呢</p>
+<h2 id="回流"><a href="#回流" class="headerlink" title="回流"></a>回流</h2><p>计算DOM节点在设备视口(viewport)内的确切位置和大小的过程，会在页面节点的几何属性或者布局发生变化时发生的</p>
+<h3 id="发生回流的情况"><a href="#发生回流的情况" class="headerlink" title="发生回流的情况"></a>发生回流的情况</h3><blockquote>
+<p>添加或删除可见的DOM元素<br>元素的位置发生变化<br>元素的尺寸发生变化（包括外边距、内边框、边框大小、高度和宽度等）<br>内容发生变化，比如文本变化或图片被另一个不同尺寸的图片所替代。<br>页面一开始渲染的时候（这肯定避免不了）<br>浏览器的窗口尺寸变化（因为回流是根据视口的大小来计算元素的位置和大小的）  </p>
+</blockquote>
+<h2 id="重绘"><a href="#重绘" class="headerlink" title="重绘"></a>重绘</h2><p>重绘的发生，是由于节点的几何属性发生改变或者由于样式发生改变但又不会影响布局的改变引起的,通过可见节点和具体样式信息，将渲染树的每个节点都转换为屏幕上的实际像素</p>
+<h3 id="发生重绘的情况"><a href="#发生重绘的情况" class="headerlink" title="发生重绘的情况"></a>发生重绘的情况</h3><p>发生回流的时候，也会发生重绘，所以上面的情况同样会触发重绘<br>我的理解是，只要页面内容发生变化，都会导致重绘的发生（如果不对请指正）</p>
+<h2 id="减少回流重绘方法和性能测试"><a href="#减少回流重绘方法和性能测试" class="headerlink" title="减少回流重绘方法和性能测试"></a>减少回流重绘方法和性能测试</h2><p>tip：在下面的性能测试中，我给出的图是某一次测试的，但实际上每种方法我都测试了很多次，每次都达到时间消耗变少的效果</p>
+<h3 id="1-对那些DOM元素的操作，不要逐一操作，而是将其一次性操作，直接使用class或者一次性写入多个style"><a href="#1-对那些DOM元素的操作，不要逐一操作，而是将其一次性操作，直接使用class或者一次性写入多个style" class="headerlink" title="1. 对那些DOM元素的操作，不要逐一操作，而是将其一次性操作，直接使用class或者一次性写入多个style"></a>1. 对那些DOM元素的操作，不要逐一操作，而是将其一次性操作，直接使用class或者一次性写入多个style</h3><p>测试demo</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"><br>            <span class="hljs-selector-class">.newClass</span>&#123;<br>                <span class="hljs-attribute">margin</span>:<span class="hljs-number">10px</span>;<br>                <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;<br>                <span class="hljs-attribute">color</span>:<span class="hljs-number">#f00</span>;<br>            &#125;<br>        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"oneByone()"</span>&gt;</span>一个个修改<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"byClass()"</span>&gt;</span>使用class修改<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>111<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>        <span class="hljs-comment">&lt;!-- 下面还有999个li标签 --&gt;</span><br>        <span class="hljs-comment">&lt;!-- ... --&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><br>            <span class="hljs-keyword">let</span> li = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">"li"</span>)<br><br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">oneByone</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; li.length; i++) &#123;<br>                    li[i].style.margin = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.fontSize = <span class="hljs-string">"20px"</span>;<br>                    li[i].style.color = <span class="hljs-string">"#f00"</span><br>                &#125;<br>            &#125;<br><br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">byClass</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; li.length; i++) &#123;<br>                    li[i].className = <span class="hljs-string">"newClass"</span><br>                &#125;<br>            &#125;<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>在这里，我通过点击两个按钮，使用performance监控，将监控图进行比较，这里主要会看的是Scripting和Rendering，即js执行和css解析，如图</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzQvMTcwYTRkMzMzMjg2NTc1MA?x-oss-process=image/format,png" alt=""></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzQvMTcwYTRkNDExNmVkMjczOA?x-oss-process=image/format,png" alt=""><br>可以看到，通过class来修改样式的时候，Scripting和Rendering都比一个一个修改消耗的时间少</p>
+<h3 id="2-对于一些样式的修改，尽量采用不会影响页面布局的修改"><a href="#2-对于一些样式的修改，尽量采用不会影响页面布局的修改" class="headerlink" title="2. 对于一些样式的修改，尽量采用不会影响页面布局的修改"></a>2. 对于一些样式的修改，尽量采用不会影响页面布局的修改</h3><p>比如display:none和visibility: hidden，在可能的情况下尽量使用visibility<br>测试demo</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"vi()"</span>&gt;</span>vBtn<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"di()"</span>&gt;</span>dBtn<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>        <span class="hljs-comment">&lt;!-- 下面还有999个li标签 --&gt;</span><br>        <span class="hljs-comment">&lt;!-- ... --&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><br>            <span class="hljs-keyword">let</span> li = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">"li"</span>)<br><br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">di</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; li.length; i++) &#123;<br>                    li[i].style.display = <span class="hljs-string">"none"</span><br>                &#125;<br>            &#125;<br><br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">vi</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; li.length; i++) &#123;<br>                    li[i].style.visibility = <span class="hljs-string">"hidden"</span><br>                &#125;<br>            &#125;<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>这里我同样使用performance来监控性能，按照我们上面的理论，使用display：none会引起回流，而使用visibility:hidden不会，所以我们重点看火焰图中的Rendering也就是紫色的部分</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzQvMTcwYTRjNDI0NmFlZWMyOQ?x-oss-process=image/format,png" alt=""></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzQvMTcwYTRjNWM0NzIwNTFmOQ?x-oss-process=image/format,png" alt=""></p>
+<p>显然可以看出，按下vBtn时消耗的时间是43ms，而按下dBtn消耗的时间是153ms，区别是很明显的</p>
+<h3 id="3-对那些需要多次修改的操作，可以先使DOM元素脱离文档流，然后对其进行多次修改，最后再将其放回到文档流中，这样只会引起两次回流"><a href="#3-对那些需要多次修改的操作，可以先使DOM元素脱离文档流，然后对其进行多次修改，最后再将其放回到文档流中，这样只会引起两次回流" class="headerlink" title="3. 对那些需要多次修改的操作，可以先使DOM元素脱离文档流，然后对其进行多次修改，最后再将其放回到文档流中，这样只会引起两次回流"></a>3. 对那些需要多次修改的操作，可以先使DOM元素脱离文档流，然后对其进行多次修改，最后再将其放回到文档流中，这样只会引起两次回流</h3><p>测试demo</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"inFloat()"</span>&gt;</span>直接修改<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"outOfFloat()"</span>&gt;</span>移出文档流<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>111<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>        <span class="hljs-comment">&lt;!-- 下面还有999个li标签 --&gt;</span><br>        <span class="hljs-comment">&lt;!-- ... --&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><br>            <span class="hljs-keyword">let</span> li = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">"li"</span>)<br><br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inFloat</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; li.length; i++) &#123;<br>                    li[i].style.margin = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.padding = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.border = <span class="hljs-string">"1px solid"</span>;<br>                    li[i].style.fontSize = <span class="hljs-string">"20px"</span>;<br>                &#125;<br>            &#125;<br><br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outOfFloat</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; li.length; i++) &#123;<br>                    li[i].style.display = <span class="hljs-string">"none"</span>;<br>                    li[i].style.margin = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.padding = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.border = <span class="hljs-string">"1px solid"</span>;<br>                    li[i].style.fontSize = <span class="hljs-string">"20px"</span>;<br>                    li[i].style.display = <span class="hljs-string">"list-item"</span>;<br>                &#125;<br>            &#125;<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzUvMTcwYTllNzgwNzk3MjBiMA?x-oss-process=image/format,png" alt=""></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzUvMTcwYTllODE4YTE4ZTBhNQ?x-oss-process=image/format,png" alt=""><br>如图，我们可以看到，脱离文档流后，Rendering的时间变少了，符合我们上面的理论，但是，可以看到Scripting那里，脱离文档流的时候，js执行的时间变长了，当然，这是因为我们为了让元素脱离文档流执行的操作导致的，我们可以进一步查看scripting的内容</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzUvMTcwYTllZDMwYzM2OTIwZg?x-oss-process=image/format,png" alt=""><br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzUvMTcwYTlmMDEwM2ZmOTNiNQ?x-oss-process=image/format,png" alt=""><br>如图可以直观地看到，outOfFloat方法的消耗比inFloat方法的消耗多，所以采取这种方法来减少回流和重绘性能消耗的时候，要考虑到回流和重绘减少的时间，是否会多于增加的js语句执行带来的消耗，这样才能真正地做到整体的性能优化</p>
+<h3 id="4-将会导致回流重绘的修改放在文档流比较后的位置"><a href="#4-将会导致回流重绘的修改放在文档流比较后的位置" class="headerlink" title="4. 将会导致回流重绘的修改放在文档流比较后的位置"></a>4. 将会导致回流重绘的修改放在文档流比较后的位置</h3><p>我们修改页面的元素后，如果文档流前面部分的布局修改了，可能会导致文档流后面的内容也要进行回流重绘，而如果这部分修改是放在后面的，那回流和重绘的消耗就会比较小了</p>
+<p>测试demo</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"front()"</span>&gt;</span>修改前面一半<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"behind()"</span>&gt;</span>修改后面一半<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>111<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>        <span class="hljs-comment">&lt;!-- 下面还有999个li标签 --&gt;</span><br>        <span class="hljs-comment">&lt;!-- ... --&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><br>            <span class="hljs-keyword">let</span> li = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">"li"</span>)<br><br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">front</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; li.length / <span class="hljs-number">2</span>; i++) &#123;<br>                    li[i].style.margin = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.padding = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.border = <span class="hljs-string">"1px solid"</span>;<br>                    li[i].style.fontSize = <span class="hljs-string">"20px"</span>;<br>                &#125;<br>            &#125;<br><br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">behind</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = li.length / <span class="hljs-number">2</span>; i &lt; li.length; i++) &#123;<br>                    li[i].style.margin = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.padding = <span class="hljs-string">"10px"</span>;<br>                    li[i].style.border = <span class="hljs-string">"1px solid"</span>;<br>                    li[i].style.fontSize = <span class="hljs-string">"20px"</span>;<br>                &#125;<br>            &#125;<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzUvMTcwYTlmZjE1YTFkNmRiOQ?x-oss-process=image/format,png" alt=""></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8zLzUvMTcwYTlmZjg5ZWRlMzI5Nw?x-oss-process=image/format,png" alt=""></p>
+<p>结果如图所示，将会导致回流和重绘的元素放在文档流后面，在css解析部分还是会消耗比较少的时间，虽然这里时间相差不多，但我多次测试时每次都是改变后面消耗会更少</p>
+
+    </div>
+</article>
+                    
+</main>
+                                        
+                                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#回流"><span class="toc-number">1.</span> <span class="toc-text">回流</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#发生回流的情况"><span class="toc-number">1.1.</span> <span class="toc-text">发生回流的情况</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重绘"><span class="toc-number">2.</span> <span class="toc-text">重绘</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#发生重绘的情况"><span class="toc-number">2.1.</span> <span class="toc-text">发生重绘的情况</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#减少回流重绘方法和性能测试"><span class="toc-number">3.</span> <span class="toc-text">减少回流重绘方法和性能测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-对那些DOM元素的操作，不要逐一操作，而是将其一次性操作，直接使用class或者一次性写入多个style"><span class="toc-number">3.1.</span> <span class="toc-text">1. 对那些DOM元素的操作，不要逐一操作，而是将其一次性操作，直接使用class或者一次性写入多个style</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-对于一些样式的修改，尽量采用不会影响页面布局的修改"><span class="toc-number">3.2.</span> <span class="toc-text">2. 对于一些样式的修改，尽量采用不会影响页面布局的修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-对那些需要多次修改的操作，可以先使DOM元素脱离文档流，然后对其进行多次修改，最后再将其放回到文档流中，这样只会引起两次回流"><span class="toc-number">3.3.</span> <span class="toc-text">3. 对那些需要多次修改的操作，可以先使DOM元素脱离文档流，然后对其进行多次修改，最后再将其放回到文档流中，这样只会引起两次回流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-将会导致回流重绘的修改放在文档流比较后的位置"><span class="toc-number">3.4.</span> <span class="toc-text">4. 将会导致回流重绘的修改放在文档流比较后的位置</span></a></li></ol></li></ol>
+    </div>
+</aside>
+                                                
+                            </div>
+                            
+                                <!-- 底部 -->
+                                <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                                    <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    
+                                        <script src="/js/highlight.js"></script>
+                                        
+                                            <script>
+                                                
+                                                hljs.initHighlightingOnLoad();
+                                                
+                                                // 页面切换title改变 
+                                                
+                                                document.addEventListener('visibilitychange', function() {
+                                                    if (document.visibilityState == 'hidden') {
+                                                        document.querySelector("title").innerText = "页面要爆炸啦快回来！！！！！"
+                                                    } else {
+                                                        document.querySelector("title").innerText = "爆炸什么的当然是开玩笑的啦~"
+                                                    }
+                                                })
+                                                
+                                                // 复制到剪贴板时自动加出处
+                                                
+                                                window.addEventListener('copy', () => {
+                                                    let selection = window.getSelection()
+                                                    if (selection.toString().length >= 100) {
+                                                        const appendLink = `
+                                                        原文出自https://qzeming.github.io
+                                                        作者：前端小黑
+                                                        复制转载该文章内容请声明文章出处`
+                                                        if (window.clipboardData) { // Internet Explorer
+                                                            const copytext = selection.toString() + appendLink;
+                                                            window.clipboardData.setData("Text", copytext);
+                                                        } else {
+
+                                                            const copytext = selection.toString() + appendLink;
+                                                            var newdiv = document.createElement('div');
+                                                            newdiv.style.position = 'absolute';
+                                                            newdiv.style.left = '-99999px';
+                                                            document.body.appendChild(newdiv);
+                                                            newdiv.innerHTML = copytext;
+                                                            selection.selectAllChildren(newdiv);
+                                                            window.setTimeout(function() {
+                                                                document.body.removeChild(newdiv);
+                                                            }, 0);
+                                                        }
+                                                    }
+                                                })
+                                                
+                                            </script>
+                                            <!-- 鼠标点击字体浮现 -->
+                                            
+                                                
+                                                    <script>
+                                                        (function() {
+                                                            // 添加鼠标点击后随动画
+                                                            const clickColors = []
+                                                            const clickText = []
+                                                            
+                                                            clickColors.push("#FF0000")
+                                                            
+                                                            clickColors.push("#FF7F00")
+                                                            
+                                                            clickColors.push("#FFFF00 ")
+                                                            
+                                                            clickColors.push("#00FF00 ")
+                                                            
+                                                            clickColors.push("#00FFFF ")
+                                                            
+                                                            clickColors.push("#0000FF")
+                                                            
+                                                            clickColors.push("#8B00FF")
+                                                            
+                                                            
+                                                            clickText.push("html")
+                                                            
+                                                            clickText.push("css")
+                                                            
+                                                            clickText.push("javascript")
+                                                            
+                                                            clickText.push("vue")
+                                                            
+                                                            clickText.push("react")
+                                                            
+                                                            clickText.push("angular")
+                                                            
+                                                            clickText.push("jquery")
+                                                            
+
+                                                            function createClickEl(text) {
+                                                                let div = document.createElement("div")
+                                                                div.className = "floatText"
+                                                                div.innerText = text
+                                                                return div
+                                                            }
+                                                            window.addEventListener("click", function(e) {
+                                                                let rt = Math.floor(Math.random() * clickText.length)
+                                                                let el = createClickEl(clickText[rt])
+                                                                let rc = Math.floor(Math.random() * clickColors.length)
+                                                                el.style.left = e.pageX + "px"
+                                                                el.style.top = e.pageY + "px"
+                                                                el.style.color = clickColors[rc]
+                                                                document.querySelector('body').appendChild(el)
+                                                                setTimeout(() => {
+                                                                    document.querySelector('body').removeChild(el)
+                                                                }, 1000);
+                                                            })
+                                                        })()
+                                                    </script>
+                                                    
+                                                        
+                                                            <canvas id="myCanvas"></canvas>
+                                                            <script src="/js/canvas.js"></script>
+                                                            
+                                                                
+                                                                    <canvas id="bgCanvas"></canvas>
+                                                                    <script src="/js/bgCanvas.js"></script>
+                                                                    
+                                                                        <script src="/js/script.js"></script>
+    </body>
+
+</html>

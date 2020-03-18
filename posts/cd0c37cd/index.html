@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/img/assets/favicon.ico">
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" href="/css/style.css">
+
+            <title>
+                前端小黑
+            </title>
+            
+                <style>
+                    #myCanvas {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                </style>
+                
+                    
+                            
+                                <style>
+                                    #bgCanvas {
+                                        background-color: #eee;
+                                        z-index: -1;
+                                        position: fixed;
+                                        display: block;
+                                        top: 0px;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    body {
+                                        background: transparent;
+                                    }
+                                </style>
+                                
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <!-- 头部 -->
+        <header id="header" class="header">
+    <div class="avatarContainer">
+        <h1 class="blogName">
+            前端小黑
+        </h1>
+    </div>
+    <nav class="topNav">
+    
+        <a href=/  class=>
+                    首页
+                </a>
+        
+        <a href=/about  class=>
+                    关于
+                </a>
+        
+        <a href=/archives  class=>
+                    归档
+                </a>
+        
+        <a href=https://github.com/QZEming  class=>
+                    GITHUB
+                </a>
+        
+        <a href=https://blog.csdn.net/zemprogram/  class=>
+                    CSDN
+                </a>
+        
+            <img src="/img/assets/code.png" alt="navBg">
+</nav>
+</header>
+            <!-- 主要部分 -->
+            
+                            <div class="mainContainer">
+                                <aside class="aside">
+    <div class="info asideContainer">
+    <div class="imgContainer">
+        <img src=/img/assets/logo.png alt="作者头像">
+    </div>
+    <div class="authorInfo">
+        <p class="authorName">
+            前端小黑
+        </p>
+        <p class="subtitle">
+            学习它不香吗
+        </p>
+        <p class="description">
+            想成为小黑的前端小白的博客
+        </p>
+        <p class="keywords">
+            
+                <span class="keyword">前端</span>
+                
+                <span class="keyword">算法</span>
+                
+                <span class="keyword">计算机网络</span>
+                
+        </p>
+    </div>
+</div>
+        <div class="tags asideContainer">
+    <h3 class="asideTitle">
+        标签
+    </h3>
+    <div id="tagsContainer" class="asideContent shrinkContainer">
+        
+
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">9 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                            css动画
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                            css布局
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">9 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css动画 data-text=css动画 >
+                        css动画
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/css布局 data-text=css布局 >
+                        css布局
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/ES6+ data-text=ES6+ >
+                        ES6+
+                    </a>
+                        <span class="article-tag-list-count">3 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript设计模式 data-text=JavaScript设计模式 >
+                        JavaScript设计模式
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/性能优化 data-text=性能优化 >
+                        性能优化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/leetcode data-text=leetcode >
+                        leetcode
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react学习笔记 data-text=react学习笔记 >
+                        react学习笔记
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/hexo data-text=hexo >
+                        hexo
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/JavaScript模块化 data-text=JavaScript模块化 >
+                        JavaScript模块化
+                    </a>
+                        <span class="article-tag-list-count">5 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/axios data-text=axios >
+                        axios
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/tags/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="tagsSpread">展开</span>
+                    <span id="tagsPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+            <div class="categories asideContainer">
+    <h3 class="asideTitle">
+        categories
+    </h3>
+    <div id="categoriesContaner" class="asideContent shrinkContainer">
+        
+            <div class="article-tag-list part-list">
+                
+                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                            JavaScript
+                        </a>
+                                <span class="article-tag-list-count">30 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/css data-text=css >
+                            css
+                        </a>
+                                <span class="article-tag-list-count">2 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                            wireshark
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                            npm
+                        </a>
+                                <span class="article-tag-list-count">1 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                            <div class="article-tag-list-item">
+                                <a class="article-tag-list-link" href=/categories/算法 data-text=算法 >
+                            算法
+                        </a>
+                                <span class="article-tag-list-count">6 </span>
+                            </div>
+                            
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+                        
+                                
+                                    
+            </div>
+
+            <div class="article-tag-list whole-list">
+                
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/JavaScript data-text=JavaScript >
+                        JavaScript
+                    </a>
+                        <span class="article-tag-list-count">30 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/css data-text=css >
+                        css
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/wireshark data-text=wireshark >
+                        wireshark
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/npm data-text=npm >
+                        npm
+                    </a>
+                        <span class="article-tag-list-count">1 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/算法 data-text=算法 >
+                        算法
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/node data-text=node >
+                        node
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/react data-text=react >
+                        react
+                    </a>
+                        <span class="article-tag-list-count">6 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/typescript data-text=typescript >
+                        typescript
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/vue data-text=vue >
+                        vue
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/框架 data-text=框架 >
+                        框架
+                    </a>
+                        <span class="article-tag-list-count">10 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/webpack data-text=webpack >
+                        webpack
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/前端工程化 data-text=前端工程化 >
+                        前端工程化
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/性能检测与优化 data-text=性能检测与优化 >
+                        性能检测与优化
+                    </a>
+                        <span class="article-tag-list-count">2 </span>
+                    </div>
+                    
+                    <div class="article-tag-list-item">
+                        <a class="article-tag-list-link" href=/categories/计算机网络 data-text=计算机网络 >
+                        计算机网络
+                    </a>
+                        <span class="article-tag-list-count">4 </span>
+                    </div>
+                    
+            </div>
+            
+                <p class="conHandle">
+                    <span id="categoriesSpread">展开</span>
+                    <span id="categoriesPackUP">收起</span>
+                </p>
+                
+                    
+    </div>
+</div>
+                <div class="asideContainer newPostContainer">
+    <h3 class="asideTitle">
+        最新文章
+    </h3>
+    <div class="asideContent">
+        
+            
+                
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/cd0c37cd/ class="article-tag-list-link">
+                        谈谈vue3.0要更新的内容相关笔记
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/fb11114e/ class="article-tag-list-link">
+                        减少回流重绘的方法及相关的性能测试结果分析
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/4c28af5f/ class="article-tag-list-link">
+                        个人博客搭建笔记----在自己的主题中添加自定义的404页面
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/a9492bb0/ class="article-tag-list-link">
+                        leetcode股票买卖问题js解法
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-tag-list">
+                        <div class="article-tag-list-item">
+                            <a href=/posts/7c5bc56b/ class="article-tag-list-link">
+                        javascript实现类
+                            </a>
+                        </div>
+                    </div>
+                    
+    </div>
+</div>
+</aside>
+                                    <main class="main">
+    
+                <article class="articleContainer">
+    <h1 class="articleTitle">
+        <span>谈谈vue3.0要更新的内容相关笔记</span>
+    </h1>
+    <div class="articleContent">
+        <p>从去年就一直说的沸沸扬扬的vue3.0发布，虽然到现在还没有正式发布的事件，但做为前端开发，我们还是要去了解的，那么vue3.0会更新什么内容呢，早在2018年11月尤大就在远程演讲中说到了，vue3.0会带来</p>
+<ul>
+<li>更<strong>快</strong></li>
+<li>更<strong>小</strong></li>
+<li>更<strong>易于维护</strong></li>
+<li>更好的<strong>多端渲染支持</strong></li>
+<li>新功能（新的API）</li>
+</ul>
+<p>下面就这些内容来说一下vue3.0的更新，这些内容基本上都是我在看了2018年和2019年的中国Vue conf视频后整理出来的，如果哪里写错了，请路过大佬帮忙指出，十分感谢<br>后续如果有其他的更新我也会回来更新这篇博客，那么开始今天的博客分享之旅</p>
+<h1 id="一、-更快"><a href="#一、-更快" class="headerlink" title="一、 更快"></a>一、 更快</h1><h2 id="1-基于模板编译和Vitrual-DOM性能方面的优化"><a href="#1-基于模板编译和Vitrual-DOM性能方面的优化" class="headerlink" title="1. 基于模板编译和Vitrual DOM性能方面的优化"></a>1. 基于模板编译和Vitrual DOM性能方面的优化</h2><p>使用typescript重写Virtual DOM</p>
+<p>我们知道，vue是使用Vitrual DOM内部渲染机制，在vue3.0中，Vitrual DOM进行了一次完全的重构，结合了模板编译等小技巧来提高性能，使得初始渲染的提速最高可以达到翻倍。  </p>
+<p>在之前的Vitrual DOM渲染机制中，即使是静态数据的内容节点，渲染机制仍然会重新生成这些节点，然而这实际上是不必要的，在vue2.x中，已经对这部分内容做了一定的优化，通过对模板的分析，对一些静态数据的内容不再重复生成，但还不够彻底，而在vue3.0中，对这些做了更多的优化</p>
+<p>在vue2.0中，对一个标签，无论是组件还是原生的标签，都会先以字符串的形式，传入到h这个函数中，h是用来生成虚拟node的函数，而判断一个标签是否为组件，实际上是在运行时判断的，这样就会导致在编译时会做重复的工作，而实际上，这个工作可以在编译的时候完成，如果我们知道它是一个原生的元素，那就生成相应的原生元素对应的Vitrual DOM的代码，同样的，如果判断为一个组件时，就生成组件的代码</p>
+<h3 id="1-一些底层的优化"><a href="#1-一些底层的优化" class="headerlink" title="(1)一些底层的优化"></a>(1)一些底层的优化</h3><p>此外，还有一些比较底层的优化，像比如</p>
+<ul>
+<li>在调用函数处理时，函数的参数尽可能一样多，这样有益于js引擎去做一些性能优化</li>
+<li>在模板中直接静态地分析一个元素所包含的子元素的类型，给运行时留下一些提示，这样可能会减少一些判断，举个例子，像下面的结构<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+div中只有一个span标签，在生成虚拟node的时候，标明其只有一个子元素，那么算法里面可以直接跳入只有一个元素的分支，这样就可以跳过很多的判断</li>
+</ul>
+<h3 id="2-优化slots生成"><a href="#2-优化slots生成" class="headerlink" title="(2)优化slots生成"></a>(2)优化slots生成</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">Comp</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>&#123;&#123; hello &#125;&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">Comp</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>在之前的vue2.0中，我们像上面这样给一个组件传入一个slot值，在这个值更新的时候，父子组件都会更新，即使在父组件其他位置没有用到这个值，而实际上我妈只是要更新这一个值而已</p>
+<p>在vue3.0的新编译机制中，把所有的slot统一编译一个函数，当我们要将一个slot传给子组件的时候，将这个函数传给子组件，而调用这个函数，是子组件的行为，所以这个“hello”的依赖，就成为了子组件的而不是父组件的，所以当hello变动时，我们只需要重新渲染子组件，而不必再去渲染父组件了</p>
+<h3 id="3-静态内容提取"><a href="#3-静态内容提取" class="headerlink" title="(3)静态内容提取"></a>(3)静态内容提取</h3><p>在vue2.0里面已经有做过了一些处理，如果检测到一部分模板不变，可以先提取出来，在之后的更新中，这一部分模板不仅可以直接使用原来的Vitrual DOM，甚至连整个比对过程都能直接跳过这整个树</p>
+<p>vue2.0没做到的是，只要一个元素里面任意深度包含着一个动态数据，那就无法将其静态化，但还是可以做一些优化的，像下面这个元素，虽然其内含有动态数据text，但是这个div的属性是静态的</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"foo"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bar"</span>&gt;</span><br>    &#123;&#123; text &#125;&#125;<br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>所以我们在比对时，就不需要再去比对这个元素了，可以跳过它，直接去比对它的children即可</p>
+<h3 id="4-内联事件函数提取"><a href="#4-内联事件函数提取" class="headerlink" title="(4)内联事件函数提取"></a>(4)内联事件函数提取</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">Comp</span> @<span class="hljs-attr">event</span>=<span class="hljs-string">"count++"</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>像上面的这个函数，在我们进行一个重渲染时，会重新去生成一个这样的函数，而因为新生成的函数和原来的函数肯定是不一样的，虽然它们做的事情是一样的，但JavaScript无法区分，所以为了安全起见，每次都会触发组件的重渲染</p>
+<p>通过一定程度的优化，每次生成这个函数时都会进行一个cache（缓存），每次都重用一个函数，就可以起到避免子组件无谓更新的一个效果</p>
+<h3 id="5-分区块对动态节点进行追踪"><a href="#5-分区块对动态节点进行追踪" class="headerlink" title="(5)分区块对动态节点进行追踪"></a>(5)分区块对动态节点进行追踪</h3><p>在过去的节点diff中，我们是针对一整个组件去做一个diff的，diff算法所消耗的时间，会受模板整体大小的影响，比如下面的内容</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"content"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>&gt;</span>Lorem ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>&gt;</span>Lorem ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>&gt;</span>Lorem ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>&gt;</span>Lorem ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>这样的结构，在之前的vue中，会是下面这样的diff</p>
+<ul>
+<li>Diff &lt;div&gt;<ul>
+<li>Diff props of &lt;div&gt;</li>
+<li>Diff children of &lt;div&gt;<ul>
+<li>Diff &lt;p&gt;<ul>
+<li>Diff props of &lt;p&gt;</li>
+<li>Diff children of &lt;p&gt;</li>
+</ul>
+</li>
+<li>Repeat n times…<br>而实际上，这里只有个message会发生改变，其他内容都是动态的，但是这里会因为这一个message发生改变，导致整个模板进行一次diff，这样就做了很多不必要的消耗了</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>所以在vue3.0中，将vdom更行性能由与模板整体大小相关提升为与动态内容的数量相关，做到以下几点</p>
+<ul>
+<li>将模板基于动态节点指令切割为嵌套的区块</li>
+<li>每个区块内部的节点结构是固定的</li>
+<li>每个区块只需要以一个Array追踪自身包含的动态节点<br>这样子，当一个数据发生改变时，我们只需要去diff它所在的那个最小区块即可，所以上面的代码结构在vue3.0之后，diff会是</li>
+<li>Diff &lt;p&gt; textContent</li>
+</ul>
+<p>这个区块的大小，甚至可以小到class的名字，因为实际上为了改变样式，更改className是非常常用的，所以如果className是动态内容，那么会将其划分为一个单独的区块，在进行diff算法时直接设置一个className即可，这样又对性能做到了很高的优化</p>
+<p>这种优化甚至快了6倍（在2019Vue conf上做的一个测试做到了36ms-&gt;6ms）</p>
+<h2 id="2-基于proxy的新数据监听系统"><a href="#2-基于proxy的新数据监听系统" class="headerlink" title="2. 基于proxy的新数据监听系统"></a>2. 基于proxy的新数据监听系统</h2><p>vue2使用的是Object.defineProperty的set/get</p>
+<ul>
+<li><p>对象属性增添/删除</p>
+</li>
+<li><p>数组index/length更改</p>
+</li>
+<li><p>Map,Set,WeakMap,WeakSet</p>
+</li>
+<li><p>Classes</p>
+</li>
+</ul>
+<p>事实上基于proy的监听，是所谓的lazy by default，只有当一个数据被使用到的时候，我们才会真正地去监听这个数据，所以对于一个大规模数据的监听，在之前使用Object.defineProperty的监听中，我们对一个数据监听，不管这个数据是否使用到，都会对其进行监听</p>
+<p>利用proxy减少组件实例初始化开销</p>
+<p>每个vue组件都会代理它所包含的所有data,computed以及props，而这些代理都是通过Object.defineProperty实现的</p>
+<p>在实际的实例化中，大量的Object.defineProperty实际上是一个昂贵的操作，而在vue3.0中，暴露给用户的this，实际上是真正组件实例的一个Proxy，所以我们实际上是在一个Proxy上获取数据，而在这个Proxy上获取数据时，我们再做一些内部的判断，这样就彻底避免了Object.defineProperty的使用</p>
+<h1 id="二、更小"><a href="#二、更小" class="headerlink" title="二、更小"></a>二、更小</h1><ol>
+<li>让代码结构和tree-shaking配合起来</li>
+</ol>
+<ul>
+<li>内置组件（keep-alive，transition…）</li>
+<li>指令的运行时helper（v-model，v-for…）</li>
+<li>各种工具函数（asyncComponent，mixins…）</li>
+</ul>
+<p>之前Vue的整个代码都是直接将整个Vue对象放进来，所以一些没用到的东西，也无法通过tree-shaking将其扔掉，所以这样就会造成即使Vue里面的一些功能我们没有用到，我们还是会将其放入到项目中，这就造成了不必要的内存消耗（即使这部分内容不大）</p>
+<p>而在Vue3.0中，采取了ES module imports按需引入的方式。通过这种做法，如果我们没有用到一些内置组件时，在编译时就不会去加载这些内容。所以如果我们只用到所有Vue应用都会用到的一些核心功能，那我们就只会加载相应的这些核心功能相关的代码，而这一部分代码在所有无关的东西都使用tree-shaking处理后，只有大概在10kb左右</p>
+<h1 id="三、更易于维护"><a href="#三、更易于维护" class="headerlink" title="三、更易于维护"></a>三、更易于维护</h1><h2 id="vue3-0从Flow迁移到TypeScript，使用TypeScript重写了"><a href="#vue3-0从Flow迁移到TypeScript，使用TypeScript重写了" class="headerlink" title="vue3.0从Flow迁移到TypeScript，使用TypeScript重写了"></a>vue3.0从Flow迁移到TypeScript，使用TypeScript重写了</h2><h2 id="内部模块解耦"><a href="#内部模块解耦" class="headerlink" title="内部模块解耦"></a>内部模块解耦</h2><p>降低源码阅读的难度</p>
+<h2 id="编译器重构"><a href="#编译器重构" class="headerlink" title="编译器重构"></a>编译器重构</h2><ul>
+<li>插件化设计</li>
+<li>带位置信息的parser（source maps）</li>
+<li>为更好的IDE工具链铺路</li>
+</ul>
+<h1 id="四、更好的多端渲染支持"><a href="#四、更好的多端渲染支持" class="headerlink" title="四、更好的多端渲染支持"></a>四、更好的多端渲染支持</h1><p>vue2中需要自己去fork源码</p>
+<p>vue3.0引入一个Custom Render API</p>
+<h1 id="五、新功能（新API）"><a href="#五、新功能（新API）" class="headerlink" title="五、新功能（新API）"></a>五、新功能（新API）</h1><h2 id="响应式数据监听API"><a href="#响应式数据监听API" class="headerlink" title="响应式数据监听API"></a>响应式数据监听API</h2><p>之前没有显式地将Vue的响应式功能暴露出来，而在vue3.0中可以通过import引入两个函数使用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123; observable , effect &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span><br><br><span class="hljs-keyword">const</span> state = observable(&#123;<br>    <span class="hljs-attr">count</span>: <span class="hljs-number">0</span><br>&#125;)<br><br>effect(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`count is : <span class="hljs-subst">$&#123;state.count&#125;</span>`</span>)<br>&#125;) <span class="hljs-comment">// count is : 0</span><br><br>state.count++ <span class="hljs-comment">// count is : 1</span><br></code></pre></td></tr></table></figure>
+<p>上面引入了observable和effect，observable可以用来创建一个显式的响应式的对象，在effect中依赖的数据，就会被注册依赖，在之后当这个对象被改动到的时候，effect就会重新执行一遍</p>
+<p>暴露这个API的主要目的，是为了轻松地实现跨组件的状态共享</p>
+<h2 id="轻松排查组件更新的触发原因"><a href="#轻松排查组件更新的触发原因" class="headerlink" title="轻松排查组件更新的触发原因"></a>轻松排查组件更新的触发原因</h2><p>提供了renderTriggered API，每一次这个组件触发了更新的时候，可以在这个API中放入一个debugger，如下代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> Comp = &#123;<br>    render(props)&#123;<br>        <span class="hljs-keyword">return</span> h(<span class="hljs-string">'div'</span>,props.count)<br>    &#125;,<br>    renderTriggered(event)&#123;<br>        <span class="hljs-keyword">debugger</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>我们就可以在浏览器中直接地看到究竟是哪一行触发这个更新，同时event还会提供更具体的更新，包括了触发更新的对象，更新前的值和更新后的值，以及这个对象中被改动的属性，触发更新的操作是什么（比如set）</p>
+<h2 id="更好的typescript支持"><a href="#更好的typescript支持" class="headerlink" title="更好的typescript支持"></a>更好的typescript支持</h2><p>使用了原生的classAPI，不再需要去依赖Vue Class Component这个库了(现在已经被撤销了)</p>
+<p>采用了Function-based API</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript">const App = &#123;<br>    setup()&#123;<br>        const count = value(0)<br>        const plusOne = computed(() =&gt; count.value+1)<br>        const increment = () =&gt; &#123; count.value++ &#125;<br>        watch(() =&gt; console.log('mounted!))<br>        // 暴露给模板或渲染函数<br>        return &#123; count &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>对比于Class API</p>
+<ul>
+<li>更好的TypeScript类型推导支持<br>TypeScript对函数的参数和返回的内容类型支持是很好的，使用这个API，js和ts写出来是一模一样的，而且会给出类型补全</li>
+<li>更灵活的逻辑复用能力<br>使用这个API可以做到<ul>
+<li>没有命名空间冲突<br>  我们将逻辑写在一个函数中，返回时可以使用解构赋值的方式获取里面的值，这样也能重写变量名，不会造成命名空间冲突</li>
+<li>数据来源清晰<br>  数据可以清晰地从这个函数中获得</li>
+<li>没有额外的组件性能消耗<br>  相对于之前版本需要使用Mixins，高阶组件，slot这些方法，使用这个API只需要去写一个函数即可</li>
+</ul>
+</li>
+<li>Tree-shaking友好<br>这里面的方法都是使用import引入的，即按需引入，如果我们不引入的话，就会被tree-shaking丢掉</li>
+<li>代码更容易被压缩<br>在代码压缩的时候，一个函数内部的一些变量或者函数名会被压缩成一个字母，但是出于安全考虑，对象的属性是不会被压缩的，所以在代码压缩的时候就更容易了</li>
+</ul>
+<p>对比React Hooks</p>
+<ul>
+<li>同样的逻辑组合、复用能力</li>
+<li>只调用一次<ul>
+<li>符合js直觉</li>
+<li>没有闭包变量问题</li>
+<li>没有内存/GC压力</li>
+<li>不存在内联回调导致子组件永远更新的问题</li>
+</ul>
+</li>
+</ul>
+<p>支持TSX</p>
+<h2 id="更好的警告信息"><a href="#更好的警告信息" class="headerlink" title="更好的警告信息"></a>更好的警告信息</h2><ul>
+<li>组件堆栈包含函数式组件</li>
+<li>可以直接在警告信息中查看组件的props</li>
+<li>在更多的警告中提供组件堆栈信息</li>
+</ul>
+<h2 id="Experimental-Time-Slicing-Support"><a href="#Experimental-Time-Slicing-Support" class="headerlink" title="(Experimental)Time Slicing Support"></a>(Experimental)Time Slicing Support</h2><p>开启这个API会将JavaScript的操作切成一部分一部分，每执行一段时间，就会将主线程还给浏览器，让浏览器得以去监听用户事件并做出相应</p>
+<p>在2019年的中国vue conf中，尤大提到了如果做的够快，可以缓解对时间分片的需求，所以这个功能最后是否会在vue3.0里出现，现在我也不清楚</p>
+<h2 id="关于IE的降级"><a href="#关于IE的降级" class="headerlink" title="关于IE的降级"></a>关于IE的降级</h2><p>在IE11中自动降级为旧的getter/setter机制，并对一些不支持的语法给予警告</p>
+
+    </div>
+</article>
+                    
+</main>
+                                        
+                                            <aside class="articleDirectory">
+    <h2 class="asideTitle">目录</h2>
+    <div class="asideContainer">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、-更快"><span class="toc-number">1.</span> <span class="toc-text">一、 更快</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-基于模板编译和Vitrual-DOM性能方面的优化"><span class="toc-number">1.1.</span> <span class="toc-text">1. 基于模板编译和Vitrual DOM性能方面的优化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-一些底层的优化"><span class="toc-number">1.1.1.</span> <span class="toc-text">(1)一些底层的优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-优化slots生成"><span class="toc-number">1.1.2.</span> <span class="toc-text">(2)优化slots生成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-静态内容提取"><span class="toc-number">1.1.3.</span> <span class="toc-text">(3)静态内容提取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-内联事件函数提取"><span class="toc-number">1.1.4.</span> <span class="toc-text">(4)内联事件函数提取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-分区块对动态节点进行追踪"><span class="toc-number">1.1.5.</span> <span class="toc-text">(5)分区块对动态节点进行追踪</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-基于proxy的新数据监听系统"><span class="toc-number">1.2.</span> <span class="toc-text">2. 基于proxy的新数据监听系统</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、更小"><span class="toc-number">2.</span> <span class="toc-text">二、更小</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、更易于维护"><span class="toc-number">3.</span> <span class="toc-text">三、更易于维护</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#vue3-0从Flow迁移到TypeScript，使用TypeScript重写了"><span class="toc-number">3.1.</span> <span class="toc-text">vue3.0从Flow迁移到TypeScript，使用TypeScript重写了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#内部模块解耦"><span class="toc-number">3.2.</span> <span class="toc-text">内部模块解耦</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编译器重构"><span class="toc-number">3.3.</span> <span class="toc-text">编译器重构</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、更好的多端渲染支持"><span class="toc-number">4.</span> <span class="toc-text">四、更好的多端渲染支持</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、新功能（新API）"><span class="toc-number">5.</span> <span class="toc-text">五、新功能（新API）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#响应式数据监听API"><span class="toc-number">5.1.</span> <span class="toc-text">响应式数据监听API</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#轻松排查组件更新的触发原因"><span class="toc-number">5.2.</span> <span class="toc-text">轻松排查组件更新的触发原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更好的typescript支持"><span class="toc-number">5.3.</span> <span class="toc-text">更好的typescript支持</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更好的警告信息"><span class="toc-number">5.4.</span> <span class="toc-text">更好的警告信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Experimental-Time-Slicing-Support"><span class="toc-number">5.5.</span> <span class="toc-text">(Experimental)Time Slicing Support</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于IE的降级"><span class="toc-number">5.6.</span> <span class="toc-text">关于IE的降级</span></a></li></ol></li></ol>
+    </div>
+</aside>
+                                                
+                            </div>
+                            
+                                <!-- 底部 -->
+                                <footer class="footer">
+    <p>Site by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a> | theme <a>simp</a></p>
+</footer>
+                                    <div class="backTop icon-arrow-up hideBtn" id="backTop"></div>
+                                    
+                                        <script src="/js/highlight.js"></script>
+                                        
+                                            <script>
+                                                
+                                                hljs.initHighlightingOnLoad();
+                                                
+                                                // 页面切换title改变 
+                                                
+                                                document.addEventListener('visibilitychange', function() {
+                                                    if (document.visibilityState == 'hidden') {
+                                                        document.querySelector("title").innerText = "页面要爆炸啦快回来！！！！！"
+                                                    } else {
+                                                        document.querySelector("title").innerText = "爆炸什么的当然是开玩笑的啦~"
+                                                    }
+                                                })
+                                                
+                                                // 复制到剪贴板时自动加出处
+                                                
+                                                window.addEventListener('copy', () => {
+                                                    let selection = window.getSelection()
+                                                    if (selection.toString().length >= 100) {
+                                                        const appendLink = `
+                                                        原文出自https://qzeming.github.io
+                                                        作者：前端小黑
+                                                        复制转载该文章内容请声明文章出处`
+                                                        if (window.clipboardData) { // Internet Explorer
+                                                            const copytext = selection.toString() + appendLink;
+                                                            window.clipboardData.setData("Text", copytext);
+                                                        } else {
+
+                                                            const copytext = selection.toString() + appendLink;
+                                                            var newdiv = document.createElement('div');
+                                                            newdiv.style.position = 'absolute';
+                                                            newdiv.style.left = '-99999px';
+                                                            document.body.appendChild(newdiv);
+                                                            newdiv.innerHTML = copytext;
+                                                            selection.selectAllChildren(newdiv);
+                                                            window.setTimeout(function() {
+                                                                document.body.removeChild(newdiv);
+                                                            }, 0);
+                                                        }
+                                                    }
+                                                })
+                                                
+                                            </script>
+                                            <!-- 鼠标点击字体浮现 -->
+                                            
+                                                
+                                                    <script>
+                                                        (function() {
+                                                            // 添加鼠标点击后随动画
+                                                            const clickColors = []
+                                                            const clickText = []
+                                                            
+                                                            clickColors.push("#FF0000")
+                                                            
+                                                            clickColors.push("#FF7F00")
+                                                            
+                                                            clickColors.push("#FFFF00 ")
+                                                            
+                                                            clickColors.push("#00FF00 ")
+                                                            
+                                                            clickColors.push("#00FFFF ")
+                                                            
+                                                            clickColors.push("#0000FF")
+                                                            
+                                                            clickColors.push("#8B00FF")
+                                                            
+                                                            
+                                                            clickText.push("html")
+                                                            
+                                                            clickText.push("css")
+                                                            
+                                                            clickText.push("javascript")
+                                                            
+                                                            clickText.push("vue")
+                                                            
+                                                            clickText.push("react")
+                                                            
+                                                            clickText.push("angular")
+                                                            
+                                                            clickText.push("jquery")
+                                                            
+
+                                                            function createClickEl(text) {
+                                                                let div = document.createElement("div")
+                                                                div.className = "floatText"
+                                                                div.innerText = text
+                                                                return div
+                                                            }
+                                                            window.addEventListener("click", function(e) {
+                                                                let rt = Math.floor(Math.random() * clickText.length)
+                                                                let el = createClickEl(clickText[rt])
+                                                                let rc = Math.floor(Math.random() * clickColors.length)
+                                                                el.style.left = e.pageX + "px"
+                                                                el.style.top = e.pageY + "px"
+                                                                el.style.color = clickColors[rc]
+                                                                document.querySelector('body').appendChild(el)
+                                                                setTimeout(() => {
+                                                                    document.querySelector('body').removeChild(el)
+                                                                }, 1000);
+                                                            })
+                                                        })()
+                                                    </script>
+                                                    
+                                                        
+                                                            <canvas id="myCanvas"></canvas>
+                                                            <script src="/js/canvas.js"></script>
+                                                            
+                                                                
+                                                                    <canvas id="bgCanvas"></canvas>
+                                                                    <script src="/js/bgCanvas.js"></script>
+                                                                    
+                                                                        <script src="/js/script.js"></script>
+    </body>
+
+</html>
