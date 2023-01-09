@@ -1,42 +1,42 @@
 // JavaScript Document
-var requestAnimationFrame = window.requestAnimationFrame || function(callback) {
+var requestAnimationFrame = window.requestAnimationFrame || function (callback) {
     window.setTimeout(callback, 1000 / 60)
 };
 
 
-var bgCanvas = document.getElementById("bgCanvas");
-var bgCtx = bgCanvas.getContext("2d");
-var maximumPossibleDistance;
-var centerX;
-var centerY;
-var mousePositionX;
-var mousePositionY;
-var mouseElement;
-var isRunning;
+const bgCanvas = document.getElementById("bgCanvas");
+const bgCtx = bgCanvas.getContext("2d");
+let maximumPossibleDistance;
+let centerX;
+let centerY;
+let mousePositionX;
+let mousePositionY;
+let mouseElement;
+let isRunning;
 
-var lines = 0;
-var objects = [];
+let lines = 0;
+let objects = [];
 
-var initAnimation = function(){
+const initAnimation = function () {
 
-    
+
     bgCanvas.width = window.innerWidth;
     bgCanvas.height = window.innerHeight;
-    
-    maximumPossibleDistance = Math.round(Math.sqrt((bgCanvas.width * bgCanvas.width) + (bgCanvas.height * bgCanvas.height)));  
-    
+
+    maximumPossibleDistance = Math.round(Math.sqrt((bgCanvas.width * bgCanvas.width) + (bgCanvas.height * bgCanvas.height)));
+
     centerX = Math.floor(bgCanvas.width / 2);
     centerY = Math.floor(bgCanvas.height / 2);
-    
+
     objects.length = 0;
     clearCanvas();
     createParticles();
 
 };
 
-window.addEventListener("resize", function(){initAnimation();},false);
+window.addEventListener("resize", function () { initAnimation(); }, false);
 
-var options = {
+const options = {
 
     particlesNumber: 80,
     initialSize: 3,
@@ -44,35 +44,35 @@ var options = {
     durationMin: 50,
     durationMax: 300,
     drawConnections: true,
-    mouseInteractionDistance:150,
-    mouseGravity:true,
-    drawMouseConnections:true,
-    red:42,
-    green:195,
-    blue:255,
-    opacity:1,
-    connectionRed:42,
-    connectionGreen:195,
-    connectionBlue:255,
-    connectionOpacity:0.1,
-    mouseConnectionRed:42,
-    mouseConnectionGreen:195,
-    mouseConnectionBlue:255,
-    mouseConnectionOpacity:0.1
-    
+    mouseInteractionDistance: 150,
+    mouseGravity: true,
+    drawMouseConnections: true,
+    red: 42,
+    green: 195,
+    blue: 255,
+    opacity: 1,
+    connectionRed: 42,
+    connectionGreen: 195,
+    connectionBlue: 255,
+    connectionOpacity: 0.1,
+    mouseConnectionRed: 42,
+    mouseConnectionGreen: 195,
+    mouseConnectionBlue: 255,
+    mouseConnectionOpacity: 0.1
+
 }
 
 // ----------------------------------------------------
 // Helper functions //
 //-----------------------------------------------------
 
-var getRandomBetween = function(a, b) {
+const getRandomBetween = function (a, b) {
 
     return Math.floor(Math.random() * b) + a;
 
 };
 
-var hitTest = function(object1, object2) {
+const hitTest = function (object1, object2) {
 
 
     if ((object1.positionX < object2.positionX + object2.size) && (object1.positionX + object2.size > object2.positionX) &&
@@ -92,11 +92,11 @@ var hitTest = function(object1, object2) {
 
 // Get distance between particles by using Pythagorean theorem
 
-var getDistance = function(element1, element2) {
+const getDistance = function (element1, element2) {
 
 
-    var difX = Math.round(Math.abs(element1.positionX - element2.positionX));
-    var difY = Math.round(Math.abs(element1.positionY - element2.positionY));
+    const difX = Math.round(Math.abs(element1.positionX - element2.positionX));
+    const difY = Math.round(Math.abs(element1.positionY - element2.positionY));
 
     return Math.round(Math.sqrt((difX * difX) + (difY * difY)));
 
@@ -150,11 +150,11 @@ function MouseParticle(positionX, positionY, size, red, green, blue, opacity) {
 
 
 
-Particle.prototype.animateTo = function(newX, newY) {
+Particle.prototype.animateTo = function (newX, newY) {
 
     var duration = this.duration;
 
-    var animatePosition = function(newPosition, currentPosition) {
+    var animatePosition = function (newPosition, currentPosition) {
 
         if (newPosition > currentPosition) {
 
@@ -193,20 +193,20 @@ Particle.prototype.animateTo = function(newX, newY) {
 
 };
 
-Particle.prototype.updateColor = function() {
+Particle.prototype.updateColor = function () {
 
     this.color = "rgba(" + this.red + "," + this.green + "," + this.blue + ",+" + this.opacity + ")";
 
 };
 
-Particle.prototype.calculateVector = function() {
+Particle.prototype.calculateVector = function () {
 
 
     var distance
     var newPosition = {};
     var particle = this;
 
-    var getCoordinates = function() {
+    var getCoordinates = function () {
 
 
         newPosition.positionX = getRandomBetween(0, window.innerWidth);
@@ -230,10 +230,10 @@ Particle.prototype.calculateVector = function() {
 };
 
 
-Particle.prototype.testInteraction = function() {
+Particle.prototype.testInteraction = function () {
 
     if (!options.drawConnections) return;
-    
+
     var closestElement;
     var distanceToClosestElement = maximumPossibleDistance;
 
@@ -257,17 +257,17 @@ Particle.prototype.testInteraction = function() {
         bgCtx.beginPath();
         bgCtx.moveTo(this.positionX + this.size / 2, this.positionY + this.size / 2);
         bgCtx.lineTo(closestElement.positionX + closestElement.size * 0.5, closestElement.positionY + closestElement.size * 0.5);
-        bgCtx.strokeStyle = "rgba(" + options.connectionRed + ","+ options.connectionGreen +","+ options.connectionBlue +"," + options.connectionOpacity + ")";
+        bgCtx.strokeStyle = "rgba(" + options.connectionRed + "," + options.connectionGreen + "," + options.connectionBlue + "," + options.connectionOpacity + ")";
         bgCtx.stroke();
         lines++
     }
 
 };
 
-MouseParticle.prototype.testInteraction = function() {  
+MouseParticle.prototype.testInteraction = function () {
 
     if (options.mouseInteractionDistance === 0) return;
-        
+
     var closestElements = []
     var distanceToClosestElement = maximumPossibleDistance;
 
@@ -279,46 +279,46 @@ MouseParticle.prototype.testInteraction = function() {
 
         if ((distance < options.mouseInteractionDistance) && (testedObject !== this)) {
 
-            
+
             closestElements.push(objects[x])
 
         }
-        
+
     }
 
-    
+
     for (var x = 0; x < closestElements.length; x++) {
-       
-       
+
+
         if (options.drawMouseConnections) {
-        
+
             var element = closestElements[x]
             bgCtx.beginPath();
             bgCtx.moveTo(this.positionX, this.positionY);
             bgCtx.lineTo(element.positionX + element.size * 0.5, element.positionY + element.size * 0.5);
-            bgCtx.strokeStyle = "rgba(" + options.mouseConnectionRed + ","+ options.mouseConnectionGreen +","+ options.mouseConnectionBlue +"," + options.mouseConnectionOpacity + ")";
+            bgCtx.strokeStyle = "rgba(" + options.mouseConnectionRed + "," + options.mouseConnectionGreen + "," + options.mouseConnectionBlue + "," + options.mouseConnectionOpacity + ")";
             bgCtx.stroke();
-            lines++ 
-        
+            lines++
+
         }
-        
+
         if (options.mouseGravity) {
-            
+
             closestElements[x].vectorX = this.positionX;
             closestElements[x].vectorY = this.positionY;
-        
+
         }
-        
-      
-       
- 
-     
+
+
+
+
+
     }
-   
+
 
 };
 
-Particle.prototype.updateAnimation = function() {
+Particle.prototype.updateAnimation = function () {
 
     this.animateTo(this.vectorX, this.vectorY);
     this.testInteraction();
@@ -329,24 +329,24 @@ Particle.prototype.updateAnimation = function() {
 
 
 
-MouseParticle.prototype.updateAnimation = function() {
-    
-    
+MouseParticle.prototype.updateAnimation = function () {
+
+
     this.positionX = mousePositionX;
     this.positionY = mousePositionY;
 
     this.testInteraction();
-    
+
 
 };
 
 
-var createParticles = function() {
+var createParticles = function () {
 
     // create mouse particle
     mouseElement = new MouseParticle(0, 0, options.initialSize, 255, 255, 255)
-   
-   
+
+
     for (var x = 0; x < options.particlesNumber; x++) {
 
         var randomX = Math.floor((Math.random() * window.innerWidth) + 1);
@@ -358,45 +358,45 @@ var createParticles = function() {
         objects.push(particle)
 
     }
-    
-   
+
+
 
 };
 
 
-var updatePosition = function() {
+var updatePosition = function () {
 
     for (var x = 0; x < objects.length; x++) {
 
         objects[x].updateAnimation()
 
     }
-    
+
     // handle mouse 
     mouseElement.updateAnimation()
-    
-    
-    
+
+
+
 
 };
 
-addEventListener('mousemove',function(e){
-    mousemove&&mousemove(e)
+addEventListener('mousemove', function (e) {
+    mousemove && mousemove(e)
     mousePositionX = e.clientX;
     mousePositionY = e.clientY;
 })
 
-var clearCanvas = function() {
+var clearCanvas = function () {
 
     bgCanvas.width = window.innerWidth;
 
 
 };
 
-var stopAnimation = function(){
+var stopAnimation = function () {
 
-  window.cancelAnimationFrame(myAnimation)
-  isRunning = false;
+    window.cancelAnimationFrame(myAnimation)
+    isRunning = false;
 
 };
 
@@ -404,7 +404,7 @@ var stopAnimation = function(){
 // Init! //
 //-----------------------------------------------------
 
-var bgLoop = function() {
+var bgLoop = function () {
 
     clearCanvas();
     updatePosition();

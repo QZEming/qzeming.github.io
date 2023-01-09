@@ -24,7 +24,7 @@ function Eye(opt) {
 	this.magnitudeMax = this.radius - this.pupilRadius;
 }
 
-Eye.prototype.step = function() {
+Eye.prototype.step = function () {
 	var dx = mx - this.x,
 		dy = my - this.y,
 		dist = Math.sqrt(dx * dx + dy * dy);
@@ -38,7 +38,7 @@ Eye.prototype.step = function() {
 	this.pupilY += ((this.y + Math.sin(this.angle) * this.magnitude) - this.pupilY) * 0.1;
 };
 
-Eye.prototype.draw = function() {
+Eye.prototype.draw = function () {
 	ctx.beginPath();
 	ctx.arc(this.x, this.y, this.radius, 0, TAU);
 	ctx.fillStyle = '#fbf9e6';
